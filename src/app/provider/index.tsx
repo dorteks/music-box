@@ -1,5 +1,5 @@
-import { ChakraProvider } from "@chakra-ui/react";
 import theme from "../theme/chakraTheme";
+import { ChakraProvider } from "@chakra-ui/react";
 
 type Props = {
   children: React.ReactNode;

@@ -1,109 +1,14 @@
-import { Box } from "@chakra-ui/react";
+import React from "react";
+import Topbar from "./topbar";
+import MainBody from "./mainbody";
+import { Stack } from "@chakra-ui/react";
 
 const Body = () => {
   return (
-    <Box>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side </div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side </div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side </div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side </div>
-      <div>Side bar</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-      <div>Body</div>
-    </Box>
+    <Stack direction="column">
+      <Topbar />
+      <MainBody />
+    </Stack>
   );
 };
 

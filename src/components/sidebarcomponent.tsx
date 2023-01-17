@@ -1,18 +1,22 @@
-import { Box } from "@chakra-ui/react";
+import {
+  YourMusic,
+  YourLastSongs,
+  YourPlaylists,
+  MainCategories,
+  YourFavouriteArtist,
+  MusicBoxHeader,
+} from "./sidebarreusables";
+import { Box, Img, Stack, Text } from "@chakra-ui/react";
 
 const SidebarComponents = () => {
   return (
     <Box>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side </div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side bar</div>
-      <div>Side </div>
+      <MusicBoxHeader />
+      <MainCategories />
+      <YourMusic />
+      <YourPlaylists />
+      <YourFavouriteArtist />
+      <YourLastSongs />
     </Box>
   );
 };

@@ -11,8 +11,8 @@ const HomePage = () => {
         "0px 1fr",
         "0px 1fr",
         "0px 1fr",
-        "240px 1fr",
-        "300px 1fr",
+        "200px 1fr",
+        "230px 1fr",
       ]}
     >
       <GridItem bgColor="red">

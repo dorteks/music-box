@@ -3,7 +3,11 @@ import { SmallSidebar } from "./sidebar";
 
 export const SmallTopbar = () => {
   return (
-    <Box h="100%" display={["flex", "flex", "flex", "none", "none"]}>
+    <Box
+      h="100%"
+      alignItems="center"
+      display={["flex", "flex", "flex", "none", "none"]}
+    >
       <SmallSidebar />
 
       <div>Small Top bar</div>
@@ -16,7 +20,11 @@ export const SmallTopbar = () => {
 
 export const BigTopbar = () => {
   return (
-    <Box display={["none", "none", "none", "flex", "flex"]}>
+    <Box
+      h="100%"
+      alignItems="center"
+      display={["none", "none", "none", "flex", "flex"]}
+    >
       <div> Large Top bar</div>
       <div> Large Top bar</div>
       <div> Large Top bar</div>
@@ -27,7 +35,7 @@ export const BigTopbar = () => {
 
 const Topbar = () => {
   return (
-    <Box h="100px" bgColor="yellow">
+    <Box h="80px" bgColor="yellow">
       <SmallTopbar />
       <BigTopbar />
     </Box>

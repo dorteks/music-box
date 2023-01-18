@@ -3,6 +3,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 
 type Props = {
   children: React.ReactNode;
+  pageProps: any;
 };
 
 const AppProvider = (props: Props) => {

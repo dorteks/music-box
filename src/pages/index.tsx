@@ -1,13 +1,13 @@
 import React, { ReactElement } from "react";
-import HomePage from "@/container/home";
-import LayoutBody from "@/layouts/main/body";
+import Layout from "@/layouts/main";
+import HomeContainer from "@/container/home";
 
 const Home = () => {
-  return <HomePage />;
+  return <HomeContainer />;
 };
 
 Home.getLayout = (page: ReactElement) => {
-  return <LayoutBody>{page}</LayoutBody>;
+  return <Layout>{page}</Layout>;
 };
 
 export default Home;

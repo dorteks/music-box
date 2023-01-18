@@ -15,10 +15,16 @@
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".",
+    "noUnusedLocals": true,
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/sidebar/usesidebar"
+  ],
   "exclude": ["node_modules"]
 }

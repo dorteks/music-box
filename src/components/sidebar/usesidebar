@@ -1,0 +1,22 @@
+// import React from "react";
+// import { IoMdHome } from "react-icons/io";
+// import { MainItems } from "./sidebarreusables";
+
+// const SidebarUsables = () => {
+//   return (
+//     <div>
+//       {[
+//         { name: "Home", img: <IoMdHome /> },
+//         { name: "Explore", img: <IoMdHome /> },
+//         { name: "New Release", img: <IoMdHome /> },
+//         { name: "Top Charts", img: <IoMdHome /> },
+//         { name: "Radio", img: <IoMdHome /> },
+//         { name: "New Music", img: <IoMdHome /> },
+//       ].map((item) => {
+//         return <MainItems title={item.name} lefticon={item.img} />;
+//       })}
+//     </div>
+//   );
+// };
+
+// export default SidebarUsables;

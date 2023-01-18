@@ -22,7 +22,9 @@ const MobileTopbar = () => {
           MUSIC BOX
         </Text>
       </Stack>
-      <Button display={["none", "none", "flex", "none", "none"]}>Search</Button>
+      <Button w="180px" display={["none", "none", "flex", "none", "none"]}>
+        Search
+      </Button>
       <BsFillBookmarkFill size="30px" />
       <RiPlayListAddLine size="30px" />
       <AiTwotoneSetting size="30px" />

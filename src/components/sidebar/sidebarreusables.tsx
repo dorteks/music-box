@@ -71,12 +71,51 @@ export const MainCategories = () => {
       >
         MAIN CATEGORIES
       </Text>
-      <MainItems title={"Home"} lefticon={<IoMdHome />} />
-      <MainItems title={"Explore"} lefticon={<IoMdHome />} />
-      <MainItems title={"New Release"} lefticon={<IoMdHome />} />
-      <MainItems title={"Top Charts"} lefticon={<IoMdHome />} />
-      <MainItems title={"Radio"} lefticon={<IoMdHome />} />
-      <MainItems title={"New Music"} lefticon={<IoMdHome />} />
+      {[
+        { title: "Home", icon: <IoMdHome /> },
+        { title: "Explore", icon: <IoMdHome /> },
+        { title: "Newss Release", icon: <IoMdHome /> },
+        { title: "Top Charts", icon: <IoMdHome /> },
+        { title: "Radio", icon: <IoMdHome /> },
+        { title: "New Music", icon: <IoMdHome /> },
+      ].map((item) => {
+        return (
+          <Stack
+            key={""}
+            p="13px"
+            pl="25px"
+            pb="15px"
+            direction="row"
+            _hover={{
+              fontWeight: "bold",
+              color: "purple.600",
+              alignItems: "center",
+              borderRadius: "25px",
+              backgroundColor: "white",
+            }}
+          >
+            <Stack direction="row">
+              <Box mr="10px" pt="3px" pb="3px" color="gray.500">
+                {item.icon}
+              </Box>
+              <Text
+                fontWeight="bold"
+                fontSize="12px"
+                width="100px"
+                overflow="hidden"
+                textOverflow="ellipsis"
+              >
+                {item.title}
+              </Text>
+            </Stack>
+            <Stack pr={["0", "0", "0", "20px", "0"]}>
+              <Box p="5px">
+                <SlArrowRight size="10px" />
+              </Box>
+            </Stack>
+          </Stack>
+        );
+      })}
     </Box>
   );
 };
@@ -94,8 +133,47 @@ export const YourMusic = () => {
       >
         YOUR MUSIC
       </Text>
-      <MainItems title={"Favourtite"} lefticon={<IoMdHome />} />
-      <MainItems title={"History"} lefticon={<IoMdHome />} />
+      {[
+        { title: "Favourtie", icon: <IoMdHome /> },
+        { title: "History", icon: <IoMdHome /> },
+      ].map((item) => {
+        return (
+          <Stack
+            key={""}
+            p="13px"
+            pl="25px"
+            pb="15px"
+            direction="row"
+            _hover={{
+              fontWeight: "bold",
+              color: "purple.600",
+              alignItems: "center",
+              borderRadius: "25px",
+              backgroundColor: "white",
+            }}
+          >
+            <Stack direction="row">
+              <Box mr="10px" pt="3px" pb="3px" color="gray.500">
+                {item.icon}
+              </Box>
+              <Text
+                fontWeight="bold"
+                fontSize="12px"
+                width="100px"
+                overflow="hidden"
+                textOverflow="ellipsis"
+              >
+                {item.title}
+              </Text>
+            </Stack>
+            <Stack pr={["0", "0", "0", "20px", "0"]}>
+              <Box p="5px">
+                <SlArrowRight size="10px" />
+              </Box>
+            </Stack>
+          </Stack>
+        );
+      })}
     </Box>
   );
 };
@@ -113,12 +191,51 @@ export const YourPlaylists = () => {
       >
         YOUR PLAYLISTS
       </Text>
-      <MainItems title={"My Rock Collect"} lefticon={<IoMdHome />} />
-      <MainItems title={"Best Music"} lefticon={<IoMdHome />} />
-      <MainItems title={"Hits of 90s"} lefticon={<IoMdHome />} />
-      <MainItems title={"Classic Music"} lefticon={<IoMdHome />} />
-      <MainItems title={"New Pop Music"} lefticon={<IoMdHome />} />
-      <MainItems title={"Slipknot"} lefticon={<IoMdHome />} />
+      {[
+        { title: "My Rock Collect", icon: <IoMdHome /> },
+        { title: "Best Music", icon: <IoMdHome /> },
+        { title: "Gits of 90s ", icon: <IoMdHome /> },
+        { title: "Classic Music", icon: <IoMdHome /> },
+        { title: "New Pop Music", icon: <IoMdHome /> },
+        { title: "Slipknot", icon: <IoMdHome /> },
+      ].map((item) => {
+        return (
+          <Stack
+            key={""}
+            p="13px"
+            pl="25px"
+            pb="15px"
+            direction="row"
+            _hover={{
+              fontWeight: "bold",
+              color: "purple.600",
+              alignItems: "center",
+              borderRadius: "25px",
+              backgroundColor: "white",
+            }}
+          >
+            <Stack direction="row">
+              <Box mr="10px" pt="3px" pb="3px" color="gray.500">
+                {item.icon}
+              </Box>
+              <Text
+                fontWeight="bold"
+                fontSize="12px"
+                width="100px"
+                overflow="hidden"
+                textOverflow="ellipsis"
+              >
+                {item.title}
+              </Text>
+            </Stack>
+            <Stack pr={["0", "0", "0", "20px", "0"]}>
+              <Box p="5px">
+                <SlArrowRight size="10px" />
+              </Box>
+            </Stack>
+          </Stack>
+        );
+      })}
       <Button
         mt="20px"
         mb="20px"

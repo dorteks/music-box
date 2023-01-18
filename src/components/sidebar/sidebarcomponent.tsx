@@ -6,7 +6,7 @@ import {
   YourFavouriteArtist,
   MusicBoxHeader,
 } from "./sidebarreusables";
-import { Box, Img, Stack, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 const SidebarComponents = () => {
   return (

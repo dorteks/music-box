@@ -81,6 +81,7 @@ export const MainCategories = () => {
       ].map((item) => {
         return (
           <Stack
+            key={""}
             p="13px"
             pl="25px"
             pb="15px"
@@ -138,6 +139,7 @@ export const YourMusic = () => {
       ].map((item) => {
         return (
           <Stack
+            key={""}
             p="13px"
             pl="25px"
             pb="15px"
@@ -199,6 +201,7 @@ export const YourPlaylists = () => {
       ].map((item) => {
         return (
           <Stack
+            key={""}
             p="13px"
             pl="25px"
             pb="15px"

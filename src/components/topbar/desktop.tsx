@@ -33,7 +33,7 @@ const DesktopTopbar = () => {
           { title: "Settings", icon: <AiTwotoneSetting /> },
         ].map((items) => {
           return (
-            <Box>
+            <Box key={""}>
               <Stack alignItems="center" direction="row">
                 {items.icon}
                 <Text>{items.title} </Text>

@@ -2,6 +2,8 @@ import { Box } from "@chakra-ui/react";
 import ExploreMusic from "./exploreMusic";
 import LatestNews from "./latestNews";
 import MoodsAndGenres from "./moodsAndGenres";
+import MoreToExplore from "./moreToExplore";
+import MusicRadioShows from "./musicRadioShows";
 import RecommendedAlbums from "./recommendedAlbums";
 
 const Body = () => {
@@ -11,6 +13,8 @@ const Body = () => {
       <RecommendedAlbums />
       <LatestNews />
       <MoodsAndGenres />
+      <MusicRadioShows />
+      <MoreToExplore />
     </Box>
   );
 };

@@ -2,17 +2,17 @@ import { Box, Card, HStack, Stack, Text } from "@chakra-ui/react";
 import {
   BsArrowLeftCircle,
   BsArrowRightCircle,
-  BsFillBookmarkFill,
   BsPlayCircleFill,
 } from "react-icons/bs";
+import { RxRadiobutton } from "react-icons/rx";
 
-const LatestNews = () => {
+const MusicRadioShows = () => {
   return (
-    <Box mt="60px">
+    <Box mt="50px" mb="50px">
       <Stack direction="row" alignItems="center" justify="space-between">
         <HStack>
           <Box pt="3px" pb="3px">
-            <BsFillBookmarkFill size="20px" />
+            <RxRadiobutton size="20px" />
           </Box>
           <Text
             p="5px"
@@ -21,7 +21,7 @@ const LatestNews = () => {
             textAlign="center"
             fontSize="18px"
           >
-            Latest News
+            Music Radio Shows
           </Text>
         </HStack>
         <HStack>
@@ -30,46 +30,37 @@ const LatestNews = () => {
         </HStack>
       </Stack>
 
-      <HStack mt="30px" gap={3}>
+      <HStack>
         {[
           {
             image: "/images/DojaCat.png",
-            title: "FLOAT",
-            artiste: "KCAMP",
+            radioName: "Radio with Carley Pierce",
           },
           {
             image: "/images/DojaCat.png",
-            title: "FLOAT",
-            artiste: "KCAMP",
+            radioName: "Glydezone Radio with Funk",
           },
           {
             image: "/images/DojaCat.png",
-            title: "FLOAT",
-            artiste: "KCAMP",
+            radioName: "The New Australia Radio",
           },
           {
             image: "/images/DojaCat.png",
-            title: "FLOAT",
-            artiste: "KCAMP",
+            radioName: "Everything together Radio",
           },
         ].map((item) => {
           return (
-            <Card key={""}>
-              <Card w="160px" h="220px" backgroundImage={item.image}>
-                <Box w="40px" mt="30px" ml="100px">
+            <Box key={""}>
+              <Card w="200px" h="150px" backgroundImage={item.image}>
+                <Box w="40px" mt="20px" ml="20px">
                   <BsPlayCircleFill size="sm" />
                 </Box>
               </Card>
 
-              <Card w="160px" h="80px" justify="center">
-                <Text ml="20px" fontSize="18p0">
-                  {item.title}
-                </Text>
-                <Text ml="20px" fontSize="12px">
-                  {item.artiste}
-                </Text>
-              </Card>
-            </Card>
+              <Text mt="10px" fontSize="14px" fontWeight="bold">
+                {item.radioName}
+              </Text>
+            </Box>
           );
         })}
       </HStack>
@@ -77,4 +68,4 @@ const LatestNews = () => {
   );
 };
 
-export default LatestNews;
+export default MusicRadioShows;

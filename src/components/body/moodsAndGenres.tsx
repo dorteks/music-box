@@ -65,8 +65,8 @@ const MoodsAndGenres = () => {
           { href: "", genre: "Metal & Hardcore" },
         ].map((item) => {
           return (
-            <GridItem>
-              <Link key={""} href={item.href}>
+            <GridItem key={""}>
+              <Link href={item.href}>
                 <Card
                   bgColor="purple.300"
                   flexDirection="row"

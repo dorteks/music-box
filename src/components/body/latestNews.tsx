@@ -54,7 +54,7 @@ const LatestNews = () => {
           },
         ].map((item) => {
           return (
-            <Card>
+            <Card key={""}>
               <Card w="160px" h="220px" backgroundImage={item.image}>
                 <Box w="40px" mt="30px" ml="100px">
                   <BsPlayCircleFill size="sm" />

@@ -7,7 +7,7 @@ type Props = {
 
 const LayoutBody = (props: Props) => {
   return (
-    <GridItem bgColor="blue">
+    <GridItem bgColor="white">
       <Stack direction="column">{props.children}</Stack>
     </GridItem>
   );

@@ -1,9 +1,8 @@
-import SidebarComponents from "@/components/sidebar/sidebarcomponent";
-import { Box, Button } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
-
 import { useState } from "react";
+import { Box, Button } from "@chakra-ui/react";
 import { AiOutlineClose } from "react-icons/ai";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import Sidebar from "@/components/sidebar";
 
 const MobileSidebar = () => {
   const [display, toggleDisplay] = useState("none");
@@ -30,7 +29,7 @@ const MobileSidebar = () => {
         <Button justifySelf="end" onClick={() => toggleDisplay("none")}>
           <AiOutlineClose size="30px" />{" "}
         </Button>
-        <SidebarComponents />
+        <Sidebar />
       </Box>
     </Box>
   );

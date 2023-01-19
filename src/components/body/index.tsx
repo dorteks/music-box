@@ -1,10 +1,10 @@
 import { Box } from "@chakra-ui/react";
-import ExploreMusic from "./exploreMusic";
-import LatestNews from "./latestNews";
-import MoodsAndGenres from "./moodsAndGenres";
-import MoreToExplore from "./moreToExplore";
-import MusicRadioShows from "./musicRadioShows";
-import RecommendedAlbums from "./recommendedAlbums";
+import ExploreMusic from "./homepage/exploreMusic";
+import LatestNews from "./homepage/latestNews";
+import MoodsAndGenres from "./homepage/moodsAndGenres";
+import MoreToExplore from "./homepage/moreToExplore";
+import MusicRadioShows from "./homepage/musicRadioShows";
+import RecommendedAlbums from "./homepage/recommendedAlbums";
 
 const Body = () => {
   return (

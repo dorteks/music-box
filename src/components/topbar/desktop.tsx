@@ -10,6 +10,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 const DesktopTopbar = () => {
   return (
@@ -28,16 +29,18 @@ const DesktopTopbar = () => {
       </HStack>
       <HStack>
         {[
-          { title: "Personal Release", icon: <BsFillBookmarkFill /> },
-          { title: "Create Playlist", icon: <RiPlayListAddLine /> },
-          { title: "Settings", icon: <AiTwotoneSetting /> },
+          { href: "", title: "Personal Release", icon: <BsFillBookmarkFill /> },
+          { href: "", title: "Create Playlist", icon: <RiPlayListAddLine /> },
+          { href: "", title: "Settings", icon: <AiTwotoneSetting /> },
         ].map((items) => {
           return (
             <Box key={""}>
-              <Stack alignItems="center" direction="row">
-                {items.icon}
-                <Text>{items.title} </Text>
-              </Stack>
+              <Link href={items.href}>
+                <Stack alignItems="center" direction="row">
+                  {items.icon}
+                  <Text>{items.title} </Text>
+                </Stack>
+              </Link>
             </Box>
           );
         })}

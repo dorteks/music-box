@@ -2,6 +2,7 @@ import { IoMdHome } from "react-icons/io";
 import { SlArrowRight } from "react-icons/sl";
 import { Box, Img, Text, Stack, Button } from "@chakra-ui/react";
 import Link from "next/link";
+import { GiMusicSpell } from "react-icons/gi";
 
 export const MusicBoxHeader = () => {
   return (
@@ -157,15 +158,28 @@ export const YourPlaylists = () => {
       </Text>
       {[
         {
+          href: "",
+          title: "Playlist Title #1",
+          icon: <GiMusicSpell />,
+        },
+        {
           href: "/my_rock_collect",
           title: "My Rock Collect",
-          icon: <IoMdHome />,
+          icon: <GiMusicSpell />,
         },
-        { href: "/best_music", title: "Best Music", icon: <IoMdHome /> },
-        { href: "/hits_of_90s", title: "Hits of 90s ", icon: <IoMdHome /> },
-        { href: "/classic_music", title: "Classic Music", icon: <IoMdHome /> },
-        { href: "/new_pop_music", title: "New Pop Music", icon: <IoMdHome /> },
-        { href: "/slipknot", title: "Slipknot", icon: <IoMdHome /> },
+        { href: "/best_music", title: "Best Music", icon: <GiMusicSpell /> },
+        { href: "/hits_of_90s", title: "Hits of 90s ", icon: <GiMusicSpell /> },
+        {
+          href: "/classic_music",
+          title: "Classic Music",
+          icon: <GiMusicSpell />,
+        },
+        {
+          href: "/new_pop_music",
+          title: "New Pop Music",
+          icon: <GiMusicSpell />,
+        },
+        { href: "/slipknot", title: "Slipknot", icon: <GiMusicSpell /> },
       ].map((item) => {
         return (
           <Link key={""} href={item.href}>

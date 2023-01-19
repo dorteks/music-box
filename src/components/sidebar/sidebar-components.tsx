@@ -42,9 +42,8 @@ export const MainCategories = () => {
         { href: "/new_music", title: "New Music", icon: <IoMdHome /> },
       ].map((item) => {
         return (
-          <Link href={item.href}>
+          <Link key={""} href={item.href}>
             <Stack
-              key={""}
               p="13px"
               pl="25px"
               pb="15px"
@@ -102,9 +101,8 @@ export const YourMusic = () => {
         { href: "/history", title: "History", icon: <IoMdHome /> },
       ].map((item) => {
         return (
-          <Link href={item.href}>
+          <Link key={""} href={item.href}>
             <Stack
-              key={""}
               p="13px"
               pl="25px"
               pb="15px"
@@ -170,9 +168,8 @@ export const YourPlaylists = () => {
         { href: "/slipknot", title: "Slipknot", icon: <IoMdHome /> },
       ].map((item) => {
         return (
-          <Link href={item.href}>
+          <Link key={""} href={item.href}>
             <Stack
-              key={""}
               p="13px"
               pl="25px"
               pb="15px"
@@ -254,7 +251,7 @@ export const YourFavouriteArtist = () => {
         },
       ].map((item) => {
         return (
-          <Link href={item.href}>
+          <Link key={""} href={item.href}>
             <Stack
               p="13px"
               pl="25px"
@@ -370,7 +367,7 @@ export const YourLastSongs = () => {
         },
       ].map((item) => {
         return (
-          <Link href={item.href}>
+          <Link key={""} href={item.href}>
             <Stack
               p="13px"
               pl="25px"

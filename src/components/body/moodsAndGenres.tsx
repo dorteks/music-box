@@ -66,7 +66,7 @@ const MoodsAndGenres = () => {
         ].map((item) => {
           return (
             <GridItem>
-              <Link href={item.href}>
+              <Link key={""} href={item.href}>
                 <Card
                   bgColor="purple.300"
                   flexDirection="row"

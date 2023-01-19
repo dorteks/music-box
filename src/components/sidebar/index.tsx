@@ -3,12 +3,12 @@ import {
   YourLastSongs,
   YourPlaylists,
   MainCategories,
-  YourFavouriteArtist,
   MusicBoxHeader,
-} from "./sidebarreusables";
+  YourFavouriteArtist,
+} from "./sidebar-components";
 import { Box } from "@chakra-ui/react";
 
-const SidebarComponents = () => {
+const Sidebar = () => {
   return (
     <Box>
       <MusicBoxHeader />
@@ -21,4 +21,4 @@ const SidebarComponents = () => {
   );
 };
 
-export default SidebarComponents;
+export default Sidebar;

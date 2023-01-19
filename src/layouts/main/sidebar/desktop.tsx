@@ -1,5 +1,5 @@
-import SidebarComponents from "@/components/sidebar/sidebarcomponent";
 import { Box } from "@chakra-ui/react";
+import Sidebar from "@/components/sidebar";
 
 const DesktopSidebar = () => {
   return (
@@ -12,7 +12,7 @@ const DesktopSidebar = () => {
       w={["0px", "0px", "0px", "200px", "230px"]}
       display={["none", "none", "none", "flex", "flex"]}
     >
-      <SidebarComponents />
+      <Sidebar />
     </Box>
   );
 };

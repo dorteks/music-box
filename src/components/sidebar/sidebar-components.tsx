@@ -1,6 +1,6 @@
-import { Box, Img, Text, Stack, Button } from "@chakra-ui/react";
-import { SlArrowRight } from "react-icons/sl";
 import { IoMdHome } from "react-icons/io";
+import { SlArrowRight } from "react-icons/sl";
+import { Box, Img, Text, Stack, Button } from "@chakra-ui/react";
 
 export const MainItems = (props: {
   title: React.ReactNode;

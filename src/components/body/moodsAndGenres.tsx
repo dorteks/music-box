@@ -46,7 +46,7 @@ const MoodsAndGenres = () => {
         </HStack>
       </Stack>
 
-      <Grid templateColumns="repeat(4, 1fr)" gap={2} mt="30px">
+      <Grid key={""} templateColumns="repeat(4, 1fr)" gap={2} mt="30px">
         {[
           { href: "", genre: "Metal & Hardcore" },
           { href: "", genre: "Good Mood" },
@@ -65,7 +65,7 @@ const MoodsAndGenres = () => {
           { href: "", genre: "Metal & Hardcore" },
         ].map((item) => {
           return (
-            <GridItem key={""}>
+            <GridItem>
               <Link href={item.href}>
                 <Card
                   bgColor="purple.300"

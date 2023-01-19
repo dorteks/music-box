@@ -65,9 +65,10 @@ const MoodsAndGenres = () => {
           { href: "", genre: "Metal & Hardcore" },
         ].map((item) => {
           return (
-            <GridItem>
+            <GridItem key={""}>
               <Link href={item.href}>
                 <Card
+                  key={""}
                   bgColor="purple.300"
                   flexDirection="row"
                   pl="10px"
@@ -78,7 +79,7 @@ const MoodsAndGenres = () => {
                   height="50px"
                 >
                   <CircleIcon />
-                  <Text w="150px" pl="10px" fontSize="14px">
+                  <Text key={""} w="150px" pl="10px" fontSize="14px">
                     {item.genre}{" "}
                   </Text>
                   <FiArrowRight />

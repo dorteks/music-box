@@ -1,54 +1,68 @@
 import {
+  Td,
+  Th,
+  Tr,
   Box,
-  Button,
-  HStack,
+  Card,
+  Text,
   Stack,
   Table,
-  TableContainer,
   Tbody,
-  Td,
-  Text,
-  Th,
   Thead,
-  Tr,
-  VStack,
+  HStack,
+  TableContainer,
 } from "@chakra-ui/react";
-import { GiMusicSpell } from "react-icons/gi";
-import { FaPencilAlt } from "react-icons/fa";
-import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
-import { GrShareOption } from "react-icons/gr";
-import { CiPlay1 } from "react-icons/ci";
+import { BsPlayCircleFill } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
+import { GrShareOption } from "react-icons/gr";
 import { MdOutlineLibraryAdd } from "react-icons/md";
 
-const Playlists = () => {
+const PersonalReleases = () => {
   return (
-    <Box mt="30px">
-      <Stack direction="row" bgColor="blue" justify="space-between">
-        <HStack>
-          <GiMusicSpell size="200px" />
-          <VStack align="left" justify="center" pl="10px">
-            <Text>PLAYLIST</Text>
-            <Text pt="10px" fontSize="40px">
-              Playlist Title #1
-            </Text>
-          </VStack>
-        </HStack>
+    <Box pl="20px">
+      <HStack mt="30px" gap={3}>
+        {[
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
+        ].map((item) => {
+          return (
+            <Card key="item">
+              <Card w="230px" h="220px" backgroundImage={item.image}>
+                <Box w="40px" mt="30px" ml="100px">
+                  <BsPlayCircleFill size="sm" />
+                </Box>
+              </Card>
 
-        <Stack direction="row" align="start" pr="40px" pt="35px" gap={5}>
-          <Button>
-            <CiPlay1 size="30px" />
-            <Text pl="10px" pr="15px">
-              Play All
-            </Text>
-          </Button>
-          <FaPencilAlt size="30px" />
-          <BsSuitHeart size="30px" />
-          <GrShareOption size="30px" />
-          <BsThreeDots size="30px" />
-          <FiDownload size="30px" />
-        </Stack>
-      </Stack>
+              <Card w="230px" h="80px" justify="center">
+                <Text ml="20px" fontSize="18p0">
+                  {item.title}
+                </Text>
+                <Text ml="20px" fontSize="12px">
+                  {item.artiste}
+                </Text>
+              </Card>
+            </Card>
+          );
+        })}
+      </HStack>
 
       <Stack mt="30px">
         <TableContainer>
@@ -138,4 +152,4 @@ const Playlists = () => {
   );
 };
 
-export default Playlists;
+export default PersonalReleases;

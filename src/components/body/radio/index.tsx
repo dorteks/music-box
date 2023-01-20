@@ -42,11 +42,7 @@ const Radio = () => {
                   width="200px"
                   height="200px"
                   bgImage={item.radioStationImage}
-                >
-                  {/* <Box alignSelf="end" mr="20px" mt="160px">
-                  <CiPlay1 size="30px" />
-                </Box> */}
-                </Card>
+                ></Card>
               </Card>
             </Stack>
           );

@@ -1,17 +1,17 @@
 import {
-  Button,
-  Card,
-  Heading,
-  HStack,
   Img,
-  Stack,
+  Card,
   Text,
+  Stack,
+  Button,
+  HStack,
+  Heading,
 } from "@chakra-ui/react";
 import React from "react";
 import { BsStar } from "react-icons/bs";
 import { MdTimer } from "react-icons/md";
-import { RxTrackNext, RxTrackPrevious } from "react-icons/rx";
 import { SlControlPlay } from "react-icons/sl";
+import { RxTrackNext, RxTrackPrevious } from "react-icons/rx";
 
 const ListenRadio = () => {
   return (

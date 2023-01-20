@@ -1,11 +1,11 @@
-import Body from "@/components/body/homepage";
+// import Body from "@/components/body/homepage";
 import Topbar from "@/components/topbar";
 
 const HomeContainer = () => {
   return (
     <>
       <Topbar />
-      <Body />
+      {/* <Body /> */}
       {/* <CreatePlaylist /> */}
       {/* <Playlists /> */}
       {/* <Settings /> */}
@@ -19,6 +19,7 @@ const HomeContainer = () => {
       {/* <Artists /> */}
       {/* <SongsByArtist /> */}
       {/* <LastPlayedSongs /> */}
+      {/* <PlayOnScreen /> */}
     </>
   );
 };

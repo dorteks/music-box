@@ -1,16 +1,9 @@
 import { AiTwotoneSetting } from "react-icons/ai";
 import { RiPlayListAddLine } from "react-icons/ri";
 import { BsFillBookmarkFill } from "react-icons/bs";
-import {
-  Avatar,
-  Box,
-  Button,
-  HStack,
-  Img,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Avatar, Box, Button, HStack, Stack, Text } from "@chakra-ui/react";
 import Link from "next/link";
+import { GiMusicSpell } from "react-icons/gi";
 
 const DesktopTopbar = () => {
   return (
@@ -24,7 +17,10 @@ const DesktopTopbar = () => {
       display={["none", "none", "none", "flex", "flex"]}
     >
       <HStack>
-        <Img src="/images/musicbox.png" alt="" boxSize="25px" mr="10px" />
+        <Box mr="10px">
+          <GiMusicSpell size="30px" />
+        </Box>
+
         <Button w="280px">Search</Button>
       </HStack>
       <HStack>

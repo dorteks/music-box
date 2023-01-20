@@ -2,8 +2,9 @@ import { AiTwotoneSetting } from "react-icons/ai";
 import { RiPlayListAddLine } from "react-icons/ri";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import MobileSidebar from "@/layouts/main/sidebar/mobile";
-import { Avatar, Box, Button, Img, Stack, Text } from "@chakra-ui/react";
+import { Avatar, Box, Button, Stack, Text } from "@chakra-ui/react";
 import Link from "next/link";
+import { GiMusicSpell } from "react-icons/gi";
 
 const MobileTopbar = () => {
   return (
@@ -18,7 +19,7 @@ const MobileTopbar = () => {
     >
       <MobileSidebar />
       <Stack direction="row" alignItems="center">
-        <Img src="/images/musicbox.png" boxSize="30px" />
+        <GiMusicSpell size="30px" />
         <Link href="/">
           <Text pl="10px" display={["none", "none", "flex", "none", "none"]}>
             MUSIC BOX

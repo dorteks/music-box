@@ -31,7 +31,7 @@ const ExploreSong = () => {
         },
       ].map((item) => {
         return (
-          <VStack gap={4}>
+          <VStack key="blogTitle" gap={4}>
             <Heading size="2xl" textAlign="center">
               {item.blogTitle}
             </Heading>

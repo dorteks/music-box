@@ -64,7 +64,7 @@ const Settings = () => {
           },
         ].map((item) => {
           return (
-            <Stack pt="30px">
+            <Stack key="title" pt="30px">
               <Heading size="sm">{item.title}</Heading>
               <HStack justify="space-between">
                 <Text width="600px" fontSize="15px">

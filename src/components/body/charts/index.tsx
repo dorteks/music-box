@@ -30,7 +30,7 @@ const Charts = () => {
             },
           ].map((item) => {
             return (
-              <Stack direction="column" pt="20px">
+              <Stack key="chartTitle" direction="column" pt="20px">
                 <Card width="200px" height="200px" bgImage={item.chartImage}>
                   {/* <Box alignSelf="end" mr="20px" mt="160px">
                   <CiPlay1 size="30px" />
@@ -70,7 +70,7 @@ const Charts = () => {
             },
           ].map((item) => {
             return (
-              <Stack direction="column" pt="20px">
+              <Stack key="chartTitle" direction="column" pt="20px">
                 <Card width="200px" height="200px" bgImage={item.chartImage}>
                   {/* <Box alignSelf="end" mr="20px" mt="160px">
                   <CiPlay1 size="30px" />
@@ -110,7 +110,7 @@ const Charts = () => {
             },
           ].map((item) => {
             return (
-              <Stack direction="column" pt="20px">
+              <Stack key="chartTitle" direction="column" pt="20px">
                 <Card width="200px" height="200px" bgImage={item.chartImage}>
                   {/* <Box alignSelf="end" mr="20px" mt="160px">
                   <CiPlay1 size="30px" />

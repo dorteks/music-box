@@ -1,8 +1,17 @@
 import { IoMdHome } from "react-icons/io";
 import { SlArrowRight } from "react-icons/sl";
-import { Box, Img, Text, Stack, Button } from "@chakra-ui/react";
+import { Box, Text, Stack, Button, Avatar } from "@chakra-ui/react";
 import Link from "next/link";
 import { GiMusicSpell } from "react-icons/gi";
+import { FaCompass } from "react-icons/fa";
+import { BiNetworkChart } from "react-icons/bi";
+import {
+  BsCalendarEvent,
+  BsFillBookmarkFill,
+  BsSuitHeartFill,
+} from "react-icons/bs";
+import { CgEditBlackPoint } from "react-icons/cg";
+import { GrHistory } from "react-icons/gr";
 
 export const MusicBoxHeader = () => {
   return (
@@ -14,8 +23,8 @@ export const MusicBoxHeader = () => {
         alignItems="center"
         display={["none", "none", "none", "flex", "flex"]}
       >
-        <Img src="/images/musicbox.png" boxSize="25px" />
-        <Text pl="10px">MUSIC BOX</Text>
+        <GiMusicSpell size="30px" />
+        <Text pl="5px">MUSIC BOX</Text>
       </Stack>
     </Link>
   );
@@ -36,11 +45,19 @@ export const MainCategories = () => {
       </Text>
       {[
         { href: "/", title: "Home", icon: <IoMdHome /> },
-        { href: "/explore", title: "Explore", icon: <IoMdHome /> },
-        { href: "/new_releases", title: "New Releases", icon: <IoMdHome /> },
-        { href: "/top_charts", title: "Top Charts", icon: <IoMdHome /> },
-        { href: "/radio", title: "Radio", icon: <IoMdHome /> },
-        { href: "/new_music", title: "New Music", icon: <IoMdHome /> },
+        { href: "/explore", title: "Explore", icon: <FaCompass /> },
+        {
+          href: "/new_releases",
+          title: "New Releases",
+          icon: <BsCalendarEvent />,
+        },
+        { href: "/top_charts", title: "Top Charts", icon: <BiNetworkChart /> },
+        { href: "/radio", title: "Radio", icon: <CgEditBlackPoint /> },
+        {
+          href: "/new_music",
+          title: "New Music",
+          icon: <BsFillBookmarkFill />,
+        },
       ].map((item) => {
         return (
           <Link key={""} href={item.href}>
@@ -98,8 +115,12 @@ export const YourMusic = () => {
         YOUR MUSIC
       </Text>
       {[
-        { href: "/favourite", title: "Favourite", icon: <IoMdHome /> },
-        { href: "/history", title: "History", icon: <IoMdHome /> },
+        {
+          href: "/favourite",
+          title: "Favourite",
+          icon: <BsSuitHeartFill color="red" />,
+        },
+        { href: "/history", title: "History", icon: <GrHistory /> },
       ].map((item) => {
         return (
           <Link key={""} href={item.href}>
@@ -257,11 +278,15 @@ export const YourFavouriteArtist = () => {
         { href: "", artistName: "Olivia Rodrigo", artistImage: <IoMdHome /> },
         { href: "", artistName: "Billie Eilish", artistImage: <IoMdHome /> },
         { href: "", artistName: "Olivia Rodrigo", artistImage: <IoMdHome /> },
-        { href: "", artistName: "Billie Eilish", artistImage: <IoMdHome /> },
+        {
+          href: "",
+          artistName: "Billie Eilish",
+          artistImage: <Avatar boxSize="20px" />,
+        },
         {
           href: "",
           artistName: "Georger Harrison Senior",
-          artistImage: <IoMdHome />,
+          artistImage: <Avatar boxSize="20px" />,
         },
       ].map((item) => {
         return (

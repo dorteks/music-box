@@ -52,20 +52,20 @@ const MoodsAndGenres = () => {
           { href: "", genre: "Good Mood" },
           { href: "", genre: "Popular Music" },
           { href: "", genre: "Dance & Electronic" },
-          { href: "", genre: "Metal & Hardcore" },
-          { href: "", genre: "Good Mood" },
-          { href: "", genre: "Popular Music" },
-          { href: "", genre: "Dance & Electronic" },
-          { href: "", genre: "Metal & Hardcore" },
-          { href: "", genre: "Good Mood" },
-          { href: "", genre: "Popular Music" },
-          { href: "", genre: "Dance & Electronic" },
-          { href: "", genre: "Popular Music" },
-          { href: "", genre: "Dance & Electronic" },
-          { href: "", genre: "Metal & Hardcore" },
+          { href: "", genre: "R & B" },
+          { href: "", genre: "Amapiano" },
+          { href: "", genre: "Traditional" },
+          { href: "", genre: "Dancehall" },
+          { href: "", genre: "Gospel" },
+          { href: "", genre: "Hip Hop $ Rap" },
+          { href: "", genre: "Pop" },
+          { href: "", genre: "Classical" },
+          { href: "", genre: "Fuji" },
+          { href: "", genre: "Juju" },
+          { href: "", genre: "Reggae" },
         ].map((item) => {
           return (
-            <GridItem key={""}>
+            <GridItem key="">
               <Link href={item.href}>
                 <Card
                   key={""}

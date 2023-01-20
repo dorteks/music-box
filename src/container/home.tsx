@@ -1,14 +1,19 @@
-// import Body from "@/components/body";
-import Playlists from "@/components/body/createPlaylist/playlists";
+import Body from "@/components/body/homepage";
 import Topbar from "@/components/topbar";
 
 const HomeContainer = () => {
   return (
     <>
       <Topbar />
-      {/* <Body /> */}
+      <Body />
       {/* <CreatePlaylist /> */}
-      <Playlists />
+      {/* <Playlists /> */}
+      {/* <Settings /> */}
+      {/* <PersonalReleases /> */}
+      {/* <Explore /> */}
+      {/* <ExploreSong /> */}
+      {/* <Top100Naija /> */}
+      {/* <Charts /> */}
     </>
   );
 };

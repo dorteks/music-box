@@ -1,48 +1,48 @@
 import {
   Box,
   Button,
+  Heading,
   HStack,
   Stack,
   Table,
   TableContainer,
   Tbody,
   Td,
-  Text,
   Th,
   Thead,
   Tr,
   VStack,
+  Text,
 } from "@chakra-ui/react";
-import { GiMusicSpell } from "react-icons/gi";
-import { FaPencilAlt } from "react-icons/fa";
 import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
-import { GrShareOption } from "react-icons/gr";
 import { CiPlay1 } from "react-icons/ci";
 import { FiDownload } from "react-icons/fi";
+import { GiMusicSpell } from "react-icons/gi";
+import { GrShareOption } from "react-icons/gr";
 import { MdOutlineLibraryAdd } from "react-icons/md";
 
-const Playlists = () => {
+const Top100Naija = () => {
   return (
-    <Box mt="30px">
+    <Box pl="20px">
       <Stack direction="row" bgColor="blue" justify="space-between">
         <HStack>
           <GiMusicSpell size="200px" />
           <VStack align="left" justify="center" pl="10px">
-            <Text>PLAYLIST</Text>
-            <Text pt="10px" fontSize="40px">
-              Playlist Title #1
+            <Heading size="lg">Top 100 Nigeria</Heading>
+            <Text pt="10px" fontSize="15px">
+              Weekly update of the most played tracks in Nigeria, update on
+              19.01.2023
             </Text>
           </VStack>
         </HStack>
 
-        <Stack direction="row" align="start" pr="40px" pt="35px" gap={5}>
+        <Stack direction="row" align="end" pr="40px" pb="20px" gap={5}>
           <Button>
             <CiPlay1 size="30px" />
             <Text pl="10px" pr="15px">
               Play All
             </Text>
           </Button>
-          <FaPencilAlt size="30px" />
           <BsSuitHeart size="30px" />
           <GrShareOption size="30px" />
           <BsThreeDots size="30px" />
@@ -52,6 +52,10 @@ const Playlists = () => {
 
       <Stack mt="30px">
         <TableContainer>
+          <Heading size="md" pl="20px" pb="20px">
+            Top 100 Naija (100)
+          </Heading>
+
           <Table variant="simple">
             <Thead>
               <Tr>
@@ -138,4 +142,4 @@ const Playlists = () => {
   );
 };
 
-export default Playlists;
+export default Top100Naija;

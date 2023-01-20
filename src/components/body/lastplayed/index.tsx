@@ -1,55 +1,22 @@
 import {
   Box,
-  Button,
   HStack,
   Stack,
   Table,
   TableContainer,
   Tbody,
   Td,
-  Text,
   Th,
   Thead,
   Tr,
-  VStack,
 } from "@chakra-ui/react";
-import { GiMusicSpell } from "react-icons/gi";
-import { FaPencilAlt } from "react-icons/fa";
-import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
-import { GrShareOption } from "react-icons/gr";
-import { CiPlay1 } from "react-icons/ci";
 import { FiDownload } from "react-icons/fi";
+import { GrShareOption } from "react-icons/gr";
 import { MdOutlineLibraryAdd } from "react-icons/md";
 
-const Playlists = () => {
+const LastPlayedSongs = () => {
   return (
-    <Box mt="30px">
-      <Stack direction="row" bgColor="blue" justify="space-between">
-        <HStack>
-          <GiMusicSpell size="200px" />
-          <VStack align="left" justify="center" pl="10px">
-            <Text>PLAYLIST</Text>
-            <Text pt="10px" fontSize="40px">
-              Playlist Title #1
-            </Text>
-          </VStack>
-        </HStack>
-
-        <Stack direction="row" align="center" pr="40px" gap={5}>
-          <Button>
-            <CiPlay1 size="30px" />
-            <Text pl="10px" pr="15px">
-              Play All
-            </Text>
-          </Button>
-          <FaPencilAlt size="30px" />
-          <BsSuitHeart size="30px" />
-          <GrShareOption size="30px" />
-          <BsThreeDots size="30px" />
-          <FiDownload size="30px" />
-        </Stack>
-      </Stack>
-
+    <Box>
       <Stack mt="30px">
         <TableContainer>
           <Table variant="simple">
@@ -138,4 +105,4 @@ const Playlists = () => {
   );
 };
 
-export default Playlists;
+export default LastPlayedSongs;

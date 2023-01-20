@@ -1,12 +1,11 @@
-// import Body from "@/components/body/homepage";
-import Radio from "@/components/body/radio";
+import Body from "@/components/body/homepage";
 import Topbar from "@/components/topbar";
 
 const HomeContainer = () => {
   return (
     <>
       <Topbar />
-      {/* <Body /> */}
+      <Body />
       {/* <CreatePlaylist /> */}
       {/* <Playlists /> */}
       {/* <Settings /> */}
@@ -15,7 +14,11 @@ const HomeContainer = () => {
       {/* <ExploreSong /> */}
       {/* <Top100Naija /> */}
       {/* <Charts /> */}
-      <Radio />
+      {/* <Radio /> */}
+      {/* <ListenRadio /> */}
+      {/* <Artists /> */}
+      {/* <SongsByArtist /> */}
+      {/* <LastPlayedSongs /> */}
     </>
   );
 };

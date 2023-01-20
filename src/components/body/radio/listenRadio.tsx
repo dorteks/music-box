@@ -20,6 +20,7 @@ const ListenRadio = () => {
         (item) => {
           return (
             <Stack
+              key="radioStationName"
               pl="20px"
               height="90vh"
               alignSelf="center"

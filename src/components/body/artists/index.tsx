@@ -32,6 +32,7 @@ const Artists = () => {
         ].map((item) => {
           return (
             <Button
+              key="byGenre"
               fontSize="14px"
               fontWeight="hairline"
               width="fit-content"
@@ -54,6 +55,7 @@ const Artists = () => {
         ].map((item) => {
           return (
             <Button
+              key="bySex"
               fontSize="14px"
               fontWeight="hairline"
               width="fit-content"
@@ -76,6 +78,7 @@ const Artists = () => {
         ].map((item) => {
           return (
             <Button
+              key="byCountry"
               fontSize="14px"
               fontWeight="hairline"
               width="fit-content"
@@ -165,7 +168,7 @@ const Artists = () => {
           },
         ].map((item) => {
           return (
-            <GridItem>
+            <GridItem key="artistName">
               <Avatar src={item.artistImage} boxSize="230px" />
               <Text textAlign="center" pt="20px" fontSize="20px">
                 {item.artistName}

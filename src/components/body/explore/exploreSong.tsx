@@ -1,3 +1,4 @@
+import Layout from "@/layouts/main";
 import {
   Box,
   Button,
@@ -7,6 +8,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+import { ReactElement } from "react";
 import { BsPlay } from "react-icons/bs";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
@@ -113,6 +115,10 @@ const ExploreSong = () => {
       </VStack> */}
     </Box>
   );
+};
+
+ExploreSong.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default ExploreSong;

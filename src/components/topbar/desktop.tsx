@@ -1,9 +1,9 @@
+import Link from "next/link";
+import { GiMusicSpell } from "react-icons/gi";
 import { AiTwotoneSetting } from "react-icons/ai";
 import { RiPlayListAddLine } from "react-icons/ri";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import { Avatar, Box, Button, HStack, Stack, Text } from "@chakra-ui/react";
-import Link from "next/link";
-import { GiMusicSpell } from "react-icons/gi";
 
 const DesktopTopbar = () => {
   return (
@@ -26,7 +26,11 @@ const DesktopTopbar = () => {
       <HStack>
         {[
           { href: "", title: "Personal Release", icon: <BsFillBookmarkFill /> },
-          { href: "", title: "Create Playlist", icon: <RiPlayListAddLine /> },
+          {
+            href: "/create-playlist",
+            title: "Create Playlist",
+            icon: <RiPlayListAddLine />,
+          },
           { href: "", title: "Settings", icon: <AiTwotoneSetting /> },
         ].map((items) => {
           return (

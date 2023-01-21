@@ -1,4 +1,6 @@
+import Layout from "@/layouts/main";
 import { Box, Card, Heading, HStack, Stack, Text } from "@chakra-ui/react";
+import { ReactElement } from "react";
 
 const Charts = () => {
   return (
@@ -124,6 +126,10 @@ const Charts = () => {
       </Stack>
     </Box>
   );
+};
+
+Charts.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default Charts;

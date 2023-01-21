@@ -1,10 +1,10 @@
+import Link from "next/link";
+import { GiMusicSpell } from "react-icons/gi";
 import { AiTwotoneSetting } from "react-icons/ai";
 import { RiPlayListAddLine } from "react-icons/ri";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import MobileSidebar from "@/layouts/main/sidebar/mobile";
 import { Avatar, Box, Button, Stack, Text } from "@chakra-ui/react";
-import Link from "next/link";
-import { GiMusicSpell } from "react-icons/gi";
 
 const MobileTopbar = () => {
   return (
@@ -13,9 +13,9 @@ const MobileTopbar = () => {
       pl="30px"
       pr="30px"
       bgColor="red"
-      display={["flex", "flex", "flex", "none", "none"]}
-      justifyContent="space-between"
       alignItems="center"
+      justifyContent="space-between"
+      display={["flex", "flex", "flex", "none", "none"]}
     >
       <MobileSidebar />
       <Stack direction="row" alignItems="center">

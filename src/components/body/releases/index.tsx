@@ -1,3 +1,4 @@
+import Layout from "@/layouts/main";
 import {
   Td,
   Th,
@@ -12,6 +13,7 @@ import {
   HStack,
   TableContainer,
 } from "@chakra-ui/react";
+import { ReactElement } from "react";
 import { BsPlayCircleFill } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
 import { GrShareOption } from "react-icons/gr";
@@ -150,6 +152,10 @@ const PersonalReleases = () => {
       </Stack>
     </Box>
   );
+};
+
+PersonalReleases.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default PersonalReleases;

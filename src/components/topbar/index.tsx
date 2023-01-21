@@ -1,6 +1,6 @@
-import { Box } from "@chakra-ui/react";
-import DesktopTopbar from "./desktop";
 import MobileTopbar from "./mobile";
+import DesktopTopbar from "./desktop";
+import { Box } from "@chakra-ui/react";
 
 const Topbar = () => {
   return (

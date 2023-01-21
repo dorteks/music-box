@@ -20,6 +20,8 @@ import { GrShareOption } from "react-icons/gr";
 import { CiPlay1 } from "react-icons/ci";
 import { FiDownload } from "react-icons/fi";
 import { MdOutlineLibraryAdd } from "react-icons/md";
+import Layout from "@/layouts/main";
+import { ReactElement } from "react";
 
 const Playlists = () => {
   return (
@@ -136,6 +138,10 @@ const Playlists = () => {
       </Stack>
     </Box>
   );
+};
+
+Playlists.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default Playlists;

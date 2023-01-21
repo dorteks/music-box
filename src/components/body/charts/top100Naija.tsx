@@ -1,3 +1,4 @@
+import Layout from "@/layouts/main";
 import {
   Box,
   Button,
@@ -14,6 +15,7 @@ import {
   VStack,
   Text,
 } from "@chakra-ui/react";
+import { ReactElement } from "react";
 import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
 import { CiPlay1 } from "react-icons/ci";
 import { FiDownload } from "react-icons/fi";
@@ -140,6 +142,10 @@ const Top100Naija = () => {
       </Stack>
     </Box>
   );
+};
+
+Top100Naija.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default Top100Naija;

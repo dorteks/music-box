@@ -1,11 +1,10 @@
-// import Body from "@/components/body/homepage";
-import Topbar from "@/components/topbar";
+// import CreatePlaylist from "@/components/body/createPlaylist";
+import Body from "@/components/body/homepage";
 
 const HomeContainer = () => {
   return (
     <>
-      <Topbar />
-      {/* <Body /> */}
+      <Body />
       {/* <CreatePlaylist /> */}
       {/* <Playlists /> */}
       {/* <Settings /> */}

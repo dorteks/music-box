@@ -1,4 +1,6 @@
+import Layout from "@/layouts/main";
 import { Box, Card, Grid, Stack, Text } from "@chakra-ui/react";
+import { ReactElement } from "react";
 import { BiPlayCircle } from "react-icons/bi";
 
 const Explore = () => {
@@ -130,6 +132,10 @@ const Explore = () => {
       </Grid>
     </Box>
   );
+};
+
+Explore.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default Explore;

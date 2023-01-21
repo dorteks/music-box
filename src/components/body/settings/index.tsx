@@ -1,3 +1,4 @@
+import Layout from "@/layouts/main";
 import {
   Box,
   Text,
@@ -7,6 +8,7 @@ import {
   Switch,
   Heading,
 } from "@chakra-ui/react";
+import { ReactElement } from "react";
 
 const Settings = () => {
   return (
@@ -78,6 +80,10 @@ const Settings = () => {
       </Stack>
     </Box>
   );
+};
+
+Settings.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default Settings;

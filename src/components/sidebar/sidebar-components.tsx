@@ -60,7 +60,7 @@ export const MainCategories = () => {
         },
       ].map((item) => {
         return (
-          <Link key={""} href={item.href}>
+          <Link key="categories" href={item.href}>
             <Stack
               p="13px"
               pl="25px"
@@ -79,9 +79,9 @@ export const MainCategories = () => {
                   {item.icon}
                 </Box>
                 <Text
-                  fontWeight="bold"
-                  fontSize="12px"
                   width="100px"
+                  fontSize="12px"
+                  fontWeight="bold"
                   overflow="hidden"
                   textOverflow="ellipsis"
                 >
@@ -123,7 +123,7 @@ export const YourMusic = () => {
         { href: "/history", title: "History", icon: <GrHistory /> },
       ].map((item) => {
         return (
-          <Link key={""} href={item.href}>
+          <Link key="yourMusic" href={item.href}>
             <Stack
               p="13px"
               pl="25px"
@@ -142,9 +142,9 @@ export const YourMusic = () => {
                   {item.icon}
                 </Box>
                 <Text
-                  fontWeight="bold"
-                  fontSize="12px"
                   width="100px"
+                  fontSize="12px"
+                  fontWeight="bold"
                   overflow="hidden"
                   textOverflow="ellipsis"
                 >
@@ -203,7 +203,7 @@ export const YourPlaylists = () => {
         { href: "/slipknot", title: "Slipknot", icon: <GiMusicSpell /> },
       ].map((item) => {
         return (
-          <Link key={""} href={item.href}>
+          <Link key="yourPlaylist" href={item.href}>
             <Stack
               p="13px"
               pl="25px"
@@ -290,7 +290,7 @@ export const YourFavouriteArtist = () => {
         },
       ].map((item) => {
         return (
-          <Link key={""} href={item.href}>
+          <Link key="favouriteArtist" href={item.href}>
             <Stack
               p="13px"
               pl="25px"
@@ -406,7 +406,7 @@ export const YourLastSongs = () => {
         },
       ].map((item) => {
         return (
-          <Link key={""} href={item.href}>
+          <Link key="lastSongs" href={item.href}>
             <Stack
               p="13px"
               pl="25px"

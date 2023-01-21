@@ -19,9 +19,10 @@ import {
   useDisclosure,
   ModalCloseButton,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { ReactElement } from "react";
 import Link from "next/link";
 import { RiPlayList2Fill } from "react-icons/ri";
+import Layout from "@/layouts/main";
 
 const CreatePlaylist = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -80,6 +81,10 @@ const CreatePlaylist = () => {
       </VStack>
     </Box>
   );
+};
+
+CreatePlaylist.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default CreatePlaylist;

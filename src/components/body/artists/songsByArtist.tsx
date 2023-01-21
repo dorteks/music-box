@@ -1,3 +1,4 @@
+import Layout from "@/layouts/main";
 import {
   Box,
   Button,
@@ -14,6 +15,7 @@ import {
   Tr,
   Avatar,
 } from "@chakra-ui/react";
+import { ReactElement } from "react";
 import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
 import { CiPlay1 } from "react-icons/ci";
 import { FaPencilAlt } from "react-icons/fa";
@@ -159,6 +161,10 @@ const SongsByArtist = () => {
       </Stack>
     </Box>
   );
+};
+
+SongsByArtist.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default SongsByArtist;

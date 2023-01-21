@@ -1,3 +1,4 @@
+import Layout from "@/layouts/main";
 import {
   Box,
   Card,
@@ -8,6 +9,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+import { ReactElement } from "react";
 import { CiPlay1 } from "react-icons/ci";
 import { FiBarChart2 } from "react-icons/fi";
 import { IoHeadsetOutline } from "react-icons/io5";
@@ -205,6 +207,10 @@ const Radio = () => {
       </Stack>
     </Box>
   );
+};
+
+Radio.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default Radio;

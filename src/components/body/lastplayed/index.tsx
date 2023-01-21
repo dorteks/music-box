@@ -1,3 +1,4 @@
+import Layout from "@/layouts/main";
 import {
   Box,
   HStack,
@@ -10,6 +11,7 @@ import {
   Thead,
   Tr,
 } from "@chakra-ui/react";
+import { ReactElement } from "react";
 import { FiDownload } from "react-icons/fi";
 import { GrShareOption } from "react-icons/gr";
 import { MdOutlineLibraryAdd } from "react-icons/md";
@@ -103,6 +105,10 @@ const LastPlayedSongs = () => {
       </Stack>
     </Box>
   );
+};
+
+LastPlayedSongs.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default LastPlayedSongs;

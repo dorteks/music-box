@@ -1,3 +1,4 @@
+import Layout from "@/layouts/main";
 import {
   Avatar,
   Box,
@@ -7,6 +8,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+import { ReactElement } from "react";
 import { IoHeadsetOutline } from "react-icons/io5";
 
 const Artists = () => {
@@ -190,6 +192,10 @@ const Artists = () => {
       </Grid>
     </Box>
   );
+};
+
+Artists.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default Artists;

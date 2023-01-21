@@ -1,3 +1,4 @@
+import Layout from "@/layouts/main";
 import {
   Box,
   Card,
@@ -10,6 +11,7 @@ import {
   Stack,
   VStack,
 } from "@chakra-ui/react";
+import { ReactElement } from "react";
 import { BiRepeat } from "react-icons/bi";
 import { BsShuffle, BsSuitHeart, BsThreeDots } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
@@ -60,6 +62,10 @@ const PlayOnScreen = () => {
       </Card>
     </Box>
   );
+};
+
+PlayOnScreen.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default PlayOnScreen;

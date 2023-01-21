@@ -7,11 +7,12 @@ import {
   HStack,
   Heading,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { ReactElement } from "react";
 import { BsStar } from "react-icons/bs";
 import { MdTimer } from "react-icons/md";
 import { SlControlPlay } from "react-icons/sl";
 import { RxTrackNext, RxTrackPrevious } from "react-icons/rx";
+import Layout from "@/layouts/main";
 
 const ListenRadio = () => {
   return (
@@ -58,6 +59,10 @@ const ListenRadio = () => {
       )}
     </Stack>
   );
+};
+
+ListenRadio.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default ListenRadio;

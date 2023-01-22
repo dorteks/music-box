@@ -27,7 +27,7 @@ const DesktopTopbar = () => {
         {[
           { href: "", title: "Personal Release", icon: <BsFillBookmarkFill /> },
           {
-            href: "/create-playlist",
+            href: "",
             title: "Create Playlist",
             icon: <RiPlayListAddLine />,
           },

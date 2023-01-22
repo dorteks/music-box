@@ -39,8 +39,8 @@ const Posts = ({ data }: InferGetStaticPropsType<typeof getStaticProps>) => {
     <>
       <Box>
         <h1> Details Page </h1>
-        <h5>{data.id}</h5>
-        <h5>{data.title}</h5>
+        <h5>The data ID is {data.id}</h5>
+        <h5>the title of the album is {data.title}</h5>
         <Link href="/posts">Back</Link>
       </Box>
     </>

@@ -49,7 +49,9 @@ const DesktopTopbar = () => {
           );
         })}
 
-        <Avatar boxSize="35px" />
+        <Link href="/user">
+          <Avatar boxSize="35px" />
+        </Link>
       </HStack>
     </Box>
   );

@@ -29,16 +29,16 @@ const MobileTopbar = () => {
       <Button w="180px" display={["none", "none", "flex", "none", "none"]}>
         Search
       </Button>
-      <Link href="">
+      <Link href="/new-releases">
         <BsFillBookmarkFill size="30px" />
       </Link>
-      <Link href="">
+      <Link href="/create-playlist">
         <RiPlayListAddLine size="30px" />
       </Link>
-      <Link href="">
+      <Link href="/settings">
         <AiTwotoneSetting size="30px" />
       </Link>
-      <Link href="">
+      <Link href="/user">
         <Avatar boxSize="35px" />
       </Link>
     </Box>

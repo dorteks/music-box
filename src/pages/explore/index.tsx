@@ -1,124 +1,31 @@
 import Layout from "@/layouts/main";
 import { Box, Card, Grid, Stack, Text } from "@chakra-ui/react";
+import { GetStaticProps, InferGetStaticPropsType } from "next";
 import Link from "next/link";
 import { ReactElement } from "react";
 import { BiPlayCircle } from "react-icons/bi";
 
-const Explore = () => {
+export const getStaticProps: GetStaticProps = async () => {
+  const res = await fetch("http://localhost:4001/explore");
+  const data = await res.json();
+
+  console.log(res, "res");
+
+  return {
+    props: { explore: data },
+  };
+};
+
+const Explore = ({
+  explore,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Box>
-      <Grid
-        key={""}
-        templateColumns="repeat(4, 1fr)"
-        gap={2}
-        ml="20px"
-        mt="30px"
-      >
-        {[
-          {
-            href: `/explore/{}`,
-            lineColor: "green",
-            playButtonColor: "purple",
-            blogTitle: "WATCH NOW",
-            heading: "Our New Video Series Breaks Down",
-            subHeading: "The Lates and Greatest in Music",
-            image: "/images/DojaCat.png",
-            imageText: "Doja Cat",
-          },
-          {
-            href: "",
-            lineColor: "red",
-            playButtonColor: "blue",
-            blogTitle: "NEW ALBUM + INTERVIEW",
-            heading: "TIKUKU",
-            subHeading: "Candy Bleakz",
-            image: "/images/CandyBleakz.webp",
-            imageText: "Candy Bleakz",
-          },
-          {
-            href: "",
-            lineColor: "blue",
-            playButtonColor: "red",
-            blogTitle: "UPDATED PLAYLIST",
-            heading: "Today's Country",
-            subHeading: "Special For You",
-            image: "/images/mettalica.jpg",
-            imageText: "Mettalica",
-          },
-          {
-            href: "",
-            lineColor: "green",
-            playButtonColor: "purple",
-            blogTitle: "DUDUKE OFFICIAL VIDEO",
-            heading: "Duduke",
-            subHeading: "Simi",
-            image: "/images/DojaCat.png",
-            imageText: "Simi",
-          },
-          {
-            href: "",
-            lineColor: "red",
-            playButtonColor: "blue",
-            blogTitle: "NEW ALBUM + INTERVIEW",
-            heading: "FEM",
-            subHeading: "Davido",
-            image: "/images/CandyBleakz.webp",
-            imageText: "Davido",
-          },
-          {
-            href: "",
-            lineColor: "blue",
-            playButtonColor: "red",
-            blogTitle: "ECHO ROOM - AIMASIKO",
-            heading: "Simi",
-            subHeading: "Special For You",
-            image: "/images/CandyBleakz.webp",
-            imageText: "Simi",
-          },
-          {
-            href: "",
-            lineColor: "red",
-            playButtonColor: "blue",
-            blogTitle: "NEW ALBUM + INTERVIEW",
-            heading: "FEM",
-            subHeading: "Davido",
-            image: "/images/CandyBleakz.webp",
-            imageText: "Davido",
-          },
-          {
-            href: "",
-            lineColor: "blue",
-            playButtonColor: "red",
-            blogTitle: "ECHO ROOM - AIMASIKO",
-            heading: "Simi",
-            subHeading: "Special For You",
-            image: "/images/CandyBleakz.webp",
-            imageText: "Simi",
-          },
-          {
-            href: "",
-            lineColor: "green",
-            playButtonColor: "purple",
-            blogTitle: "DUDUKE OFFICIAL VIDEO",
-            heading: "Duduke",
-            subHeading: "Simi",
-            image: "/images/DojaCat.png",
-            imageText: "Simi",
-          },
-          {
-            href: "",
-            lineColor: "red",
-            playButtonColor: "blue",
-            blogTitle: "NEW ALBUM + INTERVIEW",
-            heading: "FEM",
-            subHeading: "Davido",
-            image: "/images/CandyBleakz.webp",
-            imageText: "Davido",
-          },
-        ].map((item) => {
+      <Grid templateColumns="repeat(4, 1fr)" gap={2} ml="20px" mt="30px">
+        {explore.map((item: any) => {
           return (
             <Stack key="explore" direction="column" w="220px">
-              <Link href={item.href}>
+              <Link href={`explore/` + item.id}>
                 <Card w="220px" h="5px" mt="30px" bgColor={item.lineColor} />
                 <Text pt="30px" fontSize="sm" color="gray.600">
                   {item.blogTitle}

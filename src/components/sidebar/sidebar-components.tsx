@@ -179,7 +179,7 @@ export const YourPlaylists = () => {
       </Text>
       {[
         {
-          href: `/playlist/{playlist.id}`,
+          href: `/playlist/{playlist.name}`,
           title: "Playlist Title #1",
           icon: <GiMusicSpell />,
         },
@@ -272,7 +272,11 @@ export const YourFavouriteArtist = () => {
       </Text>
 
       {[
-        { href: "", artistName: "Billie Eilish", artistImage: <IoMdHome /> },
+        {
+          href: `/favourite-artist/{artist.name}`,
+          artistName: "Billie Eilish",
+          artistImage: <IoMdHome />,
+        },
         { href: "", artistName: "Olivia Rodrigo", artistImage: <IoMdHome /> },
         { href: "", artistName: "Billie Eilish", artistImage: <IoMdHome /> },
         { href: "", artistName: "Olivia Rodrigo", artistImage: <IoMdHome /> },
@@ -347,7 +351,7 @@ export const YourLastSongs = () => {
       </Text>
       {[
         {
-          href: "",
+          href: `/last-song/{song.name}`,
           trackTitle: "Buffer",
           artistName: "BTS",
           trackImage: <IoMdHome />,

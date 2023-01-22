@@ -15,7 +15,7 @@ import { BsPlay } from "react-icons/bs";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const res = await axios.get("http://localhost:4001/explore");
+  const res = await axios.get("http://127.0.0.1:4001/explore");
   const data = await res.data;
 
   const paths = data.map((explore: { id: any }) => {
@@ -34,7 +34,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context: any) => {
   const { id } = context.params;
-  const res = await axios.get(`http://localhost:4001/explore/` + id);
+  const res = await axios.get(`http://127.0.0.1:4001/explore/` + id);
   const data = await res.data;
 
   console.log(id, "id as blogTitle");

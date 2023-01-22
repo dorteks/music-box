@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "serve-json": "json-server --watch db.json --port 4001"
+    "serve-json": "json-server --watch db.json --port 4001",
+    "new-db": "nodemon app.ts"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.16",
@@ -21,13 +22,19 @@
     "axios": "^1.2.3",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.2",
+    "express": "^4.18.2",
     "framer-motion": "^8.4.3",
     "json-server": "^0.17.1",
     "next": "13.1.2",
+    "nodemon": "^2.0.20",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icon-library": "^0.1.45",
     "react-icons": "^4.7.1",
+    "ts-node": "^10.9.1",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15"
   }
 }

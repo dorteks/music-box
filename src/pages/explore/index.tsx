@@ -1,13 +1,14 @@
 import Layout from "@/layouts/main";
 import { Box, Card, Grid, Stack, Text } from "@chakra-ui/react";
+import axios from "axios";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import Link from "next/link";
 import { ReactElement } from "react";
 import { BiPlayCircle } from "react-icons/bi";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch("http://localhost:4001/explore");
-  const data = await res.json();
+  const res = await axios.get("http://localhost:4001/explore");
+  const data = await res.data;
 
   console.log(res, "res");
 

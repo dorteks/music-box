@@ -8,14 +8,15 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+import axios from "axios";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { ReactElement } from "react";
 import { BsPlay } from "react-icons/bs";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const res = await fetch("http://localhost:4001/explore");
-  const data = await res.json();
+  const res = await axios.get("http://localhost:4001/explore");
+  const data = await res.data;
 
   const paths = data.map((explore: { id: any }) => {
     return {
@@ -33,8 +34,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context: any) => {
   const { id } = context.params;
-  const res = await fetch(`http://localhost:4001/explore/` + id);
-  const data = await res.json();
+  const res = await axios.get(`http://localhost:4001/explore/` + id);
+  const data = await res.data;
 
   console.log(id, "id as blogTitle");
   console.log(data);

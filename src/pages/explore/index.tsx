@@ -1,5 +1,6 @@
 import Layout from "@/layouts/main";
 import { Box, Card, Grid, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import { ReactElement } from "react";
 import { BiPlayCircle } from "react-icons/bi";
 
@@ -15,6 +16,7 @@ const Explore = () => {
       >
         {[
           {
+            href: `/explore/{}`,
             lineColor: "green",
             playButtonColor: "purple",
             blogTitle: "WATCH NOW",
@@ -24,6 +26,7 @@ const Explore = () => {
             imageText: "Doja Cat",
           },
           {
+            href: "",
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
@@ -33,6 +36,7 @@ const Explore = () => {
             imageText: "Candy Bleakz",
           },
           {
+            href: "",
             lineColor: "blue",
             playButtonColor: "red",
             blogTitle: "UPDATED PLAYLIST",
@@ -42,6 +46,7 @@ const Explore = () => {
             imageText: "Mettalica",
           },
           {
+            href: "",
             lineColor: "green",
             playButtonColor: "purple",
             blogTitle: "DUDUKE OFFICIAL VIDEO",
@@ -51,6 +56,7 @@ const Explore = () => {
             imageText: "Simi",
           },
           {
+            href: "",
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
@@ -60,6 +66,7 @@ const Explore = () => {
             imageText: "Davido",
           },
           {
+            href: "",
             lineColor: "blue",
             playButtonColor: "red",
             blogTitle: "ECHO ROOM - AIMASIKO",
@@ -69,6 +76,7 @@ const Explore = () => {
             imageText: "Simi",
           },
           {
+            href: "",
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
@@ -78,6 +86,7 @@ const Explore = () => {
             imageText: "Davido",
           },
           {
+            href: "",
             lineColor: "blue",
             playButtonColor: "red",
             blogTitle: "ECHO ROOM - AIMASIKO",
@@ -87,6 +96,7 @@ const Explore = () => {
             imageText: "Simi",
           },
           {
+            href: "",
             lineColor: "green",
             playButtonColor: "purple",
             blogTitle: "DUDUKE OFFICIAL VIDEO",
@@ -96,6 +106,7 @@ const Explore = () => {
             imageText: "Simi",
           },
           {
+            href: "",
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
@@ -106,17 +117,19 @@ const Explore = () => {
           },
         ].map((item) => {
           return (
-            <Stack key={""} direction="column" w="220px">
-              <Card w="220px" h="5px" mt="30px" bgColor={item.lineColor} />
-              <Text pt="30px" fontSize="sm" color="gray.600">
-                {item.blogTitle}
-              </Text>
-              <Text fontSize="sm" fontWeight="bold" pt="20px" noOfLines={1}>
-                {item.heading}
-              </Text>
-              <Text fontSize="sm" fontWeight="bold" pb="20px">
-                {item.subHeading}
-              </Text>
+            <Stack key="explore" direction="column" w="220px">
+              <Link href={item.href}>
+                <Card w="220px" h="5px" mt="30px" bgColor={item.lineColor} />
+                <Text pt="30px" fontSize="sm" color="gray.600">
+                  {item.blogTitle}
+                </Text>
+                <Text fontSize="sm" fontWeight="bold" pt="20px" noOfLines={1}>
+                  {item.heading}
+                </Text>
+                <Text fontSize="sm" fontWeight="bold" pb="20px">
+                  {item.subHeading}
+                </Text>
+              </Link>
               <Card w="220px" h="220px" backgroundImage={item.image}>
                 <Box w="40px" mt="30px" ml="20px">
                   <BiPlayCircle size="sm" color={item.playButtonColor} />

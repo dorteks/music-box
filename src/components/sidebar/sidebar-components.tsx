@@ -47,20 +47,20 @@ export const MainCategories = () => {
         { href: "/", title: "Home", icon: <IoMdHome /> },
         { href: "/explore", title: "Explore", icon: <FaCompass /> },
         {
-          href: "/new_releases",
+          href: "/new-releases",
           title: "New Releases",
           icon: <BsCalendarEvent />,
         },
-        { href: "/top_charts", title: "Top Charts", icon: <BiNetworkChart /> },
+        { href: "/top-charts", title: "Top Charts", icon: <BiNetworkChart /> },
         { href: "/radio", title: "Radio", icon: <CgEditBlackPoint /> },
         {
-          href: "/new_music",
+          href: "/new-music",
           title: "New Music",
           icon: <BsFillBookmarkFill />,
         },
       ].map((item) => {
         return (
-          <Link key="categories" href={item.href}>
+          <Link key="maincategories" href={item.href}>
             <Stack
               p="13px"
               pl="25px"
@@ -123,7 +123,7 @@ export const YourMusic = () => {
         { href: "/history", title: "History", icon: <GrHistory /> },
       ].map((item) => {
         return (
-          <Link key="yourMusic" href={item.href}>
+          <Link key="yourmusic" href={item.href}>
             <Stack
               p="13px"
               pl="25px"
@@ -179,28 +179,28 @@ export const YourPlaylists = () => {
       </Text>
       {[
         {
-          href: "",
+          href: `/playlist/{playlist.name}`,
           title: "Playlist Title #1",
           icon: <GiMusicSpell />,
         },
         {
-          href: "/my_rock_collect",
+          href: "",
           title: "My Rock Collect",
           icon: <GiMusicSpell />,
         },
-        { href: "/best_music", title: "Best Music", icon: <GiMusicSpell /> },
+        { href: "", title: "Best Music", icon: <GiMusicSpell /> },
         { href: "/hits_of_90s", title: "Hits of 90s ", icon: <GiMusicSpell /> },
         {
-          href: "/classic_music",
+          href: "",
           title: "Classic Music",
           icon: <GiMusicSpell />,
         },
         {
-          href: "/new_pop_music",
+          href: "",
           title: "New Pop Music",
           icon: <GiMusicSpell />,
         },
-        { href: "/slipknot", title: "Slipknot", icon: <GiMusicSpell /> },
+        { href: "", title: "Slipknot", icon: <GiMusicSpell /> },
       ].map((item) => {
         return (
           <Link key="yourPlaylist" href={item.href}>
@@ -240,17 +240,19 @@ export const YourPlaylists = () => {
           </Link>
         );
       })}
-      <Button
-        mt="20px"
-        mb="20px"
-        ml="25px"
-        fontSize="12px"
-        color="gray.700"
-        fontWeight="bold"
-        borderRadius="25px"
-      >
-        New Playlist
-      </Button>
+      <Link href="/create-playlist">
+        <Button
+          mt="20px"
+          mb="20px"
+          ml="25px"
+          fontSize="12px"
+          color="gray.700"
+          fontWeight="bold"
+          borderRadius="25px"
+        >
+          New Playlist
+        </Button>
+      </Link>
     </Box>
   );
 };
@@ -270,7 +272,11 @@ export const YourFavouriteArtist = () => {
       </Text>
 
       {[
-        { href: "", artistName: "Billie Eilish", artistImage: <IoMdHome /> },
+        {
+          href: `/favourite-artist/{artist.name}`,
+          artistName: "Billie Eilish",
+          artistImage: <IoMdHome />,
+        },
         { href: "", artistName: "Olivia Rodrigo", artistImage: <IoMdHome /> },
         { href: "", artistName: "Billie Eilish", artistImage: <IoMdHome /> },
         { href: "", artistName: "Olivia Rodrigo", artistImage: <IoMdHome /> },
@@ -345,7 +351,7 @@ export const YourLastSongs = () => {
       </Text>
       {[
         {
-          href: "",
+          href: `/last-song/{song.name}`,
           trackTitle: "Buffer",
           artistName: "BTS",
           trackImage: <IoMdHome />,

@@ -72,7 +72,7 @@ const CreatePlaylist = () => {
             </ModalBody>
 
             <ModalFooter mt="40px" mb="30px" justifyContent="center">
-              <Link href="">
+              <Link href="/create-playlist/playlists">
                 <Button colorScheme="blue">Create</Button>
               </Link>
             </ModalFooter>

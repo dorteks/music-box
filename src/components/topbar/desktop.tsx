@@ -25,13 +25,17 @@ const DesktopTopbar = () => {
       </HStack>
       <HStack>
         {[
-          { href: "", title: "Personal Release", icon: <BsFillBookmarkFill /> },
           {
-            href: "",
+            href: "/new-releases",
+            title: "Personal Release",
+            icon: <BsFillBookmarkFill />,
+          },
+          {
+            href: "/create-playlist",
             title: "Create Playlist",
             icon: <RiPlayListAddLine />,
           },
-          { href: "", title: "Settings", icon: <AiTwotoneSetting /> },
+          { href: "/settings", title: "Settings", icon: <AiTwotoneSetting /> },
         ].map((items) => {
           return (
             <Box key={""}>

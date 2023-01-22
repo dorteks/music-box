@@ -7,7 +7,7 @@ import { ReactElement } from "react";
 import { BiPlayCircle } from "react-icons/bi";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await axios.get("http://localhost:4001/explore");
+  const res = await axios.get("http://localhost:8000/explore");
   const data = await res.data;
 
   return {

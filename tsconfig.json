@@ -24,7 +24,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/sidebar/usesidebar"
+    "src/components/sidebar/usesidebar",
+    "index.js"
   ],
   "exclude": ["node_modules"]
 }

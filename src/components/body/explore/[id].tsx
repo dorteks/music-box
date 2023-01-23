@@ -13,9 +13,10 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { ReactElement } from "react";
 import { BsPlay } from "react-icons/bs";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
+import React from "react";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const res = await axios.get("http://localhost:8000/explore");
+  const res = await axios.get("http://localhost:4001/explore");
   const data = await res.data;
 
   const paths = data.map((explore: { id: any }) => {
@@ -34,7 +35,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context: any) => {
   const { id } = context.params;
-  const res = await axios.get(`http://localhost:8000/explore/` + id);
+  const res = await axios.get(`http://localhost:4001/explore/` + id);
   const data = await res.data;
 
   return {

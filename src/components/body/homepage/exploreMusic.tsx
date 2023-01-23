@@ -8,7 +8,7 @@ const ExploreMusic = () => {
     <Box mt="50px">
       <HStack justify="space-between">
         <Heading size="md"> Explore Music </Heading>
-        <HStack>
+        <HStack gap={3}>
           <BsArrowLeftCircle size="35px" />
           <BsArrowRightCircle size="35px" />
         </HStack>
@@ -17,7 +17,7 @@ const ExploreMusic = () => {
       {/* // width 310px, gap 5 */}
       {/* // width 220px, gap 3 */}
 
-      <Stack direction="row" gap={[20, 3, 3, 3, 3]}>
+      <Stack direction="row" gap={[5, 7, 4, 3, 3]} overflowX="scroll">
         {[
           {
             lineColor: "green",
@@ -47,42 +47,42 @@ const ExploreMusic = () => {
             imageText: "Mettalica",
           },
           {
+            lineColor: "green",
+            playButtonColor: "purple",
+            blogTitle: "WATCH NOW",
+            heading: "Our New Video Series Breaks Down",
+            subHeading: "The Lates and Greatest in Music",
+            image: "/images/DojaCat.png",
+            imageText: "Doja Cat",
+          },
+          {
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
-            heading: "FEM",
-            subHeading: "Davido",
+            heading: "TIKUKU",
+            subHeading: "Candy Bleakz",
             image: "/images/CandyBleakz.webp",
-            imageText: "Davido",
+            imageText: "Candy Bleakz",
           },
-          // {
-          //   lineColor: "blue",
-          //   playButtonColor: "red",
-          //   blogTitle: "ECHO ROOM - AIMASIKO",
-          //   heading: "Simi",
-          //   subHeading: "Special For You",
-          //   image: "/images/CandyBleakz.webp",
-          //   imageText: "Simi",
-          // },
-          // {
-          //   lineColor: "green",
-          //   playButtonColor: "purple",
-          //   blogTitle: "DUDUKE OFFICIAL VIDEO",
-          //   heading: "Duduke",
-          //   subHeading: "Simi",
-          //   image: "/images/DojaCat.png",
-          //   imageText: "Simi",
-          // },
+          {
+            lineColor: "blue",
+            playButtonColor: "red",
+            blogTitle: "UPDATED PLAYLIST",
+            heading: "Today's Country",
+            subHeading: "Special For You",
+            image: "/images/mettalica.jpg",
+            imageText: "Mettalica",
+          },
         ].map((item) => {
           return (
             <Stack
               key="exploreMusicHome"
               direction="column"
-              w={["270px", "270px", "270px", "270px", "270px"]}
+              maxWidth={["350px", "350px", "300px", "300px", "300px"]}
             >
               <Link href={`explore/` + item.blogTitle}>
                 <Card
-                  w={["250px", "250px", "250px", "250px", "250px"]}
+                  w={["340px", "320px", "285px", "300px", "300px"]}
                   h="5px"
                   mt="30px"
                   bgColor={item.lineColor}
@@ -98,7 +98,7 @@ const ExploreMusic = () => {
                 </Text>
               </Link>
               <Card
-                w={["250px", "250px", "250px", "250px", "250px"]}
+                w={["340px", "320px", "285px", "300px", "300px"]}
                 h="220px"
                 backgroundImage={item.image}
               >

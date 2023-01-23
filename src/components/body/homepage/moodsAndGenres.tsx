@@ -66,10 +66,10 @@ const MoodsAndGenres = () => {
           { href: "", genre: "Traditional" },
         ].map((item) => {
           return (
-            <GridItem>
+            <GridItem key="moodAndGenre">
               <Link href={item.href}>
                 <Card
-                  key="moodAndGenre"
+                  // key="moodAndGenre"
                   bgColor="purple.300"
                   flexDirection="row"
                   pl="10px"

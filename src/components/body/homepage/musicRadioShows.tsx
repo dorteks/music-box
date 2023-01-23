@@ -8,7 +8,7 @@ import { RxRadiobutton } from "react-icons/rx";
 
 const MusicRadioShows = () => {
   return (
-    <Box mt="50px" mb="50px">
+    <Box pt="50px" pb="50px">
       <Stack direction="row" alignItems="center" justify="space-between">
         <HStack>
           <Box pt="3px" pb="3px">
@@ -19,18 +19,18 @@ const MusicRadioShows = () => {
             color="gray.700"
             fontWeight="bold"
             textAlign="center"
-            fontSize="18px"
+            fontSize="16px"
           >
             Music Radio Shows
           </Text>
         </HStack>
-        <HStack>
+        <HStack gap={3}>
           <BsArrowLeftCircle size="35px" />
           <BsArrowRightCircle size="35px" />
         </HStack>
       </Stack>
 
-      <HStack>
+      <HStack mt="30px" gap={3} overflowX="scroll">
         {[
           {
             image: "/images/DojaCat.png",
@@ -48,16 +48,28 @@ const MusicRadioShows = () => {
             image: "/images/DojaCat.png",
             radioName: "Everything together Radio",
           },
+          {
+            image: "/images/DojaCat.png",
+            radioName: "Glydezone Radio with Funk",
+          },
+          {
+            image: "/images/DojaCat.png",
+            radioName: "The New Australia Radio",
+          },
+          {
+            image: "/images/DojaCat.png",
+            radioName: "Everything together Radio",
+          },
         ].map((item) => {
           return (
-            <Box key={""}>
-              <Card w="200px" h="150px" backgroundImage={item.image}>
+            <Box key="musicRadioShows">
+              <Card minWidth="220px" h="180px" backgroundImage={item.image}>
                 <Box w="40px" mt="20px" ml="20px">
                   <BsPlayCircleFill size="sm" />
                 </Box>
               </Card>
 
-              <Text mt="10px" fontSize="14px" fontWeight="bold">
+              <Text mt="20px" mb="20px" fontSize="14px" fontWeight="bold">
                 {item.radioName}
               </Text>
             </Box>

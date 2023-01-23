@@ -13,7 +13,7 @@ import { FiArrowRight } from "react-icons/fi";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
-const CircleIcon = (props: JSX.IntrinsicAttributes) => (
+export const CircleIcon = (props: JSX.IntrinsicAttributes) => (
   <Icon viewBox="0 0 200 200" {...props}>
     <path
       fill="currentColor"
@@ -24,7 +24,7 @@ const CircleIcon = (props: JSX.IntrinsicAttributes) => (
 
 const MoodsAndGenres = () => {
   return (
-    <Box mt="50px" w="800px">
+    <Box mt="50px">
       <Stack direction="row" alignItems="center" justify="space-between">
         <HStack>
           <Box pt="3px" pb="3px">
@@ -35,18 +35,18 @@ const MoodsAndGenres = () => {
             color="gray.700"
             fontWeight="bold"
             textAlign="center"
-            fontSize="18px"
+            fontSize={["16px", "18px", "18px", "18px", "18px"]}
           >
             Moods and Genres
           </Text>
         </HStack>
-        <HStack>
+        <HStack gap={3}>
           <BsArrowLeftCircle size="35px" />
           <BsArrowRightCircle size="35px" />
         </HStack>
       </Stack>
 
-      <Grid key={""} templateColumns="repeat(4, 1fr)" gap={2} mt="30px">
+      <Grid templateColumns={["repeat(4, 1fr)"]} gap={3} mt="30px">
         {[
           { href: "", genre: "Metal & Hardcore" },
           { href: "", genre: "Good Mood" },
@@ -63,24 +63,25 @@ const MoodsAndGenres = () => {
           { href: "", genre: "Fuji" },
           { href: "", genre: "Juju" },
           { href: "", genre: "Reggae" },
+          { href: "", genre: "Traditional" },
         ].map((item) => {
           return (
-            <GridItem key="">
+            <GridItem key="moodAndGenre">
               <Link href={item.href}>
                 <Card
-                  key={""}
+                  // key="moodAndGenre"
                   bgColor="purple.300"
                   flexDirection="row"
                   pl="10px"
                   pr="10px"
                   alignItems="center"
                   justify="space-between"
-                  width="200px"
+                  width="220px"
                   height="50px"
                 >
                   <CircleIcon />
-                  <Text key={""} w="150px" pl="10px" fontSize="14px">
-                    {item.genre}{" "}
+                  <Text w="180px" pl="10px" fontSize="14px">
+                    {item.genre}
                   </Text>
                   <FiArrowRight />
                 </Card>

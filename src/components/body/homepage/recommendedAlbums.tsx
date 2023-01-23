@@ -15,23 +15,33 @@ const RecommendedAlbums = () => {
             <BsCircle size="20px" />
           </Box>
           <Text
-            p="5px"
+            pl="5px"
             color="gray.700"
             fontWeight="bold"
             textAlign="center"
-            fontSize="18px"
+            fontSize={["14px", "18px", "18px", "18px", "18px"]}
           >
             Recommended Albums
           </Text>
         </HStack>
-        <HStack>
+        <HStack gap={3}>
           <BsArrowLeftCircle size="35px" />
           <BsArrowRightCircle size="35px" />
         </HStack>
       </Stack>
 
-      <HStack mt="30px" gap={3}>
+      <HStack mt="30px" gap={[5, 7, 5, 5, 5]} overflowX="scroll">
         {[
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
           {
             image: "/images/DojaCat.png",
             title: "FLOAT",
@@ -49,8 +59,17 @@ const RecommendedAlbums = () => {
           },
         ].map((item) => {
           return (
-            <Card key={""} w="220px" h="220px" backgroundImage={item.image}>
-              <Box w="40px" mt="30px" ml="150px">
+            <Card
+              key="recommendedAlbums"
+              minWidth={["330px", "300px", "280px", "300px", "300px"]}
+              height={["250px", "220px", "220px", "230px", "240px"]}
+              backgroundImage={item.image}
+            >
+              <Box
+                w="40px"
+                mt="30px"
+                ml={["250px", "250px", "200px", "230px", "230px"]}
+              >
                 <BsPlayCircleFill size="sm" />
               </Box>
 

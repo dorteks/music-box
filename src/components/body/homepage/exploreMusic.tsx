@@ -14,10 +14,7 @@ const ExploreMusic = () => {
         </HStack>
       </HStack>
 
-      {/* // width 310px, gap 5 */}
-      {/* // width 220px, gap 3 */}
-
-      <Stack direction="row" gap={[5, 7, 4, 3, 3]} overflowX="scroll">
+      <Stack direction="row" gap={[5, 7, 4, 4, 5]} overflowX="scroll">
         {[
           {
             lineColor: "green",
@@ -78,11 +75,11 @@ const ExploreMusic = () => {
             <Stack
               key="exploreMusicHome"
               direction="column"
-              maxWidth={["350px", "350px", "300px", "300px", "300px"]}
+              maxWidth={["350px", "330px", "300px", "300px", "300px"]}
             >
               <Link href={`explore/` + item.blogTitle}>
                 <Card
-                  w={["340px", "320px", "285px", "300px", "300px"]}
+                  w={["330px", "300px", "285px", "300px", "300px"]}
                   h="5px"
                   mt="30px"
                   bgColor={item.lineColor}
@@ -98,7 +95,7 @@ const ExploreMusic = () => {
                 </Text>
               </Link>
               <Card
-                w={["340px", "320px", "285px", "300px", "300px"]}
+                w={["330px", "300px", "285px", "300px", "300px"]}
                 h="220px"
                 backgroundImage={item.image}
               >

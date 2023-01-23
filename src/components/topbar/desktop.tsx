@@ -9,11 +9,13 @@ const DesktopTopbar = () => {
   return (
     <Box
       h="80px"
-      pr="20px"
+      pr={["0", "0", "0", "30px", "50px"]}
       pl="20px"
       bgColor="red"
+      maxWidth={["0", "0", "0", "82vw", "85vw"]}
       alignItems="center"
       justifyContent="space-between"
+      backgroundColor={["none", "none", "none", "yellow", "blue"]}
       display={["none", "none", "none", "flex", "flex"]}
     >
       <HStack>

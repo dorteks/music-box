@@ -1,4 +1,5 @@
 import { Box, Card, Heading, Text, Stack, HStack } from "@chakra-ui/react";
+import Link from "next/link";
 import { BiPlayCircle } from "react-icons/bi";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
@@ -16,7 +17,7 @@ const ExploreMusic = () => {
       {/* // width 310px, gap 5 */}
       {/* // width 220px, gap 3 */}
 
-      <Stack direction="row" gap={3}>
+      <Stack direction="row" gap={[20, 3, 3, 3, 3]}>
         {[
           {
             lineColor: "green",
@@ -45,20 +46,62 @@ const ExploreMusic = () => {
             image: "/images/mettalica.jpg",
             imageText: "Mettalica",
           },
+          {
+            lineColor: "red",
+            playButtonColor: "blue",
+            blogTitle: "NEW ALBUM + INTERVIEW",
+            heading: "FEM",
+            subHeading: "Davido",
+            image: "/images/CandyBleakz.webp",
+            imageText: "Davido",
+          },
+          // {
+          //   lineColor: "blue",
+          //   playButtonColor: "red",
+          //   blogTitle: "ECHO ROOM - AIMASIKO",
+          //   heading: "Simi",
+          //   subHeading: "Special For You",
+          //   image: "/images/CandyBleakz.webp",
+          //   imageText: "Simi",
+          // },
+          // {
+          //   lineColor: "green",
+          //   playButtonColor: "purple",
+          //   blogTitle: "DUDUKE OFFICIAL VIDEO",
+          //   heading: "Duduke",
+          //   subHeading: "Simi",
+          //   image: "/images/DojaCat.png",
+          //   imageText: "Simi",
+          // },
         ].map((item) => {
           return (
-            <Stack key={""} direction="column" w="220px">
-              <Card w="220px" h="5px" mt="30px" bgColor={item.lineColor} />
-              <Text pt="30px" fontSize="sm" color="gray.600">
-                {item.blogTitle}
-              </Text>
-              <Text fontSize="sm" fontWeight="bold" pt="20px" noOfLines={1}>
-                {item.heading}
-              </Text>
-              <Text fontSize="sm" fontWeight="bold" pb="20px">
-                {item.subHeading}
-              </Text>
-              <Card w="220px" h="220px" backgroundImage={item.image}>
+            <Stack
+              key="exploreMusicHome"
+              direction="column"
+              w={["270px", "270px", "270px", "270px", "270px"]}
+            >
+              <Link href={`explore/` + item.blogTitle}>
+                <Card
+                  w={["250px", "250px", "250px", "250px", "250px"]}
+                  h="5px"
+                  mt="30px"
+                  bgColor={item.lineColor}
+                />
+                <Text pt="30px" fontSize="sm" color="gray.600">
+                  {item.blogTitle}
+                </Text>
+                <Text fontSize="sm" fontWeight="bold" pt="20px" noOfLines={1}>
+                  {item.heading}
+                </Text>
+                <Text fontSize="sm" fontWeight="bold" pb="20px">
+                  {item.subHeading}
+                </Text>
+              </Link>
+              <Card
+                w={["250px", "250px", "250px", "250px", "250px"]}
+                h="220px"
+                backgroundImage={item.image}
+              >
                 <Box w="40px" mt="30px" ml="20px">
                   <BiPlayCircle size="sm" color={item.playButtonColor} />
                 </Box>

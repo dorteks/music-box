@@ -7,16 +7,9 @@ import { BiPlayCircle } from "react-icons/bi";
 const Explore = () => {
   return (
     <Box>
-      <Grid
-        key={""}
-        templateColumns="repeat(4, 1fr)"
-        gap={2}
-        ml="20px"
-        mt="30px"
-      >
+      <Grid templateColumns="repeat(4, 1fr)" gap={2} ml="20px" mt="30px">
         {[
           {
-            href: `/explore/{}`,
             lineColor: "green",
             playButtonColor: "purple",
             blogTitle: "WATCH NOW",
@@ -26,7 +19,6 @@ const Explore = () => {
             imageText: "Doja Cat",
           },
           {
-            href: "",
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
@@ -36,7 +28,6 @@ const Explore = () => {
             imageText: "Candy Bleakz",
           },
           {
-            href: "",
             lineColor: "blue",
             playButtonColor: "red",
             blogTitle: "UPDATED PLAYLIST",
@@ -46,7 +37,6 @@ const Explore = () => {
             imageText: "Mettalica",
           },
           {
-            href: "",
             lineColor: "green",
             playButtonColor: "purple",
             blogTitle: "DUDUKE OFFICIAL VIDEO",
@@ -56,7 +46,6 @@ const Explore = () => {
             imageText: "Simi",
           },
           {
-            href: "",
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
@@ -66,7 +55,6 @@ const Explore = () => {
             imageText: "Davido",
           },
           {
-            href: "",
             lineColor: "blue",
             playButtonColor: "red",
             blogTitle: "ECHO ROOM - AIMASIKO",
@@ -76,7 +64,6 @@ const Explore = () => {
             imageText: "Simi",
           },
           {
-            href: "",
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
@@ -86,7 +73,6 @@ const Explore = () => {
             imageText: "Davido",
           },
           {
-            href: "",
             lineColor: "blue",
             playButtonColor: "red",
             blogTitle: "ECHO ROOM - AIMASIKO",
@@ -96,7 +82,6 @@ const Explore = () => {
             imageText: "Simi",
           },
           {
-            href: "",
             lineColor: "green",
             playButtonColor: "purple",
             blogTitle: "DUDUKE OFFICIAL VIDEO",
@@ -106,7 +91,6 @@ const Explore = () => {
             imageText: "Simi",
           },
           {
-            href: "",
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
@@ -118,7 +102,7 @@ const Explore = () => {
         ].map((item) => {
           return (
             <Stack key="explore" direction="column" w="220px">
-              <Link href={item.href}>
+              <Link href={`explore/` + item.blogTitle}>
                 <Card w="220px" h="5px" mt="30px" bgColor={item.lineColor} />
                 <Text pt="30px" fontSize="sm" color="gray.600">
                   {item.blogTitle}

@@ -1,0 +1,283 @@
+{
+  "explore": [
+    {
+      "id": 1,
+      "lineColor": "green",
+      "playButtonColor": "purple",
+      "blogTitle": "WATCH NOW",
+      "heading": "Our New Video Series Breaks Down",
+      "subHeading": "The Lates and Greatest in Music",
+      "image": "/images/DojaCat.png",
+      "imageText": "Doja Cat",
+      "blog": " NEW ALBUM RELEASES BY ONE OF THE MOST IMPRESSIVE AND MESMERISING FEMALE TALENTS OF THIS GENERATION, DOJA CAT",
+      "blogAuthor": "Dorteks",
+      "date": "20th January, 2023",
+      "songCoverImage": "/images/DojaCat.png",
+
+      "blogParag1": "Doja Cat is a triple threat: a pop star, an edgelord, and a hottie.  On the surface, she resembles an e-girl making fart jokes who’d peak at 70,000 Twitter followers more than a masterful, total-package artist.",
+      "blogParag2": "On June 11, Doja released the second single, “Need to Know,” from her third studio album, Planet Her. It’s one of three tracks from the album produced by hitmaker Dr. Luke",
+      "blogParag3": "",
+      "blogParag4": ""
+    },
+    {
+      "id": 2,
+      "lineColor": "red",
+      "playButtonColor": "blue",
+      "blogTitle": "NEW ALBUM + INTERVIEW",
+      "heading": "TIKUKU",
+      "subHeading": "Candy Bleakz",
+      "image": "/images/CandyBleakz.webp",
+      "imageText": "Candy Bleakz",
+      "blog": "SINGING SENSATION CANDY BLEAKZ, DROPS EXCITING AFROBEAT DEBUT TIKUKU",
+      "blogAuthor": "Dorteks",
+      "date": "14th January, 2023",
+      "songCoverImage": "/images/CandyBleakz.webp",
+
+      "blogParag1": "Candy Bleakz is known with her lyrical flow in Yoruba Language and pidgin and her influence in the street music just got started. “Tikuku” which serves as her official debut for 2022 looks promising and will definitely be a thing to groove with in coming weeks.",
+      "blogParag2": "Last year, Candy Bleakz was seen in a collaboration named, “Baba Nla” with Teni where she used it to conclude the better part of 2021 and now, she has unleashed a brand new street tune for our listening contentment.",
+
+      "blogParag3": "The latest jam, “Tikuku” has been rumored to be included in her upcoming studio body of work under the imprint, Chocolate City Music.",
+      "blogParag4": ""
+    },
+    {
+      "id": 3,
+      "lineColor": "blue",
+      "playButtonColor": "red",
+      "blogTitle": "UPDATED PLAYLIST",
+      "heading": "Today's Country",
+      "subHeading": "Special For You",
+      "image": "/images/mettalica.jpg",
+      "imageText": "Mettalica",
+      "blog": "METALLICA CONFIRMED THE TITLE AND RELEASE DATE OF NEXT ALBUM",
+      "blogAuthor": "Nuges",
+      "date": "19th January, 2023",
+      "songCoverImage": "/images/mettalica.jpg",
+
+      "blogParag1": "Metallica has confirmed the title and release date of its forthcoming 12th studio album: 72 Seasonswill be available April 14, 2023 via the band’s own Blackened Recordings.",
+      "blogParag2": "Produced by Greg Fidelman with Hetfield & Ulrich, and clocking in at over 77 minutes, the 12-track 72 Seasons is Metallica’s first full length collection of new material since 2016’s Hardwired…To Self-Destruct.",
+      "blogParag3": "The album will be released in formats including 2LP 140g black vinyl and limited edition variants, CD and digital—for a full listing of configurations, pre-orders and further information, go to metallica.com/72-seasons-info.",
+      "blogParag4": ""
+    },
+    {
+      "id": 4,
+      "lineColor": "green",
+      "playButtonColor": "purple",
+      "blogTitle": "WATCH NOW",
+      "heading": "Our New Video Series Breaks Down",
+      "subHeading": "The Lates and Greatest in Music",
+      "image": "/images/DojaCat.png",
+      "imageText": "Doja Cat",
+      "blog": " NEW ALBUM RELEASES BY ONE OF THE MOST IMPRESSIVE AND MESMERISING FEMALE TALENTS OF THIS GENERATION, DOJA CAT",
+      "blogAuthor": "Dorteks",
+      "date": "20th January, 2023",
+      "songCoverImage": "/images/DojaCat.png",
+
+      "blogParag1": "Doja Cat is a triple threat: a pop star, an edgelord, and a hottie.  On the surface, she resembles an e-girl making fart jokes who’d peak at 70,000 Twitter followers more than a masterful, total-package artist.",
+      "blogParag2": "On June 11, Doja released the second single, “Need to Know,” from her third studio album, Planet Her. It’s one of three tracks from the album produced by hitmaker Dr. Luke",
+      "blogParag3": "",
+      "blogParag4": ""
+    },
+    {
+      "id": 5,
+      "lineColor": "red",
+      "playButtonColor": "blue",
+      "blogTitle": "NEW ALBUM + INTERVIEW",
+      "heading": "TIKUKU",
+      "subHeading": "Candy Bleakz",
+      "image": "/images/CandyBleakz.webp",
+      "imageText": "Candy Bleakz",
+      "blog": "SINGING SENSATION CANDY BLEAKZ, DROPS EXCITING AFROBEAT DEBUT TIKUKU",
+      "blogAuthor": "Dorteks",
+      "date": "14th January, 2023",
+      "songCoverImage": "/images/CandyBleakz.webp",
+      "blogParag1": "Candy Bleakz is known with her lyrical flow in Yoruba Language and pidgin and her influence in the street music just got started. “Tikuku” which serves as her official debut for 2022 looks promising and will definitely be a thing to groove with in coming weeks.",
+      "blogParag2": "Last year, Candy Bleakz was seen in a collaboration named, “Baba Nla” with Teni where she used it to conclude the better part of 2021 and now, she has unleashed a brand new street tune for our listening contentment.",
+
+      "blogParag3": "The latest jam, “Tikuku” has been rumored to be included in her upcoming studio body of work under the imprint, Chocolate City Music.",
+      "blogParag4": ""
+    },
+    {
+      "id": 6,
+      "lineColor": "blue",
+      "playButtonColor": "red",
+      "blogTitle": "UPDATED PLAYLIST",
+      "heading": "Today's Country",
+      "subHeading": "Special For You",
+      "image": "/images/mettalica.jpg",
+      "imageText": "Mettalica",
+      "blog": "METALLICA CONFIRMED THE TITLE AND RELEASE DATE OF NEXT ALBUM",
+      "blogAuthor": "Nuges",
+      "date": "19th January, 2023",
+      "songCoverImage": "/images/mettalica.jpg",
+
+      "blogParag1": "Metallica has confirmed the title and release date of its forthcoming 12th studio album: 72 Seasonswill be available April 14, 2023 via the band’s own Blackened Recordings.",
+      "blogParag2": "Produced by Greg Fidelman with Hetfield & Ulrich, and clocking in at over 77 minutes, the 12-track 72 Seasons is Metallica’s first full length collection of new material since 2016’s Hardwired…To Self-Destruct.",
+      "blogParag3": "The album will be released in formats including 2LP 140g black vinyl and limited edition variants, CD and digital—for a full listing of configurations, pre-orders and further information, go to metallica.com/72-seasons-info.",
+      "blogParag4": ""
+    },
+    {
+      "id": 7,
+      "lineColor": "red",
+      "playButtonColor": "blue",
+      "blogTitle": "NEW ALBUM + INTERVIEW",
+      "heading": "TIKUKU",
+      "subHeading": "Candy Bleakz",
+      "image": "/images/CandyBleakz.webp",
+      "imageText": "Candy Bleakz",
+      "blog": "SINGING SENSATION CANDY BLEAKZ, DROPS EXCITING AFROBEAT DEBUT TIKUKU",
+      "blogAuthor": "Dorteks",
+      "date": "14th January, 2023",
+      "songCoverImage": "/images/CandyBleakz.webp",
+      "blogParag1": "Candy Bleakz is known with her lyrical flow in Yoruba Language and pidgin and her influence in the street music just got started. “Tikuku” which serves as her official debut for 2022 looks promising and will definitely be a thing to groove with in coming weeks.",
+      "blogParag2": "Last year, Candy Bleakz was seen in a collaboration named, “Baba Nla” with Teni where she used it to conclude the better part of 2021 and now, she has unleashed a brand new street tune for our listening contentment.",
+
+      "blogParag3": "The latest jam, “Tikuku” has been rumored to be included in her upcoming studio body of work under the imprint, Chocolate City Music.",
+      "blogParag4": ""
+    },
+    {
+      "id": 8,
+      "lineColor": "blue",
+      "playButtonColor": "red",
+      "blogTitle": "UPDATED PLAYLIST",
+      "heading": "Today's Country",
+      "subHeading": "Special For You",
+      "image": "/images/mettalica.jpg",
+      "imageText": "Mettalica",
+      "blog": "METALLICA CONFIRMED THE TITLE AND RELEASE DATE OF NEXT ALBUM",
+      "blogAuthor": "Nuges",
+      "date": "19th January, 2023",
+      "songCoverImage": "/images/mettalica.jpg",
+
+      "blogParag1": "Metallica has confirmed the title and release date of its forthcoming 12th studio album: 72 Seasonswill be available April 14, 2023 via the band’s own Blackened Recordings.",
+      "blogParag2": "Produced by Greg Fidelman with Hetfield & Ulrich, and clocking in at over 77 minutes, the 12-track 72 Seasons is Metallica’s first full length collection of new material since 2016’s Hardwired…To Self-Destruct.",
+      "blogParag3": "The album will be released in formats including 2LP 140g black vinyl and limited edition variants, CD and digital—for a full listing of configurations, pre-orders and further information, go to metallica.com/72-seasons-info.",
+      "blogParag4": ""
+    },
+    {
+      "id": 9,
+      "lineColor": "green",
+      "playButtonColor": "purple",
+      "blogTitle": "WATCH NOW",
+      "heading": "Our New Video Series Breaks Down",
+      "subHeading": "The Lates and Greatest in Music",
+      "image": "/images/DojaCat.png",
+      "imageText": "Doja Cat",
+      "blog": " NEW ALBUM RELEASES BY ONE OF THE MOST IMPRESSIVE AND MESMERISING FEMALE TALENTS OF THIS GENERATION, DOJA CAT",
+      "blogAuthor": "Dorteks",
+      "date": "20th January, 2023",
+      "songCoverImage": "/images/DojaCat.png",
+
+      "blogParag1": "Doja Cat is a triple threat: a pop star, an edgelord, and a hottie.  On the surface, she resembles an e-girl making fart jokes who’d peak at 70,000 Twitter followers more than a masterful, total-package artist.",
+      "blogParag2": "On June 11, Doja released the second single, “Need to Know,” from her third studio album, Planet Her. It’s one of three tracks from the album produced by hitmaker Dr. Luke",
+      "blogParag3": "",
+      "blogParag4": ""
+    },
+    {
+      "id": 10,
+      "lineColor": "red",
+      "playButtonColor": "blue",
+      "blogTitle": "NEW ALBUM + INTERVIEW",
+      "heading": "TIKUKU",
+      "subHeading": "Candy Bleakz",
+      "image": "/images/CandyBleakz.webp",
+      "imageText": "Candy Bleakz",
+      "blog": "SINGING SENSATION CANDY BLEAKZ, DROPS EXCITING AFROBEAT DEBUT TIKUKU",
+      "blogAuthor": "Dorteks",
+      "date": "14th January, 2023",
+      "songCoverImage": "/images/CandyBleakz.webp",
+      "blogParag1": "Candy Bleakz is known with her lyrical flow in Yoruba Language and pidgin and her influence in the street music just got started. “Tikuku” which serves as her official debut for 2022 looks promising and will definitely be a thing to groove with in coming weeks.",
+      "blogParag2": "Last year, Candy Bleakz was seen in a collaboration named, “Baba Nla” with Teni where she used it to conclude the better part of 2021 and now, she has unleashed a brand new street tune for our listening contentment.",
+
+      "blogParag3": "The latest jam, “Tikuku” has been rumored to be included in her upcoming studio body of work under the imprint, Chocolate City Music.",
+      "blogParag4": ""
+    },
+    {
+      "id": 11,
+      "lineColor": "blue",
+      "playButtonColor": "red",
+      "blogTitle": "UPDATED PLAYLIST",
+      "heading": "Today's Country",
+      "subHeading": "Special For You",
+      "image": "/images/mettalica.jpg",
+      "imageText": "Mettalica",
+      "blog": "METALLICA CONFIRMED THE TITLE AND RELEASE DATE OF NEXT ALBUM",
+      "blogAuthor": "Nuges",
+      "date": "19th January, 2023",
+      "songCoverImage": "/images/mettalica.jpg",
+
+      "blogParag1": "Metallica has confirmed the title and release date of its forthcoming 12th studio album: 72 Seasonswill be available April 14, 2023 via the band’s own Blackened Recordings.",
+      "blogParag2": "Produced by Greg Fidelman with Hetfield & Ulrich, and clocking in at over 77 minutes, the 12-track 72 Seasons is Metallica’s first full length collection of new material since 2016’s Hardwired…To Self-Destruct.",
+      "blogParag3": "The album will be released in formats including 2LP 140g black vinyl and limited edition variants, CD and digital—for a full listing of configurations, pre-orders and further information, go to metallica.com/72-seasons-info.",
+      "blogParag4": ""
+    },
+    {
+      "id": 12,
+      "lineColor": "green",
+      "playButtonColor": "purple",
+      "blogTitle": "WATCH NOW",
+      "heading": "Our New Video Series Breaks Down",
+      "subHeading": "The Lates and Greatest in Music",
+      "image": "/images/DojaCat.png",
+      "imageText": "Doja Cat",
+      "blog": " NEW ALBUM RELEASES BY ONE OF THE MOST IMPRESSIVE AND MESMERISING FEMALE TALENTS OF THIS GENERATION, DOJA CAT",
+      "blogAuthor": "Dorteks",
+      "date": "20th January, 2023",
+      "songCoverImage": "/images/DojaCat.png",
+
+      "blogParag1": "Doja Cat is a triple threat: a pop star, an edgelord, and a hottie.  On the surface, she resembles an e-girl making fart jokes who’d peak at 70,000 Twitter followers more than a masterful, total-package artist.",
+      "blogParag2": "On June 11, Doja released the second single, “Need to Know,” from her third studio album, Planet Her. It’s one of three tracks from the album produced by hitmaker Dr. Luke",
+      "blogParag3": "",
+      "blogParag4": ""
+    }
+  ],
+  "songs": [
+    {
+      "id": "1",
+      "title": "Tikuku",
+      "artist": "Candy Bleakz",
+      "time": "02:55"
+    },
+    {
+      "id": "2",
+      "title": "Kilometre",
+      "artist": "Burna Boy",
+      "time": "02:33"
+    },
+    {
+      "id": "3",
+      "title": "Sungba (Remix) ft. Burna Boy",
+      "artist": "Asake",
+      "time": "03:30"
+    },
+    {
+      "id": "4",
+      "title": "Woman",
+      "artist": "Simi",
+      "time": "02:48"
+    },
+    {
+      "id": "5",
+      "title": "Tikuku",
+      "artist": "Candy Bleakz",
+      "time": "02:55"
+    },
+    {
+      "id": "6",
+      "title": "Kilometre",
+      "artist": "Burna Boy",
+      "time": "02:33"
+    },
+    {
+      "id": "7",
+      "title": "Sungba (Remix) ft. Burna Boy",
+      "artist": "Asake",
+      "time": "03:30"
+    },
+    {
+      "id": "8",
+      "title": "Woman",
+      "artist": "Simi",
+      "time": "02:48"
+    }
+  ]
+}

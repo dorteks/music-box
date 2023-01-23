@@ -6,6 +6,18 @@ import Sidebar from "@/components/sidebar";
 
 const MobileSidebar = () => {
   const [display, toggleDisplay] = useState("none");
+
+  // const menuRef = useRef<HTMLDivElement>(null);
+
+  // useEffect(() => {
+  //   const handler = (event: any) => {
+  //     toggleDisplay("none");
+
+  //     console.log(menuRef.current, "menuref");
+  //   };
+  //   document.addEventListener("mousedown", handler);
+  // }, []);
+
   return (
     <Box display={["flex", "flex", "flex", "none", "none"]}>
       {/* open menu */}

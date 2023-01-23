@@ -10,11 +10,13 @@ const MobileTopbar = () => {
   return (
     <Box
       h="80px"
-      pl="30px"
-      pr="30px"
+      pl={["20px", "30px", "30px", "0", "0"]}
+      pr={["20px", "30px", "30px", "0", "0"]}
       bgColor="red"
       alignItems="center"
       justifyContent="space-between"
+      maxWidth="100vw"
+      backgroundColor={["purple", "green", "red", "none", "none"]}
       display={["flex", "flex", "flex", "none", "none"]}
     >
       <MobileSidebar />

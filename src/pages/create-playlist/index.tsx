@@ -41,10 +41,11 @@ const CreatePlaylist = () => {
 
         <Button onClick={onOpen}>Create Playlist </Button>
         <Modal
-          finalFocusRef={finalRef}
+          isCentered
           isOpen={isOpen}
           onClose={onClose}
-          isCentered
+          finalFocusRef={finalRef}
+          size={["sm", "sm", "md", "md", "md"]}
         >
           <ModalOverlay />
           <ModalContent>

@@ -7,13 +7,20 @@ import {
   Select,
   Switch,
   Heading,
+  Divider,
 } from "@chakra-ui/react";
 import { ReactElement } from "react";
 
 const Settings = () => {
   return (
-    <Box width="85vw" pl="10vw" pr="10vw">
-      <Stack bgColor="blue.50">
+    <Box
+      mt="20px"
+      mb="100px"
+      width={["100vw", "100vw", "100vw", "83vw", "83vw"]}
+      pl={["10px", "30px", "40px", "50px", "60px"]}
+      pr={["10px", "30px", "40px", "50px", "60px"]}
+    >
+      <Stack>
         {/* starts here */}
         <Heading size="lg">Settings</Heading>
         <Stack pt="30px">
@@ -72,8 +79,9 @@ const Settings = () => {
                 <Text width="600px" fontSize="15px">
                   {item.subtitle}
                 </Text>
-                <Switch pr="90px" />
+                <Switch />
               </HStack>
+              <Divider pt="20px" />
             </Stack>
           );
         })}

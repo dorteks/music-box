@@ -10,12 +10,12 @@ const PersonalReleases = () => {
         templateColumns={[
           "repeat(2, 1fr)",
           "repeat(3, 1fr)",
-          "repeat(3, 1fr)",
+          "repeat(4, 1fr)",
           "repeat(3, 1fr)",
           "repeat(4, 1fr)",
         ]}
         alignContent="center"
-        pl={["0", "0", "20px", "20px", "60px"]}
+        pl={["0", "0", "10px", "20px", "60px"]}
         pr={["60px", "60px", "60px", "50px", "60px"]}
         gap={3}
         mt="30px"
@@ -80,8 +80,8 @@ const PersonalReleases = () => {
           return (
             <GridItem key="item">
               <Card
-                w={["230px", "220px", "230px", "250px", "230px"]}
-                h="220px"
+                w={["160px", "210px", "210px", "250px", "230px"]}
+                h={["160px", "210px", "220px", "220px", "220px"]}
                 backgroundImage={item.image}
               >
                 <Box w="40px" mt="30px" ml="100px">
@@ -90,7 +90,7 @@ const PersonalReleases = () => {
               </Card>
 
               <Card
-                w={["230px", "220px", "230px", "250px", "230px"]}
+                w={["160px", "220px", "210px", "250px", "230px"]}
                 h="80px"
                 justify="center"
               >

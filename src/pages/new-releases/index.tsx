@@ -1,29 +1,61 @@
+import { Box, Card, Text, Grid, GridItem } from "@chakra-ui/react";
 import Layout from "@/layouts/main";
-import {
-  Td,
-  Th,
-  Tr,
-  Box,
-  Card,
-  Text,
-  Stack,
-  Table,
-  Tbody,
-  Thead,
-  HStack,
-  TableContainer,
-} from "@chakra-ui/react";
 import { ReactElement } from "react";
 import { BsPlayCircleFill } from "react-icons/bs";
-import { FiDownload } from "react-icons/fi";
-import { GrShareOption } from "react-icons/gr";
-import { MdOutlineLibraryAdd } from "react-icons/md";
 
 const PersonalReleases = () => {
   return (
-    <Box pl="20px">
-      <HStack mt="30px" gap={3}>
+    <Box pl="20px" overflowX="auto">
+      <Grid
+        templateColumns={[
+          "repeat(2, 1fr)",
+          "repeat(3, 1fr)",
+          "repeat(3, 1fr)",
+          "repeat(3, 1fr)",
+          "repeat(4, 1fr)",
+        ]}
+        alignContent="center"
+        pl={["0", "0", "20px", "20px", "60px"]}
+        pr={["60px", "60px", "60px", "50px", "60px"]}
+        gap={3}
+        mt="30px"
+      >
         {[
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
           {
             image: "/images/DojaCat.png",
             title: "FLOAT",
@@ -46,14 +78,22 @@ const PersonalReleases = () => {
           },
         ].map((item) => {
           return (
-            <Card key="item">
-              <Card w="230px" h="220px" backgroundImage={item.image}>
+            <GridItem key="item">
+              <Card
+                w={["230px", "220px", "230px", "250px", "230px"]}
+                h="220px"
+                backgroundImage={item.image}
+              >
                 <Box w="40px" mt="30px" ml="100px">
                   <BsPlayCircleFill size="sm" />
                 </Box>
               </Card>
 
-              <Card w="230px" h="80px" justify="center">
+              <Card
+                w={["230px", "220px", "230px", "250px", "230px"]}
+                h="80px"
+                justify="center"
+              >
                 <Text ml="20px" fontSize="18p0">
                   {item.title}
                 </Text>
@@ -61,12 +101,12 @@ const PersonalReleases = () => {
                   {item.artiste}
                 </Text>
               </Card>
-            </Card>
+            </GridItem>
           );
         })}
-      </HStack>
-
-      <Stack mt="30px">
+      </Grid>
+      {/* 
+      <Stack mt="30px" overflowX="scroll">
         <TableContainer>
           <Table variant="simple">
             <Thead>
@@ -128,6 +168,54 @@ const PersonalReleases = () => {
                 artist: "Simi",
                 time: "02:48",
               },
+              {
+                id: "9",
+                title: "Tikuku",
+                artist: "Candy Bleakz",
+                time: "02:55",
+              },
+              {
+                id: "10",
+                title: "Kilometre",
+                artist: "Burna Boy",
+                time: "02:33",
+              },
+              {
+                id: "11",
+                title: "Sungba (Remix) ft. Burna Boy",
+                artist: "Asake",
+                time: "03:30",
+              },
+              {
+                id: "12",
+                title: "Woman",
+                artist: "Simi",
+                time: "02:48",
+              },
+              {
+                id: "13",
+                title: "Tikuku",
+                artist: "Candy Bleakz",
+                time: "02:55",
+              },
+              {
+                id: "14",
+                title: "Kilometre",
+                artist: "Burna Boy",
+                time: "02:33",
+              },
+              {
+                id: "15",
+                title: "Sungba (Remix) ft. Burna Boy",
+                artist: "Asake",
+                time: "03:30",
+              },
+              {
+                id: "16",
+                title: "Woman",
+                artist: "Simi",
+                time: "02:48",
+              },
             ].map((item) => {
               return (
                 <Tbody key="id">
@@ -149,7 +237,7 @@ const PersonalReleases = () => {
             })}
           </Table>
         </TableContainer>
-      </Stack>
+      </Stack> */}
     </Box>
   );
 };

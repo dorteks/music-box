@@ -1,10 +1,10 @@
-import { Box, Card, HStack, Stack, Text } from "@chakra-ui/react";
-import { BsPlayCircleFill } from "react-icons/bs";
 import {
+  BsCircle,
   BsArrowLeftCircle,
   BsArrowRightCircle,
-  BsCircle,
 } from "react-icons/bs";
+import { BsPlayCircleFill } from "react-icons/bs";
+import { Box, Card, HStack, Stack, Text } from "@chakra-ui/react";
 
 const RecommendedAlbums = () => {
   return (

@@ -1,7 +1,7 @@
-import { Box, Card, Heading, Text, Stack, HStack } from "@chakra-ui/react";
 import Link from "next/link";
 import { BiPlayCircle } from "react-icons/bi";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
+import { Box, Card, Heading, Text, Stack, HStack } from "@chakra-ui/react";
 
 const ExploreMusic = () => {
   return (

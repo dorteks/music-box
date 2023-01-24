@@ -1,10 +1,10 @@
-import { Box, Card, HStack, Stack, Text } from "@chakra-ui/react";
 import {
+  BsPlayCircleFill,
   BsArrowLeftCircle,
   BsArrowRightCircle,
   BsFillBookmarkFill,
-  BsPlayCircleFill,
 } from "react-icons/bs";
+import { Box, Card, HStack, Stack, Text } from "@chakra-ui/react";
 
 const LatestNews = () => {
   return (
@@ -16,10 +16,10 @@ const LatestNews = () => {
           </Box>
           <Text
             p="5px"
+            fontSize="18px"
             color="gray.700"
             fontWeight="bold"
             textAlign="center"
-            fontSize="18px"
           >
             Latest News
           </Text>

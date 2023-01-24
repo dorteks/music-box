@@ -1,8 +1,8 @@
+import LatestNews from "./latestNews";
 import { Box } from "@chakra-ui/react";
 import ExploreMusic from "./exploreMusic";
-import LatestNews from "./latestNews";
-import MoodsAndGenres from "./moodsAndGenres";
 import MoreToExplore from "./moreToExplore";
+import MoodsAndGenres from "./moodsAndGenres";
 import MusicRadioShows from "./musicRadioShows";
 import RecommendedAlbums from "./recommendedAlbums";
 

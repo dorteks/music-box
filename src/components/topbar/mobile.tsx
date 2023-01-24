@@ -21,7 +21,9 @@ const MobileTopbar = () => {
     >
       <MobileSidebar />
       <Stack direction="row" alignItems="center">
-        <GiMusicSpell size="30px" />
+        <Link href="/">
+          <GiMusicSpell size="30px" />
+        </Link>
         <Link href="/">
           <Text pl="10px" display={["none", "none", "flex", "none", "none"]}>
             MUSIC BOX

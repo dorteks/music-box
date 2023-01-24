@@ -10,7 +10,6 @@ import {
   Thead,
   Button,
   HStack,
-  VStack,
   TableContainer,
 } from "@chakra-ui/react";
 import Layout from "@/layouts/main";
@@ -22,48 +21,54 @@ import { GiMusicSpell } from "react-icons/gi";
 import { GrShareOption } from "react-icons/gr";
 import { MdOutlineLibraryAdd } from "react-icons/md";
 import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
-import MobilePLaylist from "./mobilePlaylist";
 
-const Playlists = () => {
+const MobilePLaylist = () => {
   return (
     <Box>
-      {/* code snippet for playlist on mobile device */}
-      <MobilePLaylist />
-      {/* code snippet for playlist on mobile device */}
-
       <Stack
         pt="20px"
         pb="20px"
-        pl="10px"
+        pl="20px"
         bgColor="green.50"
         justify="space-between"
-        display={["none", "none", "flex", "flex", "flex"]}
+        maxWidth="100vw"
+        display={["flex", "flex", "none", "none", "none"]}
       >
-        <HStack>
-          <GiMusicSpell size="200px" />
-          <VStack align="left" justify="center" pl="10px">
-            <Text>PLAYLIST</Text>
-            <Text pt="10px" fontSize="40px">
-              Playlist Title #1
-            </Text>
-            <Stack pt="10px" direction="row" align="center" pr="40px" gap={5}>
-              <Button>
-                <CiPlay1 size="30px" />
-                <Text pl="10px" pr="15px">
-                  Play All
-                </Text>
-              </Button>
-              <FaPencilAlt size="30px" />
-              <BsSuitHeart size="30px" />
-              <GrShareOption size="30px" />
-              <BsThreeDots size="30px" />
-              <FiDownload size="30px" />
-            </Stack>
-          </VStack>
+        <HStack justify="space-between">
+          <GiMusicSpell size="50px" />
+          <HStack gap={4} pr="20px">
+            <FaPencilAlt size="25px" />
+            <GrShareOption size="25px" />
+            <BsThreeDots size="25px" />
+          </HStack>
         </HStack>
+        <HStack justify="space-between" pr="20px">
+          <Text pt="20px" fontSize="25px">
+            Playlist Title #1
+          </Text>
+          <BsSuitHeart size="30px" />
+        </HStack>
+        <Stack
+          pt="30px"
+          direction="row"
+          justify="center"
+          align="center"
+          pr={["10px", "40px"]}
+          gap={[0, 5]}
+        >
+          <Button width={["140px", "220px"]}>
+            <CiPlay1 size="30px" />
+            <Text pl="10px" pr="15px">
+              Play All
+            </Text>
+          </Button>
+          <Button width={["140px", "220px"]}>
+            <FiDownload size="30px" />
+          </Button>
+        </Stack>
       </Stack>
 
-      <Stack mt="30px" display={["none", "none", "flex", "flex", "flex"]}>
+      <Stack mt="30px" display={["flex", "flex", "none", "none", "none"]}>
         <TableContainer>
           <Table variant="simple">
             <Thead>
@@ -151,8 +156,8 @@ const Playlists = () => {
   );
 };
 
-Playlists.getLayout = (page: ReactElement) => {
+MobilePLaylist.getLayout = (page: ReactElement) => {
   return <Layout>{page}</Layout>;
 };
 
-export default Playlists;
+export default MobilePLaylist;

@@ -1,11 +1,11 @@
 import {
   Box,
   Text,
-  HStack,
-  Stack,
   Card,
   Icon,
   Grid,
+  Stack,
+  HStack,
   GridItem,
 } from "@chakra-ui/react";
 import Link from "next/link";
@@ -76,7 +76,7 @@ const MoodsAndGenres = () => {
                   pr="10px"
                   alignItems="center"
                   justify="space-between"
-                  width="220px"
+                  width={["220px", "220px", "220px", "220px", "240px"]}
                   height="50px"
                 >
                   <CircleIcon />

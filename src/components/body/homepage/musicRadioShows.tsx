@@ -1,10 +1,10 @@
-import { Box, Card, HStack, Stack, Text } from "@chakra-ui/react";
 import {
+  BsPlayCircleFill,
   BsArrowLeftCircle,
   BsArrowRightCircle,
-  BsPlayCircleFill,
 } from "react-icons/bs";
 import { RxRadiobutton } from "react-icons/rx";
+import { Box, Card, HStack, Stack, Text } from "@chakra-ui/react";
 
 const MusicRadioShows = () => {
   return (
@@ -16,10 +16,10 @@ const MusicRadioShows = () => {
           </Box>
           <Text
             p="5px"
+            fontSize="16px"
             color="gray.700"
             fontWeight="bold"
             textAlign="center"
-            fontSize="16px"
           >
             Music Radio Shows
           </Text>

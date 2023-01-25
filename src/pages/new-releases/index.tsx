@@ -5,7 +5,7 @@ import { BsPlayCircleFill } from "react-icons/bs";
 
 const PersonalReleases = () => {
   return (
-    <Box pl="20px" overflowX="auto">
+    <Box pl={["10px", "20px", "20px", "20px", "20px"]}>
       <Grid
         templateColumns={[
           "repeat(2, 1fr)",
@@ -78,7 +78,7 @@ const PersonalReleases = () => {
           },
         ].map((item) => {
           return (
-            <GridItem key="item">
+            <GridItem key="item" pt="20px">
               <Card
                 w={["160px", "210px", "210px", "250px", "230px"]}
                 h={["160px", "210px", "220px", "220px", "220px"]}

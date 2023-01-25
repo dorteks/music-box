@@ -1,5 +1,6 @@
 import Layout from "@/layouts/main";
 import { Box, Card, Heading, HStack, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import { ReactElement } from "react";
 
 const Charts = () => {
@@ -32,14 +33,16 @@ const Charts = () => {
             },
           ].map((item) => {
             return (
-              <Stack key="chartTitle" direction="column" pt="20px">
-                <Card width="200px" height="200px" bgImage={item.chartImage}>
-                  {/* <Box alignSelf="end" mr="20px" mt="160px">
+              <Link href="/top-charts/top100Naija">
+                <Stack key="chartTitle" direction="column" pt="20px">
+                  <Card width="200px" height="200px" bgImage={item.chartImage}>
+                    {/* <Box alignSelf="end" mr="20px" mt="160px">
                   <CiPlay1 size="30px" />
                 </Box> */}
-                </Card>
-                <Text textAlign="left"> {item.chartTitle} </Text>
-              </Stack>
+                  </Card>
+                  <Text textAlign="left"> {item.chartTitle} </Text>
+                </Stack>
+              </Link>
             );
           })}
         </HStack>
@@ -72,14 +75,16 @@ const Charts = () => {
             },
           ].map((item) => {
             return (
-              <Stack key="chartTitle" direction="column" pt="20px">
-                <Card width="200px" height="200px" bgImage={item.chartImage}>
-                  {/* <Box alignSelf="end" mr="20px" mt="160px">
+              <Link href="/top-charts/top100Naija">
+                <Stack key="chartTitle" direction="column" pt="20px">
+                  <Card width="200px" height="200px" bgImage={item.chartImage}>
+                    {/* <Box alignSelf="end" mr="20px" mt="160px">
                   <CiPlay1 size="30px" />
                 </Box> */}
-                </Card>
-                <Text textAlign="left"> {item.chartTitle} </Text>
-              </Stack>
+                  </Card>
+                  <Text textAlign="left"> {item.chartTitle} </Text>
+                </Stack>
+              </Link>
             );
           })}
         </HStack>
@@ -112,14 +117,16 @@ const Charts = () => {
             },
           ].map((item) => {
             return (
-              <Stack key="chartTitle" direction="column" pt="20px">
-                <Card width="200px" height="200px" bgImage={item.chartImage}>
-                  {/* <Box alignSelf="end" mr="20px" mt="160px">
+              <Link href="/top-charts/top100Naija">
+                <Stack key="chartTitle" direction="column" pt="20px">
+                  <Card width="200px" height="200px" bgImage={item.chartImage}>
+                    {/* <Box alignSelf="end" mr="20px" mt="160px">
                   <CiPlay1 size="30px" />
                 </Box> */}
-                </Card>
-                <Text textAlign="left"> {item.chartTitle} </Text>
-              </Stack>
+                  </Card>
+                  <Text textAlign="left"> {item.chartTitle} </Text>
+                </Stack>
+              </Link>
             );
           })}
         </HStack>

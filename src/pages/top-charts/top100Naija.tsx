@@ -22,37 +22,54 @@ import { FiDownload } from "react-icons/fi";
 import { GiMusicSpell } from "react-icons/gi";
 import { GrShareOption } from "react-icons/gr";
 import { MdOutlineLibraryAdd } from "react-icons/md";
+import Top100Mobile from "./mobileTop100";
 
 const Top100Naija = () => {
   return (
-    <Box pl="20px">
-      <Stack direction="row" bgColor="blue" justify="space-between">
+    <Box>
+      {/* code snippet for top charts mobile screen */}
+      <Top100Mobile />
+      {/* code snippet for top charts mobile screen */}
+
+      <Stack
+        pt="20px"
+        pb="20px"
+        pl="10px"
+        bgColor="green.50"
+        justify="space-between"
+        display={["none", "none", "flex", "flex", "flex"]}
+      >
         <HStack>
-          <GiMusicSpell size="200px" />
+          <GiMusicSpell size="180px" />
           <VStack align="left" justify="center" pl="10px">
-            <Heading size="lg">Top 100 Nigeria</Heading>
-            <Text pt="10px" fontSize="15px">
+            <Text pt="10px" fontSize="40px">
+              Top 100 Nigeria
+            </Text>
+            <Text>
               Weekly update of the most played tracks in Nigeria, update on
               19.01.2023
             </Text>
+            <Stack pt="10px" direction="row" align="center" pr="40px" gap={5}>
+              <Button>
+                <CiPlay1 size="30px" />
+                <Text pl="10px" pr="15px">
+                  Play All
+                </Text>
+              </Button>
+              <BsSuitHeart size="30px" />
+              <GrShareOption size="30px" />
+              <BsThreeDots size="30px" />
+              <FiDownload size="30px" />
+            </Stack>
           </VStack>
         </HStack>
-
-        <Stack direction="row" align="end" pr="40px" pb="20px" gap={5}>
-          <Button>
-            <CiPlay1 size="30px" />
-            <Text pl="10px" pr="15px">
-              Play All
-            </Text>
-          </Button>
-          <BsSuitHeart size="30px" />
-          <GrShareOption size="30px" />
-          <BsThreeDots size="30px" />
-          <FiDownload size="30px" />
-        </Stack>
       </Stack>
 
-      <Stack mt="30px">
+      <Stack
+        mt="30px"
+        mb="60px"
+        display={["none", "none", "flex", "flex", "flex"]}
+      >
         <TableContainer>
           <Heading size="md" pl="20px" pb="20px">
             Top 100 Naija (100)

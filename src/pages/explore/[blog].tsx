@@ -14,7 +14,13 @@ import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 const ExploreSong = () => {
   return (
-    <Box pt="40px" pl="20px" pb="60px">
+    <Box
+      pt="40px"
+      pb="60px"
+      pl={["10px", "10px", "20px", "20px", "20px"]}
+      pr={["10px", "10px", "20px", "40px", "30px"]}
+      width={["100vw", "100vw", "100vw", "85vw", "85vw"]}
+    >
       {[
         // {
         //   blog: "SINGING SENSATION CANDY BLEAKZ, DROPS EXCITING AFROBEAT DEBUT TIKUKU",
@@ -46,34 +52,70 @@ const ExploreSong = () => {
       ].map((item) => {
         return (
           <VStack key="blogTitle" gap={4}>
-            <Heading size="2xl" textAlign="center">
+            <Heading size={["sm", "md", "xl", "xl", "2xl"]} textAlign="center">
               {item.blog}
             </Heading>
             <Text>by {item.blogAuthor} </Text>
             <Text> {item.date} </Text>
 
-            <Card width="1000px" height="550px" bgImage={item.songCoverImage}>
+            <Card
+              width={["85vw", "85vw", "85vw", "70vw", "75vw"]}
+              height={["25vh", "35vh", "45vh", "450px", "550px"]}
+              bgImage={item.songCoverImage}
+            >
               blog picture here
             </Card>
 
             <Text> Blog here </Text>
-            <Text width="800px">{item.blogParag1}</Text>
-            <Text width="800px">{item.blogParag2}</Text>
-            <Text width="800px">{item.blogParag3}</Text>
-            <Text width="800px">{item.blogParag4}</Text>
+            <Text width={["90vw", "93vw", "90vw", "75vw", "75vw"]}>
+              {item.blogParag1}
+            </Text>
+            <Text width={["90vw", "93vw", "90vw", "75vw", "75vw"]}>
+              {item.blogParag2}
+            </Text>
+            <Text width={["90vw", "93vw", "90vw", "75vw", "75vw"]}>
+              {item.blogParag3}
+            </Text>
+            <Text width={["90vw", "93vw", "90vw", "75vw", "75vw"]}>
+              {item.blogParag4}
+            </Text>
 
-            <Card width="500px" height="300px" bgImage="/images/DojaCat.png">
+            <Card
+              width={["60vw", "55vw", "38vw", "35vw", "30vw"]}
+              height={["20vh", "25vh", "28vh", "250px", "250px"]}
+              bgImage={item.songCoverImage}
+            >
               <Box alignSelf="center">
                 <BsPlay size="80px" />
               </Box>
             </Card>
 
-            <HStack pt="40px" gap={10}>
-              <Button width="300px">
+            {/* previos post and next post for mobile small screen */}
+            <HStack
+              pt="40px"
+              gap={5}
+              display={["flex", "none", "none", "none", "none"]}
+            >
+              <Button width={["130px", "0px", "0px", "0px", "0px"]}>
+                <Text textAlign="center">Prev Post</Text>
+              </Button>
+              <Button width={["130px", "0px", "0px", "0px", "0px"]}>
+                <Text textAlign="center">Next Post </Text>
+              </Button>
+            </HStack>
+
+            {/* previos post and next post for  bigger screens */}
+
+            <HStack
+              pt="40px"
+              gap={10}
+              display={["none", "flex", "flex", "flex", "flex"]}
+            >
+              <Button width={["120px", "200px", "300px", "300px", "300px"]}>
                 <HiArrowLeft size="20px" />
                 <Text pl="30px">Previous Post</Text>
               </Button>
-              <Button width="300px">
+              <Button width={["120px", "200px", "300px", "300px", "300px"]}>
                 <Text pr="30px">Next Post </Text>
                 <HiArrowRight size="20px" />
               </Button>
@@ -81,50 +123,6 @@ const ExploreSong = () => {
           </VStack>
         );
       })}
-
-      {/* 
-
-      <VStack gap={4}>
-        <Heading size="2xl" textAlign="center">
-          SINGING SENSATION CANDY BLEAKZ, DROPS EXCITING AFROBEAT DEBUT TIKUKU
-        </Heading>
-        <Text>by Dorteks </Text>
-        <Text> 14th January, 2023 </Text>
-
-        <Card width="1000px" height="550px" bgImage="/images/DojaCat.png">
-          big picture here
-        </Card>
-
-        <Text> Blog here </Text>
-        <Text width="800px">
-          Nigerian multitalented emerging artist David Tokuma Dekor also known
-          as PAWZZ, drops an exciting debut single, Koma. Its the lead single to
-          his upcoming debut EP Prezz Play. Koma is an uptempo groove infused
-          with African percussions and sweet harmonies with a vocal delivery
-          that ensures each lyric sticks to listeners like an anthem.
-        </Text>
-        <Text width="800px">
-          Its an exhilarating debut by Pawzz, and we are excited to see what
-          this up-and-coming Afrobeats artist has in store next.{" "}
-        </Text>
-
-        <Card width="500px" height="300px" bgImage="/images/DojaCat.png">
-          <Box alignSelf="center">
-            <BsPlay size="80px" />
-          </Box>
-        </Card>
-
-        <HStack pt="40px" gap={10}>
-          <Button width="300px">
-            <HiArrowLeft size="20px" />
-            <Text pl="30px">Previous</Text>
-          </Button>
-          <Button width="300px">
-            <Text pr="30px">Next</Text>
-            <HiArrowRight size="20px" />
-          </Button>
-        </HStack>
-      </VStack> */}
     </Box>
   );
 };

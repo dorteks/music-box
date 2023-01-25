@@ -5,11 +5,15 @@ import { ReactElement } from "react";
 
 const Charts = () => {
   return (
-    <Box pt="20px" pl="20px">
+    <Box
+      pt="50px"
+      pl={["20px", "30px", "30px", "30px", "30px"]}
+      maxWidth={["96vw", "96vw", "95vw", "80vw", "90vw"]}
+    >
       <Stack>
         <Heading size="md">Weekly Charts</Heading>
 
-        <HStack gap="5">
+        <HStack gap="5" overflowX="scroll">
           {[
             {
               chartImage: "/images/top100naija.jpeg",
@@ -33,8 +37,8 @@ const Charts = () => {
             },
           ].map((item) => {
             return (
-              <Link href="/top-charts/top100Naija">
-                <Stack key="chartTitle" direction="column" pt="20px">
+              <Link key="chartTitle" href="/top-charts/top100Naija">
+                <Stack direction="column" pt="20px">
                   <Card width="200px" height="200px" bgImage={item.chartImage}>
                     {/* <Box alignSelf="end" mr="20px" mt="160px">
                   <CiPlay1 size="30px" />
@@ -51,7 +55,7 @@ const Charts = () => {
       <Stack mt="40px">
         <Heading size="md">Daily Charts</Heading>
 
-        <HStack gap="5">
+        <HStack gap="5" overflowX="scroll">
           {[
             {
               chartImage: "/images/top100naija.jpeg",
@@ -75,8 +79,8 @@ const Charts = () => {
             },
           ].map((item) => {
             return (
-              <Link href="/top-charts/top100Naija">
-                <Stack key="chartTitle" direction="column" pt="20px">
+              <Link key="chartTitle" href="/top-charts/top100Naija">
+                <Stack direction="column" pt="20px">
                   <Card width="200px" height="200px" bgImage={item.chartImage}>
                     {/* <Box alignSelf="end" mr="20px" mt="160px">
                   <CiPlay1 size="30px" />
@@ -90,10 +94,10 @@ const Charts = () => {
         </HStack>
       </Stack>
 
-      <Stack mt="40px">
+      <Stack mt="40px" mb="60px">
         <Heading size="md">Monthly Charts</Heading>
 
-        <HStack gap="5">
+        <HStack gap="5" overflowX="scroll">
           {[
             {
               chartImage: "/images/top100naija.jpeg",
@@ -117,8 +121,8 @@ const Charts = () => {
             },
           ].map((item) => {
             return (
-              <Link href="/top-charts/top100Naija">
-                <Stack key="chartTitle" direction="column" pt="20px">
+              <Link key="chartTitle" href="/top-charts/top100Naija">
+                <Stack direction="column" pt="20px">
                   <Card width="200px" height="200px" bgImage={item.chartImage}>
                     {/* <Box alignSelf="end" mr="20px" mt="160px">
                   <CiPlay1 size="30px" />

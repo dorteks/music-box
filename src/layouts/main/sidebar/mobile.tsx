@@ -11,17 +11,13 @@ const MobileSidebar = () => {
     const clickOutsideHandler = (e: any) => {
       if (display && !menuRef.current?.contains(e.target as Node)) {
         toggleDisplay("none");
-        // console.log("clicked outside");
       }
     };
     document.body.addEventListener("mousedown", clickOutsideHandler);
 
-    // console.log(menuRef, "menuref");
-    // console.log(menuRef.current, "current menuRef");
-
     return () =>
       document.body.removeEventListener("mousedown", clickOutsideHandler);
-  }, []);
+  }, [display]);
 
   return (
     <Box ref={menuRef} display={["flex", "flex", "flex", "none", "none"]}>

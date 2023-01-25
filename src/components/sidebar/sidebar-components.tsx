@@ -1,17 +1,17 @@
-import { IoMdHome } from "react-icons/io";
-import { SlArrowRight } from "react-icons/sl";
-import { Box, Text, Stack, Button, Avatar } from "@chakra-ui/react";
-import Link from "next/link";
-import { GiMusicSpell } from "react-icons/gi";
-import { FaCompass } from "react-icons/fa";
-import { BiNetworkChart } from "react-icons/bi";
 import {
   BsCalendarEvent,
   BsFillBookmarkFill,
   BsSuitHeartFill,
 } from "react-icons/bs";
-import { CgEditBlackPoint } from "react-icons/cg";
+import Link from "next/link";
+import { IoMdHome } from "react-icons/io";
+import { FaCompass } from "react-icons/fa";
 import { GrHistory } from "react-icons/gr";
+import { GiMusicSpell } from "react-icons/gi";
+import { SlArrowRight } from "react-icons/sl";
+import { BiNetworkChart } from "react-icons/bi";
+import { CgEditBlackPoint } from "react-icons/cg";
+import { Box, Text, Stack, Button, Avatar } from "@chakra-ui/react";
 
 export const MusicBoxHeader = () => {
   return (
@@ -69,6 +69,8 @@ export const MainCategories = () => {
               _hover={{
                 fontWeight: "bold",
                 color: "purple.600",
+                width: "95%",
+
                 alignItems: "center",
                 borderRadius: "25px",
                 backgroundColor: "white",

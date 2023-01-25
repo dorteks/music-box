@@ -7,7 +7,20 @@ import { BiPlayCircle } from "react-icons/bi";
 const Explore = () => {
   return (
     <Box>
-      <Grid templateColumns="repeat(4, 1fr)" gap={2} ml="20px" mt="30px">
+      <Grid
+        templateColumns={[
+          "repeat(2, 1fr)",
+          "repeat(3, 1fr)",
+          "repeat(4, 1fr)",
+          "repeat(4, 1fr)",
+          "repeat(5, 1fr)",
+        ]}
+        gap={2}
+        ml="20px"
+        mt="30px"
+        alignSelf="center"
+        // width="100vw"
+      >
         {[
           {
             lineColor: "green",
@@ -101,20 +114,33 @@ const Explore = () => {
           },
         ].map((item) => {
           return (
-            <Stack key="explore" direction="column" w="220px">
+            <Stack
+              key="explore"
+              direction="column"
+              w={["210px", "220px", "220px", "220px", "220px"]}
+            >
               <Link href={`explore/` + item.blogTitle}>
-                <Card w="220px" h="5px" mt="30px" bgColor={item.lineColor} />
+                <Card
+                  w={["210px", "220px", "220px", "220px", "220px"]}
+                  h="5px"
+                  mt="30px"
+                  bgColor={item.lineColor}
+                />
                 <Text pt="30px" fontSize="sm" color="gray.600">
                   {item.blogTitle}
                 </Text>
                 <Text fontSize="sm" fontWeight="bold" pt="20px" noOfLines={1}>
                   {item.heading}
                 </Text>
-                <Text fontSize="sm" fontWeight="bold" pb="20px">
+                <Text fontSize="sm" fontWeight="bold" pb="20px" noOfLines={1}>
                   {item.subHeading}
                 </Text>
               </Link>
-              <Card w="220px" h="220px" backgroundImage={item.image}>
+              <Card
+                w={["210px", "220px", "220px", "220px", "220px"]}
+                h="220px"
+                backgroundImage={item.image}
+              >
                 <Box w="40px" mt="30px" ml="20px">
                   <BiPlayCircle size="sm" color={item.playButtonColor} />
                 </Box>

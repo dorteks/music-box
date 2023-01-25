@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Box, Button } from "@chakra-ui/react";
 import { AiOutlineClose } from "react-icons/ai";
 import { HamburgerIcon } from "@chakra-ui/icons";
@@ -6,20 +6,26 @@ import Sidebar from "@/components/sidebar";
 
 const MobileSidebar = () => {
   const [display, toggleDisplay] = useState("none");
+  const menuRef = useRef<HTMLDivElement>(null);
 
-  // const menuRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const clickOutsideHandler = (e: any) => {
+      if (display && !menuRef.current?.contains(e.target as Node)) {
+        toggleDisplay("none");
+        // console.log("clicked outside");
+      }
+    };
+    document.body.addEventListener("mousedown", clickOutsideHandler);
 
-  // useEffect(() => {
-  //   const handler = (event: any) => {
-  //     toggleDisplay("none");
+    // console.log(menuRef, "menuref");
+    // console.log(menuRef.current, "current menuRef");
 
-  //     console.log(menuRef.current, "menuref");
-  //   };
-  //   document.addEventListener("mousedown", handler);
-  // }, []);
+    return () =>
+      document.body.removeEventListener("mousedown", clickOutsideHandler);
+  }, []);
 
   return (
-    <Box display={["flex", "flex", "flex", "none", "none"]}>
+    <Box ref={menuRef} display={["flex", "flex", "flex", "none", "none"]}>
       {/* open menu */}
       <Button w="30px" onClick={() => toggleDisplay("flex")}>
         <HamburgerIcon />
@@ -37,8 +43,9 @@ const MobileSidebar = () => {
         display={display}
         flexDirection="column"
         w={["65vw", "45vw", "30vw", "0vw", "0vw"]}
+        onClick={() => toggleDisplay("none")}
       >
-        <Button justifySelf="end" onClick={() => toggleDisplay("none")}>
+        <Button justifySelf="end">
           <AiOutlineClose size="30px" />{" "}
         </Button>
         <Sidebar />

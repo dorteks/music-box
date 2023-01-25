@@ -9,6 +9,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { ReactElement } from "react";
 import { CiPlay1 } from "react-icons/ci";
 import { FiBarChart2 } from "react-icons/fi";
@@ -16,8 +17,12 @@ import { IoHeadsetOutline } from "react-icons/io5";
 
 const Radio = () => {
   return (
-    <Box pl="20px" pt="30px">
-      <HStack pb="40px" gap="5">
+    <Box
+      pt="30px"
+      pl={["20px", "20px", "30px", "20px", "30px"]}
+      maxWidth={["96vw", "96vw", "96vw", "78vw", "80vw"]}
+    >
+      <HStack pb="40px" gap="5" overflowX="scroll">
         {[
           {
             radioStationImage: "/images/radio4.jpg",
@@ -36,22 +41,24 @@ const Radio = () => {
           },
         ].map((item) => {
           return (
-            <Stack key="radioStationName" direction="column" pt="20px">
-              <Card width="240px" height="250px" bgColor="blackAlpha.500">
-                <Card
-                  mt="10px"
-                  ml="10px"
-                  width="200px"
-                  height="200px"
-                  bgImage={item.radioStationImage}
-                ></Card>
-              </Card>
-            </Stack>
+            <Link key="radioStationName" href="/radio/listen-radio">
+              <Stack direction="column" pt="20px">
+                <Card width="240px" height="250px" bgColor="blackAlpha.500">
+                  <Card
+                    mt="10px"
+                    ml="10px"
+                    width="200px"
+                    height="200px"
+                    bgImage={item.radioStationImage}
+                  ></Card>
+                </Card>
+              </Stack>
+            </Link>
           );
         })}
       </HStack>
 
-      <Stack>
+      <Stack align="center">
         {[
           {
             radioStationName: "The Beat 99.9 FM",
@@ -105,7 +112,7 @@ const Radio = () => {
         })}
       </Stack>
 
-      <HStack gap="5">
+      <HStack gap="5" overflowX="scroll">
         {[
           {
             radioStationImage: "/images/radio2.jpeg",
@@ -157,7 +164,7 @@ const Radio = () => {
         })}
       </HStack>
 
-      <Stack mt="40px">
+      <Stack mt="40px" mb="40px">
         <Heading size="sm">Selected radio stations for you</Heading>
 
         {[

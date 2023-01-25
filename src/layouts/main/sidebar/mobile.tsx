@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { Box, Button } from "@chakra-ui/react";
-import { AiOutlineClose } from "react-icons/ai";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import Sidebar from "@/components/sidebar";
 
@@ -12,17 +11,13 @@ const MobileSidebar = () => {
     const clickOutsideHandler = (e: any) => {
       if (display && !menuRef.current?.contains(e.target as Node)) {
         toggleDisplay("none");
-        // console.log("clicked outside");
       }
     };
     document.body.addEventListener("mousedown", clickOutsideHandler);
 
-    // console.log(menuRef, "menuref");
-    // console.log(menuRef.current, "current menuRef");
-
     return () =>
       document.body.removeEventListener("mousedown", clickOutsideHandler);
-  }, []);
+  }, [display]);
 
   return (
     <Box ref={menuRef} display={["flex", "flex", "flex", "none", "none"]}>
@@ -45,9 +40,11 @@ const MobileSidebar = () => {
         w={["65vw", "45vw", "30vw", "0vw", "0vw"]}
         onClick={() => toggleDisplay("none")}
       >
-        <Button justifySelf="end">
-          <AiOutlineClose size="30px" />{" "}
-        </Button>
+        <Box p="20px">
+          <Button w="30px">
+            <HamburgerIcon />
+          </Button>
+        </Box>
         <Sidebar />
       </Box>
     </Box>

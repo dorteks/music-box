@@ -54,7 +54,7 @@ export const MainCategories = () => {
         { href: "/top-charts", title: "Top Charts", icon: <BiNetworkChart /> },
         { href: "/radio", title: "Radio", icon: <CgEditBlackPoint /> },
         {
-          href: "/new-music",
+          href: "/new-releases",
           title: "New Music",
           icon: <BsFillBookmarkFill />,
         },

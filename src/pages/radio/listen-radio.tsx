@@ -7,12 +7,12 @@ import {
   HStack,
   Heading,
 } from "@chakra-ui/react";
-import React, { ReactElement } from "react";
+import Layout from "@/layouts/main";
 import { BsStar } from "react-icons/bs";
 import { MdTimer } from "react-icons/md";
+import React, { ReactElement } from "react";
 import { SlControlPlay } from "react-icons/sl";
 import { RxTrackNext, RxTrackPrevious } from "react-icons/rx";
-import Layout from "@/layouts/main";
 
 const ListenRadio = () => {
   return (
@@ -22,13 +22,19 @@ const ListenRadio = () => {
           return (
             <Stack
               key="radioStationName"
-              pl="20px"
               height="90vh"
               alignSelf="center"
               alignItems="center"
             >
-              <Card mt="80px" boxSize="250px" p="50px">
-                <Img boxSize="200px" src="/images/beatfm.jpeg" />
+              <Card
+                mt="80px"
+                boxSize={["200px", "250px", "250px", "250px", "250px"]}
+                p="50px"
+              >
+                <Img
+                  boxSize={["150px", "200px", "200px", "200px", "200px"]}
+                  src="/images/beatfm.jpeg"
+                />
               </Card>
               <Heading pt="60px" size="lg">
                 {item.radioStationName}
@@ -39,14 +45,18 @@ const ListenRadio = () => {
               </Stack>
               <Stack
                 pt="30px"
-                width="250px"
+                width={["180px", "250px", "250px", "250px", "250px"]}
                 justify="space-between"
                 direction="row"
               >
                 <BsStar size="30px" />
                 <MdTimer size="30px" />
               </Stack>
-              <HStack width="350px" justify="space-between" pt="80px">
+              <HStack
+                width={["250px", "350px", "350px", "350px", "350px"]}
+                justify="space-between"
+                pt="80px"
+              >
                 <RxTrackPrevious size="30px" />
                 {/* <SlControlPause size="30px" /> */}
 

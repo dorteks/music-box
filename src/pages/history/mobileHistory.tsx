@@ -1,15 +1,14 @@
 import Layout from "@/layouts/main";
 import { Box, Button, HStack, Img, Stack, Text } from "@chakra-ui/react";
-import { ReactElement } from "react";
-import { BsThreeDots, BsSuitHeart } from "react-icons/bs";
+import React from "react";
+import { BsThreeDots } from "react-icons/bs";
 import { CiPlay1 } from "react-icons/ci";
-import { FaPencilAlt } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { GiMusicSpell } from "react-icons/gi";
 import { GrShareOption } from "react-icons/gr";
 import { DisplaySongsExtraIcons } from "../create-playlist/playlists/mobilePlaylist";
 
-const Top100Mobile = () => {
+const MobileHistory = () => {
   return (
     <Box>
       <Stack
@@ -24,24 +23,17 @@ const Top100Mobile = () => {
         <HStack justify="space-between">
           <GiMusicSpell size="50px" />
           <HStack gap={4} pr="20px">
-            <FaPencilAlt size="25px" />
             <GrShareOption size="25px" />
             <BsThreeDots size="25px" />
           </HStack>
         </HStack>
-
         <HStack justify="space-between" pr="20px">
-          <Text pt="10px" fontWeight="bold" fontSize="25px">
-            Top 100 Naija
+          <Text pt="20px" fontSize="25px" fontWeight="bold">
+            Recently Played Songs
           </Text>
-          <BsSuitHeart size="30px" />
         </HStack>
-        <Text>
-          Weekly update of the most played tracks in Nigeria, update on
-          19.01.2023
-        </Text>
         <Stack
-          pt="10px"
+          pt="30px"
           direction="row"
           justify="center"
           align="center"
@@ -60,11 +52,7 @@ const Top100Mobile = () => {
         </Stack>
       </Stack>
 
-      <Stack
-        mt="30px"
-        mb="60px"
-        display={["flex", "flex", "none", "none", "none"]}
-      >
+      <Stack mt="30px" display={["flex", "flex", "none", "none", "none"]}>
         {[
           {
             id: "1",
@@ -120,7 +108,6 @@ const Top100Mobile = () => {
               key="id"
               direction="row"
               h="60px"
-              maxWidth="100vw"
               align="center"
               justify="space-between"
               pl={["10px", "20px"]}
@@ -137,7 +124,7 @@ const Top100Mobile = () => {
                 </Stack>
               </HStack>
 
-              {/* for song extra icons */}
+              {/* extra icons for play songs */}
               <DisplaySongsExtraIcons />
             </Stack>
           );
@@ -147,8 +134,8 @@ const Top100Mobile = () => {
   );
 };
 
-Top100Mobile.getLayout = (page: ReactElement) => {
+export default MobileHistory;
+
+MobileHistory.getLayout = (page: React.ReactElement) => {
   return <Layout>{page}</Layout>;
 };
-
-export default Top100Mobile;

@@ -1,25 +1,60 @@
 import Layout from "@/layouts/main";
 import {
-  Box,
-  HStack,
-  Stack,
-  Table,
-  TableContainer,
-  Tbody,
   Td,
   Th,
-  Thead,
   Tr,
+  Box,
+  Text,
+  Stack,
+  Table,
+  Tbody,
+  Thead,
+  Button,
+  HStack,
+  VStack,
+  TableContainer,
 } from "@chakra-ui/react";
 import { ReactElement } from "react";
+import { CiPlay1 } from "react-icons/ci";
 import { FiDownload } from "react-icons/fi";
+import { BsThreeDots } from "react-icons/bs";
+import { GiMusicSpell } from "react-icons/gi";
 import { GrShareOption } from "react-icons/gr";
 import { MdOutlineLibraryAdd } from "react-icons/md";
 
-const LastPlayedSongs = () => {
+const DesktopRecentlyPlayed = () => {
   return (
     <Box>
-      <Stack mt="30px">
+      <Stack
+        pt="20px"
+        pb="20px"
+        pl="10px"
+        bgColor="green.50"
+        justify="space-between"
+        display={["none", "none", "flex", "flex", "flex"]}
+      >
+        <HStack>
+          <GiMusicSpell size="200px" />
+          <VStack align="left" justify="center" pl="10px">
+            <Text pt="10px" fontSize="40px" fontWeight="bold">
+              Recently Played
+            </Text>
+            <Stack pt="10px" direction="row" align="center" pr="40px" gap={5}>
+              <Button>
+                <CiPlay1 size="30px" />
+                <Text pl="10px" pr="15px">
+                  Play All
+                </Text>
+              </Button>
+              <GrShareOption size="30px" />
+              <BsThreeDots size="30px" />
+              <FiDownload size="30px" />
+            </Stack>
+          </VStack>
+        </HStack>
+      </Stack>
+
+      <Stack mt="30px" display={["none", "none", "flex", "flex", "flex"]}>
         <TableContainer>
           <Table variant="simple">
             <Thead>
@@ -107,8 +142,8 @@ const LastPlayedSongs = () => {
   );
 };
 
-LastPlayedSongs.getLayout = (page: ReactElement) => {
+DesktopRecentlyPlayed.getLayout = (page: ReactElement) => {
   return <Layout>{page}</Layout>;
 };
 
-export default LastPlayedSongs;
+export default DesktopRecentlyPlayed;

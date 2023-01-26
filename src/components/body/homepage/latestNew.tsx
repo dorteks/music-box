@@ -6,7 +6,7 @@ import {
 } from "react-icons/bs";
 import { Box, Card, HStack, Stack, Text } from "@chakra-ui/react";
 
-const LatestNews = () => {
+const LatestNew = () => {
   return (
     <Box mt="60px">
       <Stack direction="row" alignItems="center" justify="space-between">
@@ -21,7 +21,7 @@ const LatestNews = () => {
             fontWeight="bold"
             textAlign="center"
           >
-            Latest News
+            Latest New
           </Text>
         </HStack>
         <HStack gap={3}>
@@ -92,4 +92,4 @@ const LatestNews = () => {
   );
 };
 
-export default LatestNews;
+export default LatestNew;

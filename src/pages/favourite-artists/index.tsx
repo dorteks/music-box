@@ -8,12 +8,13 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { ReactElement } from "react";
 import { IoHeadsetOutline } from "react-icons/io5";
 
-const Artists = () => {
+const FavouriteArtists = () => {
   return (
-    <Box>
+    <Box pl={["10px", "10px", "20px", "10px", "20px"]}>
       <Stack direction="row">
         {[
           { byGenre: "All" },
@@ -94,7 +95,18 @@ const Artists = () => {
         })}
       </Stack>
 
-      <Grid templateColumns="repeat(5, 1fr)" justifyItems="center" mt="40px">
+      <Grid
+        templateColumns={[
+          "repeat(3, 1fr)",
+          "repeat(3, 1fr)",
+          "repeat(4, 1fr)",
+          "repeat(4, 1fr)",
+          "repeat(5, 1fr)",
+        ]}
+        justifyItems="center"
+        mt="40px"
+        width={["95vw", "92vw", "97vw", "80vw", "82vw"]}
+      >
         {[
           {
             artistName: "Zinoleesky",
@@ -170,23 +182,32 @@ const Artists = () => {
           },
         ].map((item) => {
           return (
-            <GridItem key="artistName">
-              <Avatar src={item.artistImage} boxSize="230px" />
-              <Text textAlign="center" pt="20px" fontSize="20px">
-                {item.artistName}
-              </Text>
-              <Stack
-                direction="row"
-                justifyContent="center"
-                pt="10px"
-                pb="50px"
-              >
-                <IoHeadsetOutline />
-                <Text fontSize="14px">
-                  {item.likes} {item.unit}
+            <Link key="artistName" href="/songs-by-artist">
+              <GridItem>
+                <Avatar
+                  src={item.artistImage}
+                  boxSize={["90px", "150px", "180px", "180px", "200px"]}
+                />
+                <Text
+                  textAlign="center"
+                  pt="10px"
+                  fontSize={["16px", "18px", "20px", "20px", "20px"]}
+                >
+                  {item.artistName}
                 </Text>
-              </Stack>
-            </GridItem>
+                <Stack
+                  direction="row"
+                  justifyContent="center"
+                  pt="10px"
+                  pb="50px"
+                >
+                  <IoHeadsetOutline />
+                  <Text fontSize={["12px", "12px", "14px", "14px", "14px"]}>
+                    {item.likes} {item.unit}
+                  </Text>
+                </Stack>
+              </GridItem>
+            </Link>
           );
         })}
       </Grid>
@@ -194,8 +215,8 @@ const Artists = () => {
   );
 };
 
-Artists.getLayout = (page: ReactElement) => {
+FavouriteArtists.getLayout = (page: ReactElement) => {
   return <Layout>{page}</Layout>;
 };
 
-export default Artists;
+export default FavouriteArtists;

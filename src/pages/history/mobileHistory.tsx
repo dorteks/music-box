@@ -6,7 +6,7 @@ import { CiPlay1 } from "react-icons/ci";
 import { FiDownload } from "react-icons/fi";
 import { GiMusicSpell } from "react-icons/gi";
 import { GrShareOption } from "react-icons/gr";
-import { DisplaySongsExtraIcons } from "../create-playlist/playlists/mobilePlaylist";
+import { DisplaySongsExtraIcons } from "../playlists/mobilePlaylist";
 
 const MobileHistory = () => {
   return (

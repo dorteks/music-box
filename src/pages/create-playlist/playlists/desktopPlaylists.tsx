@@ -22,13 +22,13 @@ import { GiMusicSpell } from "react-icons/gi";
 import { GrShareOption } from "react-icons/gr";
 import { MdOutlineLibraryAdd } from "react-icons/md";
 import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
-import MobilePLaylist from "./mobilePlaylist";
+// import MobilePLaylist from "./mobilePlaylist";
 
-const Playlists = () => {
+const DesktopPlaylists = () => {
   return (
     <Box>
       {/* code snippet for playlist on mobile device */}
-      <MobilePLaylist />
+      {/* <MobilePLaylist /> */}
       {/* code snippet for playlist on mobile device */}
 
       <Stack
@@ -43,7 +43,7 @@ const Playlists = () => {
           <GiMusicSpell size="200px" />
           <VStack align="left" justify="center" pl="10px">
             <Text>PLAYLIST</Text>
-            <Text pt="10px" fontSize="40px">
+            <Text pt="10px" fontSize="40px" fontWeight="bold">
               Playlist Title #1
             </Text>
             <Stack pt="10px" direction="row" align="center" pr="40px" gap={5}>
@@ -151,8 +151,8 @@ const Playlists = () => {
   );
 };
 
-Playlists.getLayout = (page: ReactElement) => {
+DesktopPlaylists.getLayout = (page: ReactElement) => {
   return <Layout>{page}</Layout>;
 };
 
-export default Playlists;
+export default DesktopPlaylists;

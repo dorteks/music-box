@@ -1,57 +1,14 @@
-import {
-  Box,
-  Text,
-  Stack,
-  Button,
-  HStack,
-  Img,
-  useOutsideClick,
-} from "@chakra-ui/react";
 import Layout from "@/layouts/main";
-import { ReactElement } from "react";
+import { Box, Button, HStack, Img, Stack, Text } from "@chakra-ui/react";
+import React from "react";
+import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
 import { CiPlay1 } from "react-icons/ci";
 import { FiDownload } from "react-icons/fi";
-import { FaPencilAlt } from "react-icons/fa";
-import { GiMusicSpell } from "react-icons/gi";
+// import { GiMusicSpell } from "react-icons/gi";
 import { GrShareOption } from "react-icons/gr";
-import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
-import { MdOutlineLibraryAdd } from "react-icons/md";
-import Link from "next/link";
-import React from "react";
+import { DisplaySongsExtraIcons } from "../create-playlist/playlists/mobilePlaylist";
 
-export const DisplaySongsExtraIcons = () => {
-  const ref = React.useRef(null);
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
-  useOutsideClick({
-    ref: ref,
-    handler: () => setIsModalOpen(false),
-  });
-
-  return (
-    <>
-      {isModalOpen ? (
-        <div ref={ref} onClick={() => setIsModalOpen(false)}>
-          <HStack align="left" gap={5}>
-            <FiDownload
-              size="20px"
-              onClick={() => console.log("button clicked")}
-            />
-            <Link href="">
-              <BsSuitHeart size="20px" />
-            </Link>
-            <MdOutlineLibraryAdd size="20px" />
-          </HStack>
-        </div>
-      ) : (
-        <Button onClick={() => setIsModalOpen(true)}>
-          <BsThreeDots size="20px" />
-        </Button>
-      )}
-    </>
-  );
-};
-
-const MobilePLaylist = () => {
+const MobileFavourite = () => {
   return (
     <Box>
       <Stack
@@ -64,18 +21,19 @@ const MobilePLaylist = () => {
         display={["flex", "flex", "none", "none", "none"]}
       >
         <HStack justify="space-between">
-          <GiMusicSpell size="50px" />
+          <Box boxSize="50px" p="5px">
+            <BsSuitHeart size="50px" />
+          </Box>
+
           <HStack gap={4} pr="20px">
-            <FaPencilAlt size="25px" />
             <GrShareOption size="25px" />
             <BsThreeDots size="25px" />
           </HStack>
         </HStack>
         <HStack justify="space-between" pr="20px">
-          <Text pt="20px" fontSize="25px">
-            Playlist Title #1
+          <Text pt="20px" fontSize="30px" fontWeight="bold">
+            Liked Songs
           </Text>
-          <BsSuitHeart size="30px" />
         </HStack>
         <Stack
           pt="30px"
@@ -179,8 +137,8 @@ const MobilePLaylist = () => {
   );
 };
 
-MobilePLaylist.getLayout = (page: ReactElement) => {
+export default MobileFavourite;
+
+MobileFavourite.getLayout = (page: React.ReactElement) => {
   return <Layout>{page}</Layout>;
 };
-
-export default MobilePLaylist;

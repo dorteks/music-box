@@ -1,4 +1,4 @@
-import LatestNews from "./latestNews";
+import LatestNews from "./latestNew";
 import { Box } from "@chakra-ui/react";
 import ExploreMusic from "./exploreMusic";
 import MoreToExplore from "./moreToExplore";

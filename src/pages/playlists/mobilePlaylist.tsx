@@ -7,6 +7,8 @@ import {
   Img,
   useOutsideClick,
 } from "@chakra-ui/react";
+import React from "react";
+import Link from "next/link";
 import Layout from "@/layouts/main";
 import { ReactElement } from "react";
 import { CiPlay1 } from "react-icons/ci";
@@ -14,10 +16,8 @@ import { FiDownload } from "react-icons/fi";
 import { FaPencilAlt } from "react-icons/fa";
 import { GiMusicSpell } from "react-icons/gi";
 import { GrShareOption } from "react-icons/gr";
-import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
 import { MdOutlineLibraryAdd } from "react-icons/md";
-import Link from "next/link";
-import React from "react";
+import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
 
 export const DisplaySongsExtraIcons = () => {
   const ref = React.useRef(null);
@@ -58,9 +58,9 @@ const MobilePLaylist = () => {
         pt="20px"
         pb="20px"
         pl="20px"
+        maxWidth="100vw"
         bgColor="green.50"
         justify="space-between"
-        maxWidth="100vw"
         display={["flex", "flex", "none", "none", "none"]}
       >
         <HStack justify="space-between">
@@ -79,11 +79,11 @@ const MobilePLaylist = () => {
         </HStack>
         <Stack
           pt="30px"
+          gap={[0, 5]}
+          align="center"
           direction="row"
           justify="center"
-          align="center"
           pr={["10px", "40px"]}
-          gap={[0, 5]}
         >
           <Button width={["140px", "220px"]}>
             <CiPlay1 size="30px" />

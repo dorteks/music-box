@@ -37,7 +37,7 @@ export const MainCategories = () => {
         mt="10px"
         mb="20px"
         ml="25px"
-        fontSize="12px"
+        fontSize="13px"
         color="gray.700"
         fontWeight="bold"
       >
@@ -110,7 +110,7 @@ export const YourMusic = () => {
         mt="40px"
         mb="20px"
         ml="25px"
-        fontSize="12px"
+        fontSize="13px"
         color="gray.700"
         fontWeight="bold"
       >
@@ -173,7 +173,7 @@ export const YourPlaylists = () => {
         mt="40px"
         mb="20px"
         ml="25px"
-        fontSize="12px"
+        fontSize="13px"
         color="gray.700"
         fontWeight="bold"
       >
@@ -181,7 +181,7 @@ export const YourPlaylists = () => {
       </Text>
       {[
         {
-          href: `/playlist/{playlist.name}`,
+          href: `/playlists`,
           title: "Playlist Title #1",
           icon: <GiMusicSpell />,
         },
@@ -262,20 +262,22 @@ export const YourPlaylists = () => {
 export const YourFavouriteArtist = () => {
   return (
     <Box>
-      <Text
-        mt="40px"
-        mb="20px"
-        ml="25px"
-        fontSize="12px"
-        color="gray.700"
-        fontWeight="bold"
-      >
-        YOUR FAVOURITE ARTIST
-      </Text>
+      <Link href="/favourite-artists">
+        <Text
+          mt="40px"
+          mb="20px"
+          ml="25px"
+          fontSize="13px"
+          color="gray.700"
+          fontWeight="bold"
+        >
+          YOUR FAVOURITE ARTIST
+        </Text>
+      </Link>
 
       {[
         {
-          href: `/favourite-artist/{artist.name}`,
+          href: `/songs-by-artist/`,
           artistName: "Billie Eilish",
           artistImage: <IoMdHome />,
         },
@@ -345,7 +347,7 @@ export const YourLastSongs = () => {
         mt="40px"
         mb="20px"
         ml="25px"
-        fontSize="12px"
+        fontSize="13px"
         color="gray.700"
         fontWeight="bold"
       >

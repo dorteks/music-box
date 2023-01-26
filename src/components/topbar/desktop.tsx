@@ -12,7 +12,7 @@ const DesktopTopbar = () => {
       pr={["0", "0", "0", "30px", "50px"]}
       pl="20px"
       bgColor="red"
-      maxWidth={["0", "0", "0", "84vw", "85vw"]}
+      maxWidth={["0", "0", "0", "84vw", "86vw"]}
       alignItems="center"
       justifyContent="space-between"
       backgroundColor={["none", "none", "none", "yellow", "blue"]}

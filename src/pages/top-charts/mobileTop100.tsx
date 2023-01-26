@@ -7,7 +7,7 @@ import { FaPencilAlt } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { GiMusicSpell } from "react-icons/gi";
 import { GrShareOption } from "react-icons/gr";
-import { DisplaySongsExtraIcons } from "../create-playlist/playlists/mobilePlaylist";
+import { DisplaySongsExtraIcons } from "../playlists/mobilePlaylist";
 
 const Top100Mobile = () => {
   return (

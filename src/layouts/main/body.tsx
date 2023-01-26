@@ -1,6 +1,7 @@
+import React from "react";
 import Topbar from "@/components/topbar";
 import { GridItem, Stack } from "@chakra-ui/react";
-import React from "react";
+// import PlayOnScreen from "@/pages/play-on-screen";
 
 type Props = {
   children: React.ReactNode;
@@ -11,6 +12,7 @@ const LayoutBody = (props: Props) => {
     <GridItem bgColor="white">
       <Topbar />
       <Stack direction="column">{props.children}</Stack>
+      {/* <PlayOnScreen /> */}
     </GridItem>
   );
 };

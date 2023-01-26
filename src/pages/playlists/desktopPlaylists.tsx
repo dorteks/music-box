@@ -22,15 +22,10 @@ import { GiMusicSpell } from "react-icons/gi";
 import { GrShareOption } from "react-icons/gr";
 import { MdOutlineLibraryAdd } from "react-icons/md";
 import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
-// import MobilePLaylist from "./mobilePlaylist";
 
 const DesktopPlaylists = () => {
   return (
     <Box>
-      {/* code snippet for playlist on mobile device */}
-      {/* <MobilePLaylist /> */}
-      {/* code snippet for playlist on mobile device */}
-
       <Stack
         pt="20px"
         pb="20px"

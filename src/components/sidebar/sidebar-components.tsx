@@ -343,19 +343,21 @@ export const YourFavouriteArtist = () => {
 export const YourLastSongs = () => {
   return (
     <Box>
-      <Text
-        mt="40px"
-        mb="20px"
-        ml="25px"
-        fontSize="13px"
-        color="gray.700"
-        fontWeight="bold"
-      >
-        YOUR LAST SONGS
-      </Text>
+      <Link href="/recently-played">
+        <Text
+          mt="40px"
+          mb="20px"
+          ml="25px"
+          fontSize="13px"
+          color="gray.700"
+          fontWeight="bold"
+        >
+          YOUR LAST SONGS
+        </Text>
+      </Link>
       {[
         {
-          href: `/last-song/{song.name}`,
+          href: "",
           trackTitle: "Buffer",
           artistName: "BTS",
           trackImage: <IoMdHome />,

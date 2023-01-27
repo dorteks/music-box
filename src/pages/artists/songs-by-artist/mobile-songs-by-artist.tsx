@@ -14,7 +14,7 @@ import { CiPlay1 } from "react-icons/ci";
 import { FiDownload } from "react-icons/fi";
 import { GrShareOption } from "react-icons/gr";
 import { BsThreeDots, BsSuitHeart } from "react-icons/bs";
-import { DisplaySongsExtraIcons } from "../playlists/mobilePlaylist";
+import { DisplaySongsExtraIcons } from "@/pages/playlists/mobilePlaylist";
 
 const MobileSongsByArtist = () => {
   return (

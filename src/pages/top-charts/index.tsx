@@ -8,13 +8,33 @@ const Charts = () => {
     <Box
       pt="50px"
       pl={["20px", "30px", "30px", "30px", "30px"]}
-      maxWidth={["96vw", "96vw", "95vw", "80vw", "90vw"]}
+      maxWidth={["96vw", "96vw", "95vw", "80vw", "83vw"]}
     >
       <Stack>
         <Heading size="md">Weekly Charts</Heading>
 
         <HStack gap="5" overflowX="scroll">
           {[
+            {
+              chartImage: "/images/top100naija.jpeg",
+              chartTitle: "Top 100 Nigeria",
+            },
+            {
+              chartImage: "/images/top100africa.jpeg",
+              chartTitle: "Top 100 Africa",
+            },
+            {
+              chartImage: "/images/topGospel.jpeg",
+              chartTitle: "Top 100 Gospel",
+            },
+            {
+              chartImage: "/images/top100international.jpeg",
+              chartTitle: "Top 100 International",
+            },
+            {
+              chartImage: "/images/topGospel.jpeg",
+              chartTitle: "Top 100 Gospel",
+            },
             {
               chartImage: "/images/top100naija.jpeg",
               chartTitle: "Top 100 Nigeria",
@@ -77,6 +97,26 @@ const Charts = () => {
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
+            {
+              chartImage: "/images/top100naija.jpeg",
+              chartTitle: "Top 100 Nigeria",
+            },
+            {
+              chartImage: "/images/top100africa.jpeg",
+              chartTitle: "Top 100 Africa",
+            },
+            {
+              chartImage: "/images/topGospel.jpeg",
+              chartTitle: "Top 100 Gospel",
+            },
+            {
+              chartImage: "/images/top100international.jpeg",
+              chartTitle: "Top 100 International",
+            },
+            {
+              chartImage: "/images/topGospel.jpeg",
+              chartTitle: "Top 100 Gospel",
+            },
           ].map((item) => {
             return (
               <Link key="chartTitle" href="/top-charts/top100Naija">
@@ -99,6 +139,26 @@ const Charts = () => {
 
         <HStack gap="5" overflowX="scroll">
           {[
+            {
+              chartImage: "/images/top100naija.jpeg",
+              chartTitle: "Top 100 Nigeria",
+            },
+            {
+              chartImage: "/images/top100africa.jpeg",
+              chartTitle: "Top 100 Africa",
+            },
+            {
+              chartImage: "/images/topGospel.jpeg",
+              chartTitle: "Top 100 Gospel",
+            },
+            {
+              chartImage: "/images/top100international.jpeg",
+              chartTitle: "Top 100 International",
+            },
+            {
+              chartImage: "/images/topGospel.jpeg",
+              chartTitle: "Top 100 Gospel",
+            },
             {
               chartImage: "/images/top100naija.jpeg",
               chartTitle: "Top 100 Nigeria",

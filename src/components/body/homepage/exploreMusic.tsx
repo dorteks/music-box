@@ -3,6 +3,63 @@ import { BiPlayCircle } from "react-icons/bi";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import { Box, Card, Heading, Text, Stack, HStack } from "@chakra-ui/react";
 
+const exploreData = [
+  {
+    lineColor: "green",
+    playButtonColor: "purple",
+    blogTitle: "WATCH NOW",
+    heading: "Our New Video Series Breaks Down",
+    subHeading: "The Lates and Greatest in Music",
+    image: "/images/DojaCat.png",
+    imageText: "Doja Cat",
+  },
+  {
+    lineColor: "red",
+    playButtonColor: "blue",
+    blogTitle: "NEW ALBUM + INTERVIEW",
+    heading: "TIKUKU",
+    subHeading: "Candy Bleakz",
+    image: "/images/CandyBleakz.webp",
+    imageText: "Candy Bleakz",
+  },
+  {
+    lineColor: "blue",
+    playButtonColor: "red",
+    blogTitle: "UPDATED PLAYLIST",
+    heading: "Today's Country",
+    subHeading: "Special For You",
+    image: "/images/mettalica.jpg",
+    imageText: "Mettalica",
+  },
+  {
+    lineColor: "green",
+    playButtonColor: "purple",
+    blogTitle: "WATCH NOW",
+    heading: "Our New Video Series Breaks Down",
+    subHeading: "The Lates and Greatest in Music",
+    image: "/images/DojaCat.png",
+    imageText: "Doja Cat",
+  },
+  {
+    lineColor: "red",
+    playButtonColor: "blue",
+    blogTitle: "NEW ALBUM + INTERVIEW",
+    heading: "TIKUKU",
+    subHeading: "Candy Bleakz",
+    image: "/images/CandyBleakz.webp",
+    imageText: "Candy Bleakz",
+  },
+  {
+    lineColor: "blue",
+    playButtonColor: "red",
+    blogTitle: "UPDATED PLAYLIST",
+    heading: "Today's Country",
+    subHeading: "Special For You",
+    image: "/images/mettalica.jpg",
+    imageText: "Mettalica",
+  },
+];
+
 const ExploreMusic = () => {
   return (
     <Box mt="50px">
@@ -15,62 +72,7 @@ const ExploreMusic = () => {
       </HStack>
 
       <Stack direction="row" gap={[5, 7, 4, 4, 5]} overflowX="scroll">
-        {[
-          {
-            lineColor: "green",
-            playButtonColor: "purple",
-            blogTitle: "WATCH NOW",
-            heading: "Our New Video Series Breaks Down",
-            subHeading: "The Lates and Greatest in Music",
-            image: "/images/DojaCat.png",
-            imageText: "Doja Cat",
-          },
-          {
-            lineColor: "red",
-            playButtonColor: "blue",
-            blogTitle: "NEW ALBUM + INTERVIEW",
-            heading: "TIKUKU",
-            subHeading: "Candy Bleakz",
-            image: "/images/CandyBleakz.webp",
-            imageText: "Candy Bleakz",
-          },
-          {
-            lineColor: "blue",
-            playButtonColor: "red",
-            blogTitle: "UPDATED PLAYLIST",
-            heading: "Today's Country",
-            subHeading: "Special For You",
-            image: "/images/mettalica.jpg",
-            imageText: "Mettalica",
-          },
-          {
-            lineColor: "green",
-            playButtonColor: "purple",
-            blogTitle: "WATCH NOW",
-            heading: "Our New Video Series Breaks Down",
-            subHeading: "The Lates and Greatest in Music",
-            image: "/images/DojaCat.png",
-            imageText: "Doja Cat",
-          },
-          {
-            lineColor: "red",
-            playButtonColor: "blue",
-            blogTitle: "NEW ALBUM + INTERVIEW",
-            heading: "TIKUKU",
-            subHeading: "Candy Bleakz",
-            image: "/images/CandyBleakz.webp",
-            imageText: "Candy Bleakz",
-          },
-          {
-            lineColor: "blue",
-            playButtonColor: "red",
-            blogTitle: "UPDATED PLAYLIST",
-            heading: "Today's Country",
-            subHeading: "Special For You",
-            image: "/images/mettalica.jpg",
-            imageText: "Mettalica",
-          },
-        ].map((item) => {
+        {exploreData.map((item) => {
           return (
             <Stack
               key="exploreMusicHome"

@@ -73,12 +73,6 @@ const Radio = () => {
               bgColor="red.50"
               justifyContent="space-around"
             >
-              {/* <Box
-                height="15px"
-                bgImage="/images/wave.jpeg"
-                bgColor="red.50"
-                justifyContent="space-between"
-              /> */}
               <Stack direction="row" alignContent="center">
                 <Img
                   display={["none", "none", "flex", "flex", "flex"]}
@@ -86,7 +80,7 @@ const Radio = () => {
                   width={["150px", "200px", "200px", "200px", "250px"]}
                   src="images/headphone.jpeg"
                 />
-                <VStack justify="center" align="left">
+                <VStack justify="center">
                   <HStack>
                     <Heading size={["sm", "md", "lg", "lg", "lg"]} pr="20px">
                       {item.radioStationName}
@@ -109,7 +103,7 @@ const Radio = () => {
                   borderRadius="40px"
                   bgColor="blackAlpha.400"
                 >
-                  <CiPlay1 size={["10px", "10px", "30px", "50px", "50px"]} />
+                  {/* <CiPlay1 size={["10px", "10px", "30px", "50px", "50px"]} /> */}
                 </Box>
               </Stack>
             </Card>

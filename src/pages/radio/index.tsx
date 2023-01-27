@@ -68,44 +68,42 @@ const Radio = () => {
           return (
             <Card
               key="radioStationName"
-              width={["90vw", "90vw", "90vw", "90vw", "70vw"]}
-              height="300px"
+              width={["95vw", "95vw", "95vw", "75vw", "70vw"]}
+              height={["200px", "200px", "250px", "300px", "300px"]}
               bgColor="red.50"
+              justifyContent="space-around"
             >
-              <Box
-                width={["90vw", "90vw", "90vw", "90vw", "70vw"]}
-                height="15px"
-                bgImage="/images/wave.jpeg"
-                bgColor="red.50"
-                justifyContent="space-between"
-              />
               <Stack direction="row" alignContent="center">
                 <Img
-                  boxSize="275px"
-                  width="300px"
+                  display={["none", "none", "flex", "flex", "flex"]}
+                  boxSize={["150px", "200px", "200px", "200px", "250px"]}
+                  width={["150px", "200px", "200px", "200px", "250px"]}
                   src="images/headphone.jpeg"
                 />
-                <VStack pl="175px" pr="50px" align="left" justify="center">
+                <VStack justify="center">
                   <HStack>
-                    <Heading size="lg" pr="20px">
+                    <Heading size={["sm", "md", "lg", "lg", "lg"]} pr="20px">
                       {item.radioStationName}
                     </Heading>
 
                     <FiBarChart2 size="25px" />
                   </HStack>
-                  <Text pt="20px" fontSize="16px">
+                  <Text
+                    pt="20px"
+                    fontSize={["12px", "12px", "16px", "16px", "16px"]}
+                  >
                     {item.genres}
                   </Text>
                 </VStack>
                 <Box
                   p="15px"
                   ml="50px"
-                  boxSize="80px"
+                  boxSize={["60px", "60px", "60px", "80px", "80px"]}
                   alignSelf="center"
                   borderRadius="40px"
                   bgColor="blackAlpha.400"
                 >
-                  <CiPlay1 size="50px" />
+                  {/* <CiPlay1 size={["10px", "10px", "30px", "50px", "50px"]} /> */}
                 </Box>
               </Stack>
             </Card>
@@ -175,47 +173,52 @@ const Radio = () => {
           { radioStationName: "560 Smooth Jazz", likes: "40.0", unit: "K" },
           { radioStationName: "Real 99.1 FM Aba", likes: "748.0", unit: "K" },
           { radioStationName: "560 Power Country", likes: "2.0", unit: "M" },
+          { radioStationName: "560 Power Country", likes: "57.0", unit: "K" },
+          { radioStationName: "560 Smooth Jazz", likes: "40.0", unit: "K" },
+          { radioStationName: "Real 99.1 FM Aba", likes: "748.0", unit: "K" },
+          { radioStationName: "560 Power Country", likes: "2.0", unit: "M" },
         ].map((item) => {
           return (
-            <Stack
-              key="radioStationName"
-              w={["90vw", "90vw", "90vw", "75vw", "78vw"]}
-              direction="row"
-              pt="20px"
-              pl={["", "10px", "20px", "30px", "30px"]}
-              justify="space-between"
-            >
-              <HStack>
-                <Card
-                  width={["60px", "80px", "95px", "100px", "100px"]}
-                  height={["60px", "80px", "95px", "100px", "100px"]}
-                  bgImage="/images/radio2.jpeg"
-                ></Card>
-                <Stack
-                  pl={["10px", "30px", "30px", "30px", "30px"]}
-                  direction="column"
-                  justify="space-evenly"
-                >
-                  <Text> {item.radioStationName} </Text>
-                  <HStack>
-                    <IoHeadsetOutline />
-                    <Text>
-                      {item.likes} {item.unit}
-                    </Text>
-                  </HStack>
-                </Stack>
-              </HStack>
-
-              <Box
-                p={["5px", "10px", "15px", "15px", "15px"]}
-                boxSize={["50px", "60px", "70px", "70px", "70px"]}
-                alignSelf="center"
-                borderRadius="40px"
-                bgColor="blackAlpha.400"
+            <Link key="radioStationName" href="/radio/listen-radio">
+              <Stack
+                w={["90vw", "90vw", "90vw", "75vw", "78vw"]}
+                direction="row"
+                pt="20px"
+                pl={["", "10px", "20px", "30px", "30px"]}
+                justify="space-between"
               >
-                <CiPlay1 size="40px" />
-              </Box>
-            </Stack>
+                <HStack>
+                  <Card
+                    width={["60px", "80px", "95px", "100px", "100px"]}
+                    height={["60px", "80px", "95px", "100px", "100px"]}
+                    bgImage="/images/radio2.jpeg"
+                  ></Card>
+                  <Stack
+                    pl={["10px", "30px", "30px", "30px", "30px"]}
+                    direction="column"
+                    justify="space-evenly"
+                  >
+                    <Text> {item.radioStationName} </Text>
+                    <HStack>
+                      <IoHeadsetOutline />
+                      <Text>
+                        {item.likes} {item.unit}
+                      </Text>
+                    </HStack>
+                  </Stack>
+                </HStack>
+
+                <Box
+                  p={["5px", "10px", "15px", "15px", "15px"]}
+                  boxSize={["50px", "60px", "70px", "70px", "70px"]}
+                  alignSelf="center"
+                  borderRadius="40px"
+                  bgColor="blackAlpha.400"
+                >
+                  <CiPlay1 size="40px" />
+                </Box>
+              </Stack>
+            </Link>
           );
         })}
       </Stack>

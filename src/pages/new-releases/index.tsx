@@ -76,6 +76,11 @@ const PersonalReleases = () => {
             title: "FLOAT",
             artiste: "KCAMP",
           },
+          {
+            image: "/images/DojaCat.png",
+            title: "FLOAT",
+            artiste: "KCAMP",
+          },
         ].map((item) => {
           return (
             <GridItem key="item" pt="20px">

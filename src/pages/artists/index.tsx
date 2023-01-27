@@ -182,7 +182,7 @@ const FavouriteArtists = () => {
           },
         ].map((item) => {
           return (
-            <Link key="artistName" href="/songs-by-artist">
+            <Link key="artistName" href="artists/songs-by-artist">
               <GridItem>
                 <Avatar
                   src={item.artistImage}

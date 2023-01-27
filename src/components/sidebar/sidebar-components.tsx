@@ -191,7 +191,7 @@ export const YourPlaylists = () => {
           icon: <GiMusicSpell />,
         },
         { href: "", title: "Best Music", icon: <GiMusicSpell /> },
-        { href: "/hits_of_90s", title: "Hits of 90s ", icon: <GiMusicSpell /> },
+        { href: "", title: "Hits of 90s ", icon: <GiMusicSpell /> },
         {
           href: "",
           title: "Classic Music",
@@ -205,7 +205,11 @@ export const YourPlaylists = () => {
         { href: "", title: "Slipknot", icon: <GiMusicSpell /> },
       ].map((item) => {
         return (
-          <Link key="yourPlaylist" href={item.href}>
+          <Link
+            key="yourPlaylist"
+            // href={item.href}
+            href="/playlists"
+          >
             <Stack
               p="13px"
               pl="25px"
@@ -262,7 +266,7 @@ export const YourPlaylists = () => {
 export const YourFavouriteArtist = () => {
   return (
     <Box>
-      <Link href="/favourite-artists">
+      <Link href="/artists">
         <Text
           mt="40px"
           mb="20px"
@@ -277,7 +281,7 @@ export const YourFavouriteArtist = () => {
 
       {[
         {
-          href: `/songs-by-artist/`,
+          href: `/artists/songs-by-artist/`,
           artistName: "Billie Eilish",
           artistImage: <IoMdHome />,
         },

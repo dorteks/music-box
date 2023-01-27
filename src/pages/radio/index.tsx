@@ -185,9 +185,8 @@ const Radio = () => {
           { radioStationName: "560 Power Country", likes: "2.0", unit: "M" },
         ].map((item) => {
           return (
-            <Link href="/radio/listen-radio">
+            <Link key="radioStationName" href="/radio/listen-radio">
               <Stack
-                key="radioStationName"
                 w={["90vw", "90vw", "90vw", "75vw", "78vw"]}
                 direction="row"
                 pt="20px"

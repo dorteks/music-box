@@ -153,7 +153,7 @@ const MobileSongsByArtist = () => {
         ].map((item) => {
           return (
             <Stack
-              key="id"
+              key={item.id}
               h="60px"
               pb="10px"
               align="center"

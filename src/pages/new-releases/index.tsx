@@ -22,68 +22,80 @@ const PersonalReleases = () => {
       >
         {[
           {
+            id: 1,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 2,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 3,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 4,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 5,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 6,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 7,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 8,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 9,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 10,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 11,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 12,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
         ].map((item) => {
           return (
-            <GridItem key="item" pt="20px">
+            <GridItem key={item.id} pt="20px">
               <Card
                 w={["160px", "210px", "210px", "250px", "230px"]}
                 h={["160px", "210px", "220px", "220px", "220px"]}

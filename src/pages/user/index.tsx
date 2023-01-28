@@ -5,9 +5,7 @@ const User = () => {
     <Box>
       <Text>User</Text>
       <Text>user@demo.com</Text>
-
       <Text>Full Profile</Text>
-
       <Text>Log Out</Text>
     </Box>
   );

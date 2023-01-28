@@ -44,23 +44,30 @@ export const MainCategories = () => {
         MAIN CATEGORIES
       </Text>
       {[
-        { href: "/", title: "Home", icon: <IoMdHome /> },
-        { href: "/explore", title: "Explore", icon: <FaCompass /> },
+        { id: 1, href: "/", title: "Home", icon: <IoMdHome /> },
+        { id: 2, href: "/explore", title: "Explore", icon: <FaCompass /> },
         {
+          id: 3,
           href: "/new-releases",
           title: "New Releases",
           icon: <BsCalendarEvent />,
         },
-        { href: "/top-charts", title: "Top Charts", icon: <BiNetworkChart /> },
-        { href: "/radio", title: "Radio", icon: <CgEditBlackPoint /> },
         {
+          id: 4,
+          href: "/top-charts",
+          title: "Top Charts",
+          icon: <BiNetworkChart />,
+        },
+        { id: 5, href: "/radio", title: "Radio", icon: <CgEditBlackPoint /> },
+        {
+          id: 6,
           href: "/new-releases",
           title: "New Music",
           icon: <BsFillBookmarkFill />,
         },
       ].map((item) => {
         return (
-          <Link key="maincategories" href={item.href}>
+          <Link key={item.id} href={item.href}>
             <Stack
               p="13px"
               pl="25px"
@@ -118,14 +125,15 @@ export const YourMusic = () => {
       </Text>
       {[
         {
+          id: 1,
           href: "/favourite",
           title: "Favourite",
           icon: <BsSuitHeartFill color="red" />,
         },
-        { href: "/history", title: "History", icon: <GrHistory /> },
+        { id: 2, href: "/history", title: "History", icon: <GrHistory /> },
       ].map((item) => {
         return (
-          <Link key="yourmusic" href={item.href}>
+          <Link key={item.id} href={item.href}>
             <Stack
               p="13px"
               pl="25px"
@@ -181,32 +189,36 @@ export const YourPlaylists = () => {
       </Text>
       {[
         {
+          id: 1,
           href: `/playlists`,
           title: "Playlist Title #1",
           icon: <GiMusicSpell />,
         },
         {
+          id: 2,
           href: "",
           title: "My Rock Collect",
           icon: <GiMusicSpell />,
         },
-        { href: "", title: "Best Music", icon: <GiMusicSpell /> },
-        { href: "", title: "Hits of 90s ", icon: <GiMusicSpell /> },
+        { id: 3, href: "", title: "Best Music", icon: <GiMusicSpell /> },
+        { id: 4, href: "", title: "Hits of 90s ", icon: <GiMusicSpell /> },
         {
+          id: 5,
           href: "",
           title: "Classic Music",
           icon: <GiMusicSpell />,
         },
         {
+          id: 6,
           href: "",
           title: "New Pop Music",
           icon: <GiMusicSpell />,
         },
-        { href: "", title: "Slipknot", icon: <GiMusicSpell /> },
+        { id: 7, href: "", title: "Slipknot", icon: <GiMusicSpell /> },
       ].map((item) => {
         return (
           <Link
-            key="yourPlaylist"
+            key={item.id}
             // href={item.href}
             href="/playlists"
           >
@@ -281,30 +293,68 @@ export const YourFavouriteArtist = () => {
 
       {[
         {
+          id: 1,
           href: `/artists/songs-by-artist/`,
           artistName: "Billie Eilish",
           artistImage: <IoMdHome />,
         },
-        { href: "", artistName: "Olivia Rodrigo", artistImage: <IoMdHome /> },
-        { href: "", artistName: "Billie Eilish", artistImage: <IoMdHome /> },
-        { href: "", artistName: "Olivia Rodrigo", artistImage: <IoMdHome /> },
-        { href: "", artistName: "Billie Eilish", artistImage: <IoMdHome /> },
-        { href: "", artistName: "Olivia Rodrigo", artistImage: <IoMdHome /> },
-        { href: "", artistName: "Billie Eilish", artistImage: <IoMdHome /> },
-        { href: "", artistName: "Olivia Rodrigo", artistImage: <IoMdHome /> },
         {
+          id: 2,
+          href: "",
+          artistName: "Olivia Rodrigo",
+          artistImage: <IoMdHome />,
+        },
+        {
+          id: 3,
+          href: "",
+          artistName: "Billie Eilish",
+          artistImage: <IoMdHome />,
+        },
+        {
+          id: 4,
+          href: "",
+          artistName: "Olivia Rodrigo",
+          artistImage: <IoMdHome />,
+        },
+        {
+          id: 5,
+          href: "",
+          artistName: "Billie Eilish",
+          artistImage: <IoMdHome />,
+        },
+        {
+          id: 6,
+          href: "",
+          artistName: "Olivia Rodrigo",
+          artistImage: <IoMdHome />,
+        },
+        {
+          id: 7,
+          href: "",
+          artistName: "Billie Eilish",
+          artistImage: <IoMdHome />,
+        },
+        {
+          id: 8,
+          href: "",
+          artistName: "Olivia Rodrigo",
+          artistImage: <IoMdHome />,
+        },
+        {
+          id: 9,
           href: "",
           artistName: "Billie Eilish",
           artistImage: <Avatar boxSize="20px" />,
         },
         {
+          id: 10,
           href: "",
           artistName: "Georger Harrison Senior",
           artistImage: <Avatar boxSize="20px" />,
         },
       ].map((item) => {
         return (
-          <Link key="favouriteArtist" href={item.href}>
+          <Link key={item.id} href={item.href}>
             <Stack
               p="13px"
               pl="25px"
@@ -361,60 +411,70 @@ export const YourLastSongs = () => {
       </Link>
       {[
         {
+          id: 1,
           href: "",
           trackTitle: "Buffer",
           artistName: "BTS",
           trackImage: <IoMdHome />,
         },
         {
+          id: 2,
           href: "",
           trackTitle: "FEM",
           artistName: "Davido",
           trackImage: <IoMdHome />,
         },
         {
+          id: 3,
           href: "",
           trackTitle: "Buffer",
           artistName: "BTS",
           trackImage: <IoMdHome />,
         },
         {
+          id: 4,
           href: "",
           trackTitle: "FEM",
           artistName: "Davido",
           trackImage: <IoMdHome />,
         },
         {
+          id: 5,
           href: "",
           trackTitle: "Buffer",
           artistName: "BTS",
           trackImage: <IoMdHome />,
         },
         {
+          id: 6,
           href: "",
           trackTitle: "FEM",
           artistName: "Davido",
           trackImage: <IoMdHome />,
         },
         {
+          id: 7,
           href: "",
           trackTitle: "Buffer",
           artistName: "BTS",
           trackImage: <IoMdHome />,
         },
         {
+          id: 8,
           href: "",
           trackTitle: "FEM",
           artistName: "Davido",
           trackImage: <IoMdHome />,
         },
         {
+          id: 9,
           href: "",
           trackTitle: "Buffer",
           artistName: "BTS",
           trackImage: <IoMdHome />,
         },
         {
+          id: 10,
           href: "",
           trackTitle: "FEM",
           artistName: "Davido",
@@ -422,7 +482,7 @@ export const YourLastSongs = () => {
         },
       ].map((item) => {
         return (
-          <Link key="lastSongs" href={item.href}>
+          <Link key={item.id} href={item.href}>
             <Stack
               p="13px"
               pl="25px"

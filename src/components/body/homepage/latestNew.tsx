@@ -33,43 +33,50 @@ const LatestNew = () => {
       <HStack mt="30px" gap={3} overflowX="scroll">
         {[
           {
+            id: 1,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 2,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 3,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 4,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 5,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 6,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 7,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
         ].map((item) => {
           return (
-            <div key="latestNews">
+            <div key={item.id}>
               <Card minWidth="225px" h="220px" backgroundImage={item.image}>
                 <Box w="40px" mt="30px" ml="150px">
                   <BsPlayCircleFill size="sm" />

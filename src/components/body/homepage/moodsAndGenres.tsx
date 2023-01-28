@@ -48,28 +48,27 @@ const MoodsAndGenres = () => {
 
       <Grid templateColumns={["repeat(4, 1fr)"]} gap={3} mt="30px">
         {[
-          { href: "", genre: "Metal & Hardcore" },
-          { href: "", genre: "Good Mood" },
-          { href: "", genre: "Popular Music" },
-          { href: "", genre: "Dance & Electronic" },
-          { href: "", genre: "R & B" },
-          { href: "", genre: "Amapiano" },
-          { href: "", genre: "Traditional" },
-          { href: "", genre: "Dancehall" },
-          { href: "", genre: "Gospel" },
-          { href: "", genre: "Hip Hop $ Rap" },
-          { href: "", genre: "Pop" },
-          { href: "", genre: "Classical" },
-          { href: "", genre: "Fuji" },
-          { href: "", genre: "Juju" },
-          { href: "", genre: "Reggae" },
-          { href: "", genre: "Traditional" },
+          { id: 16, href: "", genre: "Metal & Hardcore" },
+          { id: 1, href: "", genre: "Good Mood" },
+          { id: 2, href: "", genre: "Popular Music" },
+          { id: 3, href: "", genre: "Dance & Electronic" },
+          { id: 4, href: "", genre: "R & B" },
+          { id: 5, href: "", genre: "Amapiano" },
+          { id: 6, href: "", genre: "Traditional" },
+          { id: 7, href: "", genre: "Dancehall" },
+          { id: 8, href: "", genre: "Gospel" },
+          { id: 9, href: "", genre: "Hip Hop $ Rap" },
+          { id: 10, href: "", genre: "Pop" },
+          { id: 11, href: "", genre: "Classical" },
+          { id: 12, href: "", genre: "Fuji" },
+          { id: 13, href: "", genre: "Juju" },
+          { id: 14, href: "", genre: "Reggae" },
+          { id: 15, href: "", genre: "Traditional" },
         ].map((item) => {
           return (
-            <GridItem key="moodAndGenre">
+            <GridItem key={item.id}>
               <Link href={item.href}>
                 <Card
-                  // key="moodAndGenre"
                   bgColor="purple.300"
                   flexDirection="row"
                   pl="10px"

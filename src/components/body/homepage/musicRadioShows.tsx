@@ -34,36 +34,43 @@ const MusicRadioShows = () => {
       <HStack mt="30px" gap={3} overflowX="scroll">
         {[
           {
+            id: 1,
             image: "/images/DojaCat.png",
             radioName: "Radio with Carley Pierce",
           },
           {
+            id: 2,
             image: "/images/DojaCat.png",
             radioName: "Glydezone Radio with Funk",
           },
           {
+            id: 3,
             image: "/images/DojaCat.png",
             radioName: "The New Australia Radio",
           },
           {
+            id: 4,
             image: "/images/DojaCat.png",
             radioName: "Everything together Radio",
           },
           {
+            id: 5,
             image: "/images/DojaCat.png",
             radioName: "Glydezone Radio with Funk",
           },
           {
+            id: 6,
             image: "/images/DojaCat.png",
             radioName: "The New Australia Radio",
           },
           {
+            id: 7,
             image: "/images/DojaCat.png",
             radioName: "Everything together Radio",
           },
         ].map((item) => {
           return (
-            <Link key="musicRadioShows" href="/radio/listen-radio">
+            <Link key={item.id} href="/radio/listen-radio">
               <Box>
                 <Card minWidth="220px" h="180px" backgroundImage={item.image}>
                   <Box w="40px" mt="20px" ml="20px">

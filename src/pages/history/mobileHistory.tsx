@@ -105,7 +105,7 @@ const MobileHistory = () => {
         ].map((item) => {
           return (
             <Stack
-              key="id"
+              key={item.id}
               direction="row"
               h="60px"
               align="center"

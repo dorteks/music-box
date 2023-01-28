@@ -5,6 +5,7 @@ import { Box, Card, Heading, Text, Stack, HStack } from "@chakra-ui/react";
 
 const exploreData = [
   {
+    id: 6,
     lineColor: "green",
     playButtonColor: "purple",
     blogTitle: "WATCH NOW",
@@ -12,8 +13,10 @@ const exploreData = [
     subHeading: "The Lates and Greatest in Music",
     image: "/images/DojaCat.png",
     imageText: "Doja Cat",
+    song: "/tikuku.mp3",
   },
   {
+    id: 5,
     lineColor: "red",
     playButtonColor: "blue",
     blogTitle: "NEW ALBUM + INTERVIEW",
@@ -21,8 +24,10 @@ const exploreData = [
     subHeading: "Candy Bleakz",
     image: "/images/CandyBleakz.webp",
     imageText: "Candy Bleakz",
+    song: "/tikuku.mp3",
   },
   {
+    id: 4,
     lineColor: "blue",
     playButtonColor: "red",
     blogTitle: "UPDATED PLAYLIST",
@@ -30,8 +35,10 @@ const exploreData = [
     subHeading: "Special For You",
     image: "/images/mettalica.jpg",
     imageText: "Mettalica",
+    song: "/tikuku.mp3",
   },
   {
+    id: 1,
     lineColor: "green",
     playButtonColor: "purple",
     blogTitle: "WATCH NOW",
@@ -39,8 +46,10 @@ const exploreData = [
     subHeading: "The Lates and Greatest in Music",
     image: "/images/DojaCat.png",
     imageText: "Doja Cat",
+    song: "/tikuku.mp3",
   },
   {
+    id: 2,
     lineColor: "red",
     playButtonColor: "blue",
     blogTitle: "NEW ALBUM + INTERVIEW",
@@ -48,8 +57,10 @@ const exploreData = [
     subHeading: "Candy Bleakz",
     image: "/images/CandyBleakz.webp",
     imageText: "Candy Bleakz",
+    song: "/tikuku.mp3",
   },
   {
+    id: 3,
     lineColor: "blue",
     playButtonColor: "red",
     blogTitle: "UPDATED PLAYLIST",
@@ -57,10 +68,24 @@ const exploreData = [
     subHeading: "Special For You",
     image: "/images/mettalica.jpg",
     imageText: "Mettalica",
+    song: "/tikuku.mp3",
   },
 ];
 
 const ExploreMusic = () => {
+  // useEffect(() => {
+  //   const htmlaudio: HTMLAudioElement = new Audio("/tikuku.mp3");
+  //   console.log(htmlaudio, "htmlaudio from explore");
+
+  //   const playButton = () => {
+  //     return <Button onClick={() => htmlaudio.play()}>PLay</Button>;
+  //   };
+
+  //   const pauseButton = () => {
+  //     return <Button onClick={() => htmlaudio.pause()}>Pause</Button>;
+  //   };
+  // }, []);
+
   return (
     <Box mt="50px">
       <HStack justify="space-between">
@@ -75,7 +100,7 @@ const ExploreMusic = () => {
         {exploreData.map((item) => {
           return (
             <Stack
-              key="exploreMusicHome"
+              key={item.id}
               direction="column"
               maxWidth={["350px", "330px", "300px", "300px", "300px"]}
             >

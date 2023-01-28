@@ -37,6 +37,7 @@ const ExploreSong = () => {
         //   blogParag4: "",
         // },
         {
+          id: 1,
           blog: "NEW ALBUM RELEASES BY ONE OF THE MOST IMPRESSIVE AND MESMERISING FEMALE TALENTS OF THIS GENERATION, DOJA CAT",
           blogAuthor: "Dorteks",
           date: "20th January, 2023",
@@ -51,7 +52,7 @@ const ExploreSong = () => {
         },
       ].map((item) => {
         return (
-          <VStack key="blogTitle" gap={4}>
+          <VStack key={item.id} gap={4}>
             <Heading size={["sm", "md", "xl", "xl", "2xl"]} textAlign="center">
               {item.blog}
             </Heading>

@@ -17,25 +17,25 @@ const FavouriteArtists = () => {
     <Box pl={["10px", "10px", "20px", "10px", "20px"]}>
       <Stack direction="row">
         {[
-          { byGenre: "All" },
-          { byGenre: "Afrobeats" },
-          { byGenre: "Afropop" },
-          { byGenre: "Gospel" },
-          { byGenre: "Amapiano" },
-          { byGenre: "Hip Hop & Rap" },
-          { byGenre: "Electronic" },
-          { byGenre: "R & B" },
-          { byGenre: "Dancehall" },
-          { byGenre: "Reggae" },
-          { byGenre: "Fuji" },
-          { byGenre: "Juju" },
-          { byGenre: "Pop" },
-          { byGenre: "Traditional" },
-          { byGenre: "Afropop" },
+          { id: 1, byGenre: "All" },
+          { id: 2, byGenre: "Afrobeats" },
+          { id: 3, byGenre: "Afropop" },
+          { id: 4, byGenre: "Gospel" },
+          { id: 5, byGenre: "Amapiano" },
+          { id: 6, byGenre: "Hip Hop & Rap" },
+          { id: 7, byGenre: "Electronic" },
+          { id: 8, byGenre: "R & B" },
+          { id: 9, byGenre: "Dancehall" },
+          { id: 10, byGenre: "Reggae" },
+          { id: 11, byGenre: "Fuji" },
+          { id: 12, byGenre: "Juju" },
+          { id: 13, byGenre: "Pop" },
+          { id: 14, byGenre: "Traditional" },
+          { id: 15, byGenre: "Afropop" },
         ].map((item) => {
           return (
             <Button
-              key="byGenre"
+              key={item.id}
               fontSize="14px"
               fontWeight="hairline"
               width="fit-content"
@@ -51,14 +51,14 @@ const FavouriteArtists = () => {
 
       <Stack direction="row" mt="20px">
         {[
-          { bySex: "All" },
-          { bySex: "Male" },
-          { bySex: "Female" },
-          { bySex: "Group & Band" },
+          { id: 1, bySex: "All" },
+          { id: 2, bySex: "Male" },
+          { id: 3, bySex: "Female" },
+          { id: 4, bySex: "Group & Band" },
         ].map((item) => {
           return (
             <Button
-              key="bySex"
+              key={item.id}
               fontSize="14px"
               fontWeight="hairline"
               width="fit-content"
@@ -74,14 +74,14 @@ const FavouriteArtists = () => {
 
       <Stack direction="row" mt="20px">
         {[
-          { byCountry: "All" },
-          { byCountry: "Nigerian" },
-          { byCountry: "European & North American" },
-          { byCountry: "Other" },
+          { id: 1, byCountry: "All" },
+          { id: 2, byCountry: "Nigerian" },
+          { id: 3, byCountry: "European & North American" },
+          { id: 4, byCountry: "Other" },
         ].map((item) => {
           return (
             <Button
-              key="byCountry"
+              key={item.id}
               fontSize="14px"
               fontWeight="hairline"
               width="fit-content"
@@ -109,72 +109,84 @@ const FavouriteArtists = () => {
       >
         {[
           {
+            id: 1,
             artistName: "Zinoleesky",
             artistImage: "/images/zinoleesky.jpg",
             likes: "81.4",
             unit: "M",
           },
           {
+            id: 2,
             artistName: "Zinoleesky",
             artistImage: "/images/zinoleesky.jpg",
             likes: "81.4",
             unit: "M",
           },
           {
+            id: 3,
             artistName: "Zinoleesky",
             artistImage: "/images/zinoleesky.jpg",
             likes: "81.4",
             unit: "M",
           },
           {
+            id: 4,
             artistName: "Zinoleesky",
             artistImage: "/images/zinoleesky.jpg",
             likes: "81.4",
             unit: "M",
           },
           {
+            id: 5,
             artistName: "Zinoleesky",
             artistImage: "/images/zinoleesky.jpg",
             likes: "81.4",
             unit: "M",
           },
           {
+            id: 6,
             artistName: "Zinoleesky",
             artistImage: "/images/zinoleesky.jpg",
             likes: "81.4",
             unit: "M",
           },
           {
+            id: 7,
             artistName: "Zinoleesky",
             artistImage: "/images/zinoleesky.jpg",
             likes: "81.4",
             unit: "M",
           },
           {
+            id: 8,
             artistName: "Zinoleesky",
             artistImage: "/images/zinoleesky.jpg",
             likes: "81.4",
             unit: "M",
           },
           {
+            id: 9,
             artistName: "Zinoleesky",
             artistImage: "/images/zinoleesky.jpg",
             likes: "81.4",
             unit: "M",
           },
           {
+            id: 10,
             artistName: "Zinoleesky",
             artistImage: "/images/zinoleesky.jpg",
             likes: "81.4",
             unit: "M",
           },
           {
+            id: 11,
             artistName: "Zinoleesky",
             artistImage: "/images/zinoleesky.jpg",
             likes: "81.4",
             unit: "M",
           },
           {
+            id: 12,
             artistName: "Zinoleesky",
             artistImage: "/images/zinoleesky.jpg",
             likes: "81.4",
@@ -182,7 +194,7 @@ const FavouriteArtists = () => {
           },
         ].map((item) => {
           return (
-            <Link key="artistName" href="artists/songs-by-artist">
+            <Link key={item.id} href="artists/songs-by-artist">
               <GridItem>
                 <Avatar
                   src={item.artistImage}

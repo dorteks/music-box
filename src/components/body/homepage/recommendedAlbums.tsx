@@ -33,26 +33,31 @@ const RecommendedAlbums = () => {
       <HStack mt="30px" gap={[5, 7, 5, 5, 5]} overflowX="scroll">
         {[
           {
+            id: 1,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 2,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 3,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 4,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
           },
           {
+            id: 5,
             image: "/images/DojaCat.png",
             title: "FLOAT",
             artiste: "KCAMP",
@@ -60,7 +65,7 @@ const RecommendedAlbums = () => {
         ].map((item) => {
           return (
             <Card
-              key="recommendedAlbums"
+              key={item.id}
               minWidth={["330px", "300px", "280px", "300px", "300px"]}
               height={["250px", "220px", "220px", "230px", "240px"]}
               backgroundImage={item.image}

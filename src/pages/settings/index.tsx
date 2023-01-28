@@ -44,36 +44,42 @@ const Settings = () => {
 
         {[
           {
+            id: 1,
             title: "Stream via Wi-Fi only ",
             subtitle:
               "To reduce carrier data charges, do not stream music over mobile networks",
           },
           {
+            id: 2,
             title: "Limit mobile data usage ",
             subtitle: "Only stream HD video on Wi-Fi",
           },
           {
+            id: 3,
             title: "Restricted mode ",
             subtitle:
               "Restricted mode hides songs and videos that may contain inappropriate content flagged by users and other signals. No filter is 100% accurate, but it should help you avoid most inappropriate content",
           },
           {
+            id: 4,
             title: "Recommendation notification",
             subtitle:
               "Notify me of music I might like based on what I listen to",
           },
           {
+            id: 5,
             title: "Playlist update notification",
             subtitle: "Notify me when playlists I like are updated",
           },
           {
+            id: 6,
             title: "Product update notification",
             subtitle:
               "Notify me about new features, product news, and tips for getting started on Music-box",
           },
         ].map((item) => {
           return (
-            <Stack key="title" pt="30px">
+            <Stack key={item.id} pt="30px">
               <Heading size="sm">{item.title}</Heading>
               <HStack justify="space-between">
                 <Text width="600px" fontSize="15px">

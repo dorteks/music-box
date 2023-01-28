@@ -117,7 +117,7 @@ const Top100Mobile = () => {
         ].map((item) => {
           return (
             <Stack
-              key="id"
+              key={item.id}
               direction="row"
               h="60px"
               maxWidth="100vw"

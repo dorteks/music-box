@@ -16,48 +16,58 @@ const Charts = () => {
         <HStack gap="5" overflowX="scroll">
           {[
             {
+              id: 1,
               chartImage: "/images/top100naija.jpeg",
               chartTitle: "Top 100 Nigeria",
             },
             {
+              id: 2,
               chartImage: "/images/top100africa.jpeg",
               chartTitle: "Top 100 Africa",
             },
             {
+              id: 3,
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
             {
+              id: 4,
               chartImage: "/images/top100international.jpeg",
               chartTitle: "Top 100 International",
             },
             {
+              id: 5,
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
             {
+              id: 6,
               chartImage: "/images/top100naija.jpeg",
               chartTitle: "Top 100 Nigeria",
             },
             {
+              id: 7,
               chartImage: "/images/top100africa.jpeg",
               chartTitle: "Top 100 Africa",
             },
             {
+              id: 8,
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
             {
+              id: 9,
               chartImage: "/images/top100international.jpeg",
               chartTitle: "Top 100 International",
             },
             {
+              id: 10,
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
           ].map((item) => {
             return (
-              <Link key="chartTitle" href="/top-charts/top100Naija">
+              <Link key={item.id} href="/top-charts/top100Naija">
                 <Stack direction="column" pt="20px">
                   <Card width="200px" height="200px" bgImage={item.chartImage}>
                     {/* <Box alignSelf="end" mr="20px" mt="160px">
@@ -78,48 +88,58 @@ const Charts = () => {
         <HStack gap="5" overflowX="scroll">
           {[
             {
+              id: 1,
               chartImage: "/images/top100naija.jpeg",
               chartTitle: "Top 100 Nigeria",
             },
             {
+              id: 2,
               chartImage: "/images/top100africa.jpeg",
               chartTitle: "Top 100 Africa",
             },
             {
+              id: 3,
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
             {
+              id: 4,
               chartImage: "/images/top100international.jpeg",
               chartTitle: "Top 100 International",
             },
             {
+              id: 5,
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
             {
+              id: 6,
               chartImage: "/images/top100naija.jpeg",
               chartTitle: "Top 100 Nigeria",
             },
             {
+              id: 7,
               chartImage: "/images/top100africa.jpeg",
               chartTitle: "Top 100 Africa",
             },
             {
+              id: 8,
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
             {
+              id: 9,
               chartImage: "/images/top100international.jpeg",
               chartTitle: "Top 100 International",
             },
             {
+              id: 10,
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
           ].map((item) => {
             return (
-              <Link key="chartTitle" href="/top-charts/top100Naija">
+              <Link key={item.id} href="/top-charts/top100Naija">
                 <Stack direction="column" pt="20px">
                   <Card width="200px" height="200px" bgImage={item.chartImage}>
                     {/* <Box alignSelf="end" mr="20px" mt="160px">
@@ -140,48 +160,58 @@ const Charts = () => {
         <HStack gap="5" overflowX="scroll">
           {[
             {
+              id: 1,
               chartImage: "/images/top100naija.jpeg",
               chartTitle: "Top 100 Nigeria",
             },
             {
+              id: 2,
               chartImage: "/images/top100africa.jpeg",
               chartTitle: "Top 100 Africa",
             },
             {
+              id: 3,
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
             {
+              id: 4,
               chartImage: "/images/top100international.jpeg",
               chartTitle: "Top 100 International",
             },
             {
+              id: 5,
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
             {
+              id: 6,
               chartImage: "/images/top100naija.jpeg",
               chartTitle: "Top 100 Nigeria",
             },
             {
+              id: 7,
               chartImage: "/images/top100africa.jpeg",
               chartTitle: "Top 100 Africa",
             },
             {
+              id: 8,
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
             {
+              id: 9,
               chartImage: "/images/top100international.jpeg",
               chartTitle: "Top 100 International",
             },
             {
+              id: 10,
               chartImage: "/images/topGospel.jpeg",
               chartTitle: "Top 100 Gospel",
             },
           ].map((item) => {
             return (
-              <Link key="chartTitle" href="/top-charts/top100Naija">
+              <Link key={item.id} href="/top-charts/top100Naija">
                 <Stack direction="column" pt="20px">
                   <Card width="200px" height="200px" bgImage={item.chartImage}>
                     {/* <Box alignSelf="end" mr="20px" mt="160px">

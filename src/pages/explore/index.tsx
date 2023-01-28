@@ -23,6 +23,7 @@ const Explore = () => {
       >
         {[
           {
+            id: 1,
             lineColor: "green",
             playButtonColor: "purple",
             blogTitle: "WATCH NOW",
@@ -32,6 +33,7 @@ const Explore = () => {
             imageText: "Doja Cat",
           },
           {
+            id: 2,
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
@@ -41,6 +43,7 @@ const Explore = () => {
             imageText: "Candy Bleakz",
           },
           {
+            id: 3,
             lineColor: "blue",
             playButtonColor: "red",
             blogTitle: "UPDATED PLAYLIST",
@@ -50,6 +53,7 @@ const Explore = () => {
             imageText: "Mettalica",
           },
           {
+            id: 4,
             lineColor: "green",
             playButtonColor: "purple",
             blogTitle: "DUDUKE OFFICIAL VIDEO",
@@ -59,6 +63,7 @@ const Explore = () => {
             imageText: "Simi",
           },
           {
+            id: 10,
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
@@ -68,6 +73,7 @@ const Explore = () => {
             imageText: "Davido",
           },
           {
+            id: 5,
             lineColor: "blue",
             playButtonColor: "red",
             blogTitle: "ECHO ROOM - AIMASIKO",
@@ -77,6 +83,7 @@ const Explore = () => {
             imageText: "Simi",
           },
           {
+            id: 6,
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
@@ -86,6 +93,7 @@ const Explore = () => {
             imageText: "Davido",
           },
           {
+            id: 7,
             lineColor: "blue",
             playButtonColor: "red",
             blogTitle: "ECHO ROOM - AIMASIKO",
@@ -95,6 +103,7 @@ const Explore = () => {
             imageText: "Simi",
           },
           {
+            id: 8,
             lineColor: "green",
             playButtonColor: "purple",
             blogTitle: "DUDUKE OFFICIAL VIDEO",
@@ -104,6 +113,7 @@ const Explore = () => {
             imageText: "Simi",
           },
           {
+            id: 9,
             lineColor: "red",
             playButtonColor: "blue",
             blogTitle: "NEW ALBUM + INTERVIEW",
@@ -115,7 +125,7 @@ const Explore = () => {
         ].map((item) => {
           return (
             <Stack
-              key="explore"
+              key={item.id}
               direction="column"
               w={["210px", "220px", "220px", "220px", "220px"]}
             >

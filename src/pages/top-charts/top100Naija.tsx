@@ -137,7 +137,7 @@ const Top100Naija = () => {
               },
             ].map((item) => {
               return (
-                <Tbody key="id">
+                <Tbody key={item.id}>
                   <Tr>
                     <Td>{item.id}</Td>
                     <Td>{item.title}</Td>

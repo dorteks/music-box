@@ -25,23 +25,28 @@ const Radio = () => {
       <HStack pb="40px" gap="5" overflowX="scroll">
         {[
           {
+            id: 1,
             radioStationImage: "/images/radio4.jpg",
           },
           {
+            id: 2,
             radioStationImage: "/images/radio4.jpg",
           },
           {
+            id: 3,
             radioStationImage: "/images/radio4.jpg",
           },
           {
+            id: 4,
             radioStationImage: "/images/radio4.jpg",
           },
           {
+            id: 5,
             radioStationImage: "/images/radio4.jpg",
           },
         ].map((item) => {
           return (
-            <Link key="radioStationName" href="/radio/listen-radio">
+            <Link key={item.id} href="/radio/listen-radio">
               <Stack direction="column" pt="20px">
                 <Card width="240px" height="250px" bgColor="blackAlpha.500">
                   <Card
@@ -61,13 +66,14 @@ const Radio = () => {
       <Stack align="center" mt="20px">
         {[
           {
+            id: 1,
             radioStationName: "The Beat 99.9 FM",
             genres: "sports.entertainment.news.music",
           },
         ].map((item) => {
           return (
             <Card
-              key="radioStationName"
+              key={item.id}
               width={["95vw", "95vw", "95vw", "75vw", "70vw"]}
               height={["200px", "200px", "250px", "300px", "300px"]}
               bgColor="red.50"
@@ -114,32 +120,38 @@ const Radio = () => {
       <HStack gap="5" overflowX="scroll">
         {[
           {
+            id: 1,
             radioStationImage: "/images/radio2.jpeg",
             radioStationName: "Real 99.1FM Aba",
           },
           {
+            id: 2,
             radioStationImage: "/images/radio2.jpeg",
             radioStationName: "THe beat 99.9 FM",
           },
           {
+            id: 3,
             radioStationImage: "/images/radio2.jpeg",
             radioStationName: "Fresh 105.9FM",
           },
           {
+            id: 4,
             radioStationImage: "/images/radio2.jpeg",
             radioStationName: "Gospel FM Awka",
           },
           {
+            id: 5,
             radioStationImage: "/images/radio2.jpeg",
             radioStationName: "Domi Radio",
           },
           {
+            id: 6,
             radioStationImage: "/images/radio2.jpeg",
             radioStationName: "Lagos Talks 91.3FM",
           },
         ].map((item) => {
           return (
-            <Link key="radioName" href="/radio/listen-radio">
+            <Link key={item.id} href="/radio/listen-radio">
               <Stack key="radioStationName" direction="column" pt="20px">
                 <Card
                   width="200px"
@@ -169,17 +181,57 @@ const Radio = () => {
         <Heading size="sm">Selected radio stations for you</Heading>
 
         {[
-          { radioStationName: "560 Power Country", likes: "57.0", unit: "K" },
-          { radioStationName: "560 Smooth Jazz", likes: "40.0", unit: "K" },
-          { radioStationName: "Real 99.1 FM Aba", likes: "748.0", unit: "K" },
-          { radioStationName: "560 Power Country", likes: "2.0", unit: "M" },
-          { radioStationName: "560 Power Country", likes: "57.0", unit: "K" },
-          { radioStationName: "560 Smooth Jazz", likes: "40.0", unit: "K" },
-          { radioStationName: "Real 99.1 FM Aba", likes: "748.0", unit: "K" },
-          { radioStationName: "560 Power Country", likes: "2.0", unit: "M" },
+          {
+            id: 1,
+            radioStationName: "560 Power Country",
+            likes: "57.0",
+            unit: "K",
+          },
+          {
+            id: 2,
+            radioStationName: "560 Smooth Jazz",
+            likes: "40.0",
+            unit: "K",
+          },
+          {
+            id: 3,
+            radioStationName: "Real 99.1 FM Aba",
+            likes: "748.0",
+            unit: "K",
+          },
+          {
+            id: 4,
+            radioStationName: "560 Power Country",
+            likes: "2.0",
+            unit: "M",
+          },
+          {
+            id: 5,
+            radioStationName: "560 Power Country",
+            likes: "57.0",
+            unit: "K",
+          },
+          {
+            id: 6,
+            radioStationName: "560 Smooth Jazz",
+            likes: "40.0",
+            unit: "K",
+          },
+          {
+            id: 7,
+            radioStationName: "Real 99.1 FM Aba",
+            likes: "748.0",
+            unit: "K",
+          },
+          {
+            id: 8,
+            radioStationName: "560 Power Country",
+            likes: "2.0",
+            unit: "M",
+          },
         ].map((item) => {
           return (
-            <Link key="radioStationName" href="/radio/listen-radio">
+            <Link key={item.id} href="/radio/listen-radio">
               <Stack
                 w={["90vw", "90vw", "90vw", "75vw", "78vw"]}
                 direction="row"

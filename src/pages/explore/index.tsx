@@ -1,8 +1,9 @@
+// import AudioPlayer from "@/audio/audio";
+import AudioPlayer from "@/audio/audioPlayer";
 import Layout from "@/layouts/main";
 import { Box, Card, Grid, Stack, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import { ReactElement } from "react";
-import { BiPlayCircle } from "react-icons/bi";
 
 const Explore = () => {
   return (
@@ -31,6 +32,7 @@ const Explore = () => {
             subHeading: "The Lates and Greatest in Music",
             image: "/images/DojaCat.png",
             imageText: "Doja Cat",
+            song: "/davido-fem.mp3",
           },
           {
             id: 2,
@@ -41,6 +43,7 @@ const Explore = () => {
             subHeading: "Candy Bleakz",
             image: "/images/CandyBleakz.webp",
             imageText: "Candy Bleakz",
+            song: "/tikuku.mp3",
           },
           {
             id: 3,
@@ -51,6 +54,7 @@ const Explore = () => {
             subHeading: "Special For You",
             image: "/images/mettalica.jpg",
             imageText: "Mettalica",
+            song: "/davido-fem.mp3",
           },
           {
             id: 4,
@@ -61,17 +65,9 @@ const Explore = () => {
             subHeading: "Simi",
             image: "/images/DojaCat.png",
             imageText: "Simi",
+            song: "/tikuku.mp3",
           },
-          {
-            id: 10,
-            lineColor: "red",
-            playButtonColor: "blue",
-            blogTitle: "NEW ALBUM + INTERVIEW",
-            heading: "FEM",
-            subHeading: "Davido",
-            image: "/images/CandyBleakz.webp",
-            imageText: "Davido",
-          },
+
           {
             id: 5,
             lineColor: "blue",
@@ -81,6 +77,7 @@ const Explore = () => {
             subHeading: "Special For You",
             image: "/images/CandyBleakz.webp",
             imageText: "Simi",
+            song: "/RTID-Kizz-Daniel.mp3",
           },
           {
             id: 6,
@@ -91,6 +88,7 @@ const Explore = () => {
             subHeading: "Davido",
             image: "/images/CandyBleakz.webp",
             imageText: "Davido",
+            song: "/davido-fem.mp3",
           },
           {
             id: 7,
@@ -101,6 +99,7 @@ const Explore = () => {
             subHeading: "Special For You",
             image: "/images/CandyBleakz.webp",
             imageText: "Simi",
+            song: "/RTID-Kizz-Daniel.mp3",
           },
           {
             id: 8,
@@ -111,6 +110,7 @@ const Explore = () => {
             subHeading: "Simi",
             image: "/images/DojaCat.png",
             imageText: "Simi",
+            song: "/tikuku.mp3",
           },
           {
             id: 9,
@@ -121,8 +121,22 @@ const Explore = () => {
             subHeading: "Davido",
             image: "/images/CandyBleakz.webp",
             imageText: "Davido",
+            song: "/davido-fem.mp3",
+          },
+          {
+            id: 10,
+            lineColor: "red",
+            playButtonColor: "blue",
+            blogTitle: "NEW ALBUM + INTERVIEW",
+            heading: "FEM",
+            subHeading: "Davido",
+            image: "/images/CandyBleakz.webp",
+            imageText: "Davido",
+            song: "/davido-fem.mp3",
           },
         ].map((item) => {
+          console.log(item.song, "songs");
+
           return (
             <Stack
               key={item.id}
@@ -152,7 +166,7 @@ const Explore = () => {
                 backgroundImage={item.image}
               >
                 <Box w="40px" mt="30px" ml="20px">
-                  <BiPlayCircle size="sm" color={item.playButtonColor} />
+                  <AudioPlayer song={`` + item.song} />
                 </Box>
 
                 <Text mt="80px" ml="20px" color="white" fontSize="18px">

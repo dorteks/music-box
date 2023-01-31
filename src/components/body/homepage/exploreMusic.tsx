@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { BiPlayCircle } from "react-icons/bi";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import { Box, Card, Heading, Text, Stack, HStack } from "@chakra-ui/react";
+import AudioPlayer from "@/audio/audioPlayer";
 
 const exploreData = [
   {
@@ -127,7 +127,7 @@ const ExploreMusic = () => {
                 backgroundImage={item.image}
               >
                 <Box w="40px" mt="30px" ml="20px">
-                  <BiPlayCircle size="sm" color={item.playButtonColor} />
+                  <AudioPlayer song={item.song} />
                 </Box>
 
                 <Text mt="80px" ml="20px" color="white" fontSize="18px">

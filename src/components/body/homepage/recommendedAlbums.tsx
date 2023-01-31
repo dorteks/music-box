@@ -3,8 +3,8 @@ import {
   BsArrowLeftCircle,
   BsArrowRightCircle,
 } from "react-icons/bs";
-import { BsPlayCircleFill } from "react-icons/bs";
 import { Box, Card, HStack, Stack, Text } from "@chakra-ui/react";
+import AudioPlayer from "@/audio/audioPlayer";
 
 const RecommendedAlbums = () => {
   return (
@@ -75,7 +75,7 @@ const RecommendedAlbums = () => {
                 mt="30px"
                 ml={["250px", "250px", "200px", "230px", "230px"]}
               >
-                <BsPlayCircleFill size="sm" />
+                <AudioPlayer song={""} />
               </Box>
 
               <Text mt="60px" ml="20px" color="white" fontSize="18px">

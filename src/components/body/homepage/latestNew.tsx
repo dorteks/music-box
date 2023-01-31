@@ -1,10 +1,10 @@
 import {
-  BsPlayCircleFill,
   BsArrowLeftCircle,
   BsArrowRightCircle,
   BsFillBookmarkFill,
 } from "react-icons/bs";
 import { Box, Card, HStack, Stack, Text } from "@chakra-ui/react";
+import AudioPlayer from "@/audio/audioPlayer";
 
 const LatestNew = () => {
   return (
@@ -79,7 +79,7 @@ const LatestNew = () => {
             <div key={item.id}>
               <Card minWidth="225px" h="220px" backgroundImage={item.image}>
                 <Box w="40px" mt="30px" ml="150px">
-                  <BsPlayCircleFill size="sm" />
+                  <AudioPlayer song={""} />
                 </Box>
               </Card>
 

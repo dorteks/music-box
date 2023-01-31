@@ -1,11 +1,8 @@
-import {
-  BsPlayCircleFill,
-  BsArrowLeftCircle,
-  BsArrowRightCircle,
-} from "react-icons/bs";
+import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import { RxRadiobutton } from "react-icons/rx";
 import { Box, Card, HStack, Stack, Text } from "@chakra-ui/react";
 import Link from "next/link";
+import AudioPlayer from "@/audio/audioPlayer";
 
 const MusicRadioShows = () => {
   return (
@@ -74,7 +71,7 @@ const MusicRadioShows = () => {
               <Box>
                 <Card minWidth="220px" h="180px" backgroundImage={item.image}>
                   <Box w="40px" mt="20px" ml="20px">
-                    <BsPlayCircleFill size="sm" />
+                    <AudioPlayer song={""} />
                   </Box>
                 </Card>
 

@@ -1,6 +1,6 @@
-import { Button } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import React from "react";
-import { BsPauseCircle } from "react-icons/bs";
+import { BsPauseCircleFill } from "react-icons/bs";
 
 type props = {
   handleClick: any;
@@ -8,13 +8,13 @@ type props = {
 
 const Pause = ({ handleClick }: props) => {
   return (
-    <Button
+    <Box
       onClick={() => {
         handleClick();
       }}
     >
-      <BsPauseCircle />
-    </Button>
+      <BsPauseCircleFill size="sm" />
+    </Box>
   );
 };
 

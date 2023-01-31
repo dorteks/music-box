@@ -1,3 +1,4 @@
+import AudioPlayer from "@/audio/audioPlayer";
 import Layout from "@/layouts/main";
 import {
   Box,
@@ -44,6 +45,18 @@ const Radio = () => {
             id: 5,
             radioStationImage: "/images/radio4.jpg",
           },
+          {
+            id: 6,
+            radioStationImage: "/images/radio4.jpg",
+          },
+          {
+            id: 7,
+            radioStationImage: "/images/radio4.jpg",
+          },
+          {
+            id: 8,
+            radioStationImage: "/images/radio4.jpg",
+          },
         ].map((item) => {
           return (
             <Link key={item.id} href="/radio/listen-radio">
@@ -79,28 +92,37 @@ const Radio = () => {
               bgColor="red.50"
               justifyContent="space-around"
             >
-              <Stack direction="row" alignContent="center">
-                <Img
-                  display={["none", "none", "flex", "flex", "flex"]}
-                  boxSize={["150px", "200px", "200px", "200px", "250px"]}
-                  width={["150px", "200px", "200px", "200px", "250px"]}
-                  src="images/headphone.jpeg"
-                />
+              <Stack
+                direction="row"
+                alignContent="center"
+                justify="space-between"
+              >
+                <Link href="/radio/listen-radio">
+                  <Img
+                    display={["none", "none", "flex", "flex", "flex"]}
+                    boxSize={["150px", "200px", "200px", "200px", "250px"]}
+                    width={["150px", "200px", "200px", "200px", "250px"]}
+                    src="images/headphone.jpeg"
+                  />
+                </Link>
                 <VStack justify="center">
-                  <HStack>
-                    <Heading size={["sm", "md", "lg", "lg", "lg"]} pr="20px">
-                      {item.radioStationName}
-                    </Heading>
+                  <Link href="/radio/listen-radio">
+                    <HStack>
+                      <Heading size={["sm", "md", "lg", "lg", "lg"]} pr="20px">
+                        {item.radioStationName}
+                      </Heading>
 
-                    <FiBarChart2 size="25px" />
-                  </HStack>
-                  <Text
-                    pt="20px"
-                    fontSize={["12px", "12px", "16px", "16px", "16px"]}
-                  >
-                    {item.genres}
-                  </Text>
+                      <FiBarChart2 size="25px" />
+                    </HStack>
+                    <Text
+                      pt="20px"
+                      fontSize={["12px", "12px", "16px", "16px", "16px"]}
+                    >
+                      {item.genres}
+                    </Text>
+                  </Link>
                 </VStack>
+
                 <Box
                   p="15px"
                   ml="50px"
@@ -109,7 +131,7 @@ const Radio = () => {
                   borderRadius="40px"
                   bgColor="blackAlpha.400"
                 >
-                  {/* <CiPlay1 size={["10px", "10px", "30px", "50px", "50px"]} /> */}
+                  <AudioPlayer song={"/RTID-Kizz-Daniel.mp3"} />
                 </Box>
               </Stack>
             </Card>
@@ -231,14 +253,14 @@ const Radio = () => {
           },
         ].map((item) => {
           return (
-            <Link key={item.id} href="/radio/listen-radio">
-              <Stack
-                w={["90vw", "90vw", "90vw", "75vw", "78vw"]}
-                direction="row"
-                pt="20px"
-                pl={["", "10px", "20px", "30px", "30px"]}
-                justify="space-between"
-              >
+            <Stack
+              w={["90vw", "90vw", "90vw", "75vw", "78vw"]}
+              direction="row"
+              pt="20px"
+              pl={["", "10px", "20px", "30px", "30px"]}
+              justify="space-between"
+            >
+              <Link key={item.id} href="/radio/listen-radio">
                 <HStack>
                   <Card
                     width={["60px", "80px", "95px", "100px", "100px"]}
@@ -259,18 +281,18 @@ const Radio = () => {
                     </HStack>
                   </Stack>
                 </HStack>
+              </Link>
 
-                <Box
-                  p={["5px", "10px", "15px", "15px", "15px"]}
-                  boxSize={["50px", "60px", "70px", "70px", "70px"]}
-                  alignSelf="center"
-                  borderRadius="40px"
-                  bgColor="blackAlpha.400"
-                >
-                  <CiPlay1 size="40px" />
-                </Box>
-              </Stack>
-            </Link>
+              <Box
+                p={["5px", "10px", "15px", "15px", "15px"]}
+                boxSize={["50px", "60px", "70px", "70px", "70px"]}
+                alignSelf="center"
+                borderRadius="40px"
+                bgColor="blackAlpha.400"
+              >
+                <AudioPlayer song={"/RTID-Kizz-Daniel.mp3"} />{" "}
+              </Box>
+            </Stack>
           );
         })}
       </Stack>

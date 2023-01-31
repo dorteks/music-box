@@ -254,13 +254,14 @@ const Radio = () => {
         ].map((item) => {
           return (
             <Stack
+              key={item.id}
               w={["90vw", "90vw", "90vw", "75vw", "78vw"]}
               direction="row"
               pt="20px"
               pl={["", "10px", "20px", "30px", "30px"]}
               justify="space-between"
             >
-              <Link key={item.id} href="/radio/listen-radio">
+              <Link href="/radio/listen-radio">
                 <HStack>
                   <Card
                     width={["60px", "80px", "95px", "100px", "100px"]}

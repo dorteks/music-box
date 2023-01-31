@@ -6,13 +6,15 @@ import {
   Button,
   HStack,
   Heading,
+  Box,
 } from "@chakra-ui/react";
 import Layout from "@/layouts/main";
 import { BsStar } from "react-icons/bs";
 import { MdTimer } from "react-icons/md";
 import React, { ReactElement } from "react";
-import { SlControlPlay } from "react-icons/sl";
+// import { SlControlPlay } from "react-icons/sl";
 import { RxTrackNext, RxTrackPrevious } from "react-icons/rx";
+import AudioPlayer from "@/audio/audioPlayer";
 
 const ListenRadio = () => {
   return (
@@ -61,7 +63,10 @@ const ListenRadio = () => {
               <RxTrackPrevious size="30px" />
               {/* <SlControlPause size="30px" /> */}
 
-              <SlControlPlay size="30px" />
+              {/* <SlControlPlay size="30px" /> */}
+              <Box boxSize="50px">
+                <AudioPlayer song={"/RTID-Kizz-Daniel.mp3"} />
+              </Box>
               <RxTrackNext size="30px" />
             </HStack>
           </Stack>

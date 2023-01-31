@@ -1,7 +1,6 @@
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import { RxRadiobutton } from "react-icons/rx";
 import { Box, Card, HStack, Stack, Text } from "@chakra-ui/react";
-import Link from "next/link";
 import AudioPlayer from "@/audio/audioPlayer";
 
 const MusicRadioShows = () => {
@@ -67,19 +66,16 @@ const MusicRadioShows = () => {
           },
         ].map((item) => {
           return (
-            <Link key={item.id} href="/radio/listen-radio">
-              <Box>
-                <Card minWidth="220px" h="180px" backgroundImage={item.image}>
-                  <Box w="40px" mt="20px" ml="20px">
-                    <AudioPlayer song={""} />
-                  </Box>
-                </Card>
-
-                <Text mt="20px" mb="20px" fontSize="14px" fontWeight="bold">
-                  {item.radioName}
-                </Text>
-              </Box>
-            </Link>
+            <Box key={item.id}>
+              <Card minWidth="220px" h="180px" backgroundImage={item.image}>
+                <Box w="40px" mt="20px" ml="20px">
+                  <AudioPlayer song={""} />
+                </Box>
+              </Card>
+              <Text mt="20px" mb="20px" fontSize="14px" fontWeight="bold">
+                {item.radioName}
+              </Text>
+            </Box>
           );
         })}
       </HStack>

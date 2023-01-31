@@ -1,3 +1,4 @@
+import AudioPlayer from "@/audio/audioPlayer";
 import Layout from "@/layouts/main";
 import {
   Box,
@@ -9,7 +10,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { ReactElement } from "react";
-import { BsPlay } from "react-icons/bs";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 const ExploreSong = () => {
@@ -86,8 +86,8 @@ const ExploreSong = () => {
               height={["20vh", "25vh", "28vh", "250px", "250px"]}
               bgImage={item.songCoverImage}
             >
-              <Box alignSelf="center">
-                <BsPlay size="80px" />
+              <Box boxSize="50px" mt="20px" alignSelf="center">
+                <AudioPlayer song={"/davido-fem.mp3"} />
               </Box>
             </Card>
 

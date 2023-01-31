@@ -1,7 +1,7 @@
 import { Box, Card, Text, Grid, GridItem } from "@chakra-ui/react";
 import Layout from "@/layouts/main";
 import { ReactElement } from "react";
-import { BsPlayCircleFill } from "react-icons/bs";
+import AudioPlayer from "@/audio/audioPlayer";
 
 const PersonalReleases = () => {
   return (
@@ -102,7 +102,7 @@ const PersonalReleases = () => {
                 backgroundImage={item.image}
               >
                 <Box w="40px" mt="30px" ml="100px">
-                  <BsPlayCircleFill size="sm" />
+                  <AudioPlayer song={"/davido-fem.mp3"} />{" "}
                 </Box>
               </Card>
 

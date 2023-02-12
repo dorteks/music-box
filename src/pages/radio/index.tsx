@@ -76,7 +76,7 @@ const Radio = () => {
         })}
       </HStack>
 
-      <Stack align="center" mt="20px">
+      <Stack align="center" mt="20px" bgColor="white">
         {[
           {
             id: 1,
@@ -85,12 +85,12 @@ const Radio = () => {
           },
         ].map((item) => {
           return (
-            <Card
+            <Stack
               key={item.id}
+              bgColor="white"
+              justifyContent="space-around"
               width={["95vw", "95vw", "95vw", "75vw", "70vw"]}
               height={["200px", "200px", "250px", "300px", "300px"]}
-              bgColor="red.50"
-              justifyContent="space-around"
             >
               <Stack
                 direction="row"
@@ -134,7 +134,7 @@ const Radio = () => {
                   <AudioPlayer song={"/RTID-Kizz-Daniel.mp3"} />
                 </Box>
               </Stack>
-            </Card>
+            </Stack>
           );
         })}
       </Stack>

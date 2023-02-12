@@ -15,7 +15,7 @@ const DesktopTopbar = () => {
       backgroundColor="whitesmoke"
       justifyContent="space-between"
       pr={["0", "0", "0", "30px", "50px"]}
-      maxWidth={["0", "0", "0", "84vw", "86vw"]}
+      maxWidth={["0", "0", "0", "84vw", "89vw"]}
       display={["none", "none", "none", "flex", "flex"]}
       // backgroundColor={["none", "none", "none", "yellow", "blue"]}
     >

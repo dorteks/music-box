@@ -34,13 +34,15 @@ const MobileSongsByArtist = () => {
           ].map((item) => {
             return (
               <Stack
-                key="artistName"
                 pl="10px"
                 pb="30px"
                 height="auto"
+                key="artistName"
+                color="gray.600"
                 direction="column"
-                bgColor="green.50"
                 justify="space-between"
+                bgColor="whiteAlpha.900"
+                borderBottom="1px solid gray"
               >
                 <Stack
                   pt="20px"

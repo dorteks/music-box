@@ -9,23 +9,27 @@ const DesktopTopbar = () => {
   return (
     <Box
       h="80px"
-      pr={["0", "0", "0", "30px", "50px"]}
       pl="20px"
-      bgColor="red"
-      maxWidth={["0", "0", "0", "84vw", "86vw"]}
       alignItems="center"
+      borderBottom="1px solid gray"
+      backgroundColor="whitesmoke"
       justifyContent="space-between"
-      backgroundColor={["none", "none", "none", "yellow", "blue"]}
+      pr={["0", "0", "0", "30px", "50px"]}
+      maxWidth={["0", "0", "0", "84vw", "86vw"]}
       display={["none", "none", "none", "flex", "flex"]}
+      // backgroundColor={["none", "none", "none", "yellow", "blue"]}
     >
       <HStack>
         <Box mr="10px">
           <GiMusicSpell size="30px" />
         </Box>
 
-        <Button w="280px">Search</Button>
+        <Button w="280px" bgColor="white">
+          {" "}
+          Search
+        </Button>
       </HStack>
-      <HStack>
+      <HStack gap={2}>
         {[
           {
             id: 1,
@@ -59,7 +63,7 @@ const DesktopTopbar = () => {
         })}
 
         <Link href="/user">
-          <Avatar boxSize="35px" />
+          <Avatar boxSize="40px" src="/images/zinoleesky.jpg" />
         </Link>
       </HStack>
     </Box>

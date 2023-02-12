@@ -8,6 +8,24 @@ import { ReactElement } from "react";
 const Explore = () => {
   return (
     <Box>
+      <Stack
+        direction="column"
+        w={["210px", "220px", "220px", "220px", "220px"]}
+      >
+        {/* <Card
+          w={["210px", "220px", "220px", "220px", "220px"]}
+          h="220px"
+          backgroundImage=""
+        >
+          <Box w="40px" mt="30px" ml="20px">
+            <AudioPlayer song="/RTID-Kizz-Daniel.mp3" />
+          </Box>
+
+          <Text mt="80px" ml="20px" color="white" fontSize="18px">
+            ASASsssssss
+          </Text>
+        </Card> */}
+      </Stack>
       <Grid
         templateColumns={[
           "repeat(2, 1fr)",
@@ -135,7 +153,7 @@ const Explore = () => {
             song: "/davido-fem.mp3",
           },
         ].map((item) => {
-          console.log(item.song, "songs");
+          console.log(item.song, item.heading, "list of songs");
 
           return (
             <Stack
@@ -166,7 +184,7 @@ const Explore = () => {
                 backgroundImage={item.image}
               >
                 <Box w="40px" mt="30px" ml="20px">
-                  <AudioPlayer song={`` + item.song} />
+                  <AudioPlayer song={item.song} />
                 </Box>
 
                 <Text mt="80px" ml="20px" color="white" fontSize="18px">

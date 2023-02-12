@@ -11,7 +11,9 @@ const LayoutBody = (props: Props) => {
   return (
     <GridItem bgColor="white">
       <Topbar />
-      <Stack direction="column">{props.children}</Stack>
+      <Stack direction="column" bgColor="whitesmoke">
+        {props.children}
+      </Stack>
       {/* <PlayOnScreen /> */}
     </GridItem>
   );

@@ -10,14 +10,15 @@ const MobileTopbar = () => {
   return (
     <Box
       h="80px"
+      maxWidth="100vw"
+      alignItems="center"
+      backgroundColor="whitesmoke"
+      borderBottom="1px solid gray"
+      justifyContent="space-between"
       pl={["20px", "30px", "30px", "0", "0"]}
       pr={["20px", "30px", "30px", "0", "0"]}
-      bgColor="red"
-      alignItems="center"
-      justifyContent="space-between"
-      maxWidth="100vw"
-      backgroundColor={["purple", "green", "red", "none", "none"]}
       display={["flex", "flex", "flex", "none", "none"]}
+      // backgroundColor={["purple", "green", "red", "none", "none"]}
     >
       <MobileSidebar />
       <Stack direction="row" alignItems="center">
@@ -43,7 +44,7 @@ const MobileTopbar = () => {
         <AiTwotoneSetting size="30px" />
       </Link>
       <Link href="/user">
-        <Avatar boxSize="35px" />
+        <Avatar boxSize="35px" src="/images/zinoleesky.jpg" />
       </Link>
     </Box>
   );

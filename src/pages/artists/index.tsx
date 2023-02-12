@@ -14,7 +14,7 @@ import { IoHeadsetOutline } from "react-icons/io5";
 
 const FavouriteArtists = () => {
   return (
-    <Box pl={["10px", "10px", "20px", "10px", "20px"]}>
+    <Box pt="30px" pl={["10px", "10px", "20px", "10px", "20px"]}>
       <Stack direction="row">
         {[
           { id: 1, byGenre: "All" },
@@ -35,13 +35,13 @@ const FavouriteArtists = () => {
         ].map((item) => {
           return (
             <Button
-              key={item.id}
-              fontSize="14px"
-              fontWeight="hairline"
-              width="fit-content"
-              bgColor="teal"
-              borderRadius="20px"
               mr="10px"
+              key={item.id}
+              bgColor="teal"
+              fontSize="14px"
+              width="fit-content"
+              borderRadius="20px"
+              fontWeight="hairline"
             >
               {item.byGenre}
             </Button>

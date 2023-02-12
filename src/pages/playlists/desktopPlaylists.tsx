@@ -30,12 +30,14 @@ const DesktopPlaylists = () => {
         pt="20px"
         pb="20px"
         pl="10px"
-        bgColor="green.50"
+        color="gray.600"
         justify="space-between"
+        bgColor="whiteAlpha.900"
+        borderBottom="1px solid gray"
         display={["none", "none", "flex", "flex", "flex"]}
       >
         <HStack>
-          <GiMusicSpell size="200px" />
+          <GiMusicSpell size="200px" color="black" />
           <VStack align="left" justify="center" pl="10px">
             <Text>PLAYLIST</Text>
             <Text pt="10px" fontSize="40px" fontWeight="bold">

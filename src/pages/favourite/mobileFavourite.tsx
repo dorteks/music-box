@@ -15,9 +15,11 @@ const MobileFavourite = () => {
         pt="20px"
         pb="20px"
         pl="20px"
-        bgColor="green.50"
-        justify="space-between"
         maxWidth="100vw"
+        color="gray.600"
+        justify="space-between"
+        bgColor="whiteAlpha.900"
+        borderBottom="1px solid gray"
         display={["flex", "flex", "none", "none", "none"]}
       >
         <HStack justify="space-between">

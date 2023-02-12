@@ -99,10 +99,10 @@ const Radio = () => {
               >
                 <Link href="/radio/listen-radio">
                   <Img
-                    display={["none", "none", "flex", "flex", "flex"]}
-                    boxSize={["150px", "200px", "200px", "200px", "250px"]}
-                    width={["150px", "200px", "200px", "200px", "250px"]}
                     src="images/headphone.jpeg"
+                    display={["none", "none", "flex", "flex", "flex"]}
+                    width={["150px", "200px", "200px", "200px", "250px"]}
+                    boxSize={["150px", "200px", "200px", "200px", "250px"]}
                   />
                 </Link>
                 <VStack justify="center">

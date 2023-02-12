@@ -16,12 +16,14 @@ const MobileRecentlyPlayed = () => {
         pb="20px"
         pl="20px"
         maxWidth="100vw"
-        bgColor="green.50"
+        color="gray.600"
         justify="space-between"
+        bgColor="whiteAlpha.900"
+        borderBottom="1px solid gray"
         display={["flex", "flex", "none", "none", "none"]}
       >
         <HStack justify="space-between">
-          <GiMusicSpell size="50px" />
+          <GiMusicSpell size="50px" color="black" />
           <HStack gap={4} pr="20px">
             <GrShareOption size="25px" />
             <BsThreeDots size="25px" />

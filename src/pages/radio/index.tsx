@@ -99,7 +99,7 @@ const Radio = () => {
               >
                 <Link href="/radio/listen-radio">
                   <Img
-                    src="images/headphone.jpeg"
+                    src="images/headphone.png"
                     display={["none", "none", "flex", "flex", "flex"]}
                     width={["150px", "200px", "200px", "200px", "250px"]}
                     boxSize={["150px", "200px", "200px", "200px", "250px"]}

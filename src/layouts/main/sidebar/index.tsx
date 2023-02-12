@@ -4,7 +4,7 @@ import DesktopSidebar from "./desktop";
 
 const LayoutSide = () => {
   return (
-    <GridItem bgColor="red">
+    <GridItem>
       <DesktopSidebar />
       {/* Mobile sidebar is used in mobile topbar */}
     </GridItem>

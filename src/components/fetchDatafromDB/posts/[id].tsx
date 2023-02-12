@@ -1,7 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import Link from "next/link";
-// import Link from "next/link";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/albums");

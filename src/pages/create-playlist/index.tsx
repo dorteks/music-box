@@ -32,7 +32,7 @@ const CreatePlaylist = () => {
   const [value, setValue] = React.useState("1");
 
   return (
-    <Box height="80vh" display="flex" justifyContent="center">
+    <Box height="100vh" display="flex" justifyContent="center">
       <VStack alignContent="center" justify="center">
         <RiPlayList2Fill size="70px" />
         <Text pt="50px" pb="20px">

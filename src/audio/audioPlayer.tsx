@@ -5,7 +5,7 @@ import Play from "./play";
 import useAudioPlayer from "./useAudioPlayer";
 
 type props = {
-  song: any;
+  song: string;
 };
 
 const AudioPlayer = ({ song }: props) => {

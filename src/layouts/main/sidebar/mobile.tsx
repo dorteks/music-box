@@ -30,9 +30,9 @@ const MobileSidebar = () => {
       <Box
         top="0"
         left="0"
+        zIndex={20}
         height="100vh"
         position="fixed"
-        zIndex={20}
         overflowY="auto"
         bgColor="gray.50"
         display={display}

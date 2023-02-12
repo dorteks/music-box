@@ -29,11 +29,13 @@ const DesktopFavourite = () => {
         pt="20px"
         pb="20px"
         pl="10px"
-        bgColor="green.50"
+        color="gray.600"
         justify="space-between"
+        bgColor="whiteAlpha.900"
+        borderBottom="1px solid gray"
         display={["none", "none", "flex", "flex", "flex"]}
       >
-        <HStack>
+        <HStack color="gray.700">
           <Box boxSize="200px" p="70px">
             <BsSuitHeart size="70px" />
           </Box>
